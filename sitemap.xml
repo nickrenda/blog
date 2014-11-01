@@ -7,7 +7,7 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://epwalsh.public.iastate.edu/</loc>
+  <loc>http://epwalsh.github.io/</loc>
   <lastmod>2014-08-28T03:33:12+00:00</lastmod>
   <priority>1.00</priority>
 </url>
@@ -45,10 +45,5 @@
   <loc>http://epwalsh.github.io/HonorsPaper.pdf</loc>
   <lastmod>2014-08-26T02:39:53+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://epwalsh.shinyapps.io/05_Crime/</loc>
-    <lastmod>2014-08-26T02:39:53+00:00</lastmod>
-    <priority>0.80</priority>
 </url>
 </urlset>
