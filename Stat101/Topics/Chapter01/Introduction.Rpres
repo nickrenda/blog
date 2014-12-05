@@ -3,8 +3,10 @@ Introduction
 author: Evan 'Pete' Walsh
 date: 
 
-First Slide
+Welcome to Stat 101
 ========================================================
+
+"Statistics show that people who have more birthdays tend to live longer."
 
 For more details on authoring R presentations click the
 **Help** button on the toolbar.

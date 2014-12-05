@@ -22,8 +22,27 @@ output: html_document
 ### Powerpoint Slides
 
 - [Introduction](https://epwalsh.github.io/Stat101/Topics/Chapter01/Introduction.html)
-- Chapter 1
-- Chapter 2
+- Chapter 01
+- Chapter 02
+- Chapter 03
+- Chapter 04
+- Chapter 05
+- Chapter 06
+- Chapter 07
+- Chapter 08
+- Chapter 09
+- Chapter 10
+- Chapter 11
+- Chapter 12
+- Chapter 13
+- Chapter 14
+- Chapter 15
+- Chapter 16
+- Chapter 17
+- Chapter 18
+- Chapter 19
+- Chapter 20
+- Chapter 21
 
 ---
 
@@ -32,3 +51,11 @@ output: html_document
 - [Khan Academy educational videos on statistics](https://www.khanacademy.org/math/probability)
 - [Introductory examples from Lock5](http://lock5stat.com/statkey/)
 
+---
+
+<div style="text-align:center">
+            
+  <small>© 2014 Evan P. Walsh</small><br>
+  <small>Last updated December 2014</small>
+            
+</div>
