@@ -53,9 +53,7 @@ output: html_document
 
 ---
 
-<div style="text-align:center">
-            
+<div style="text-align:center">          
   <small>© 2014 Evan P. Walsh</small><br>
-  <small>Last updated December 2014</small>
-            
+  <small>Last updated December 2014</small>           
 </div>

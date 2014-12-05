@@ -1,7 +1,7 @@
 Introduction
 ========================================================
 author: Evan 'Pete' Walsh
-date: 
+date: December 4, 2014
 
 Welcome to Stat 101
 ========================================================
@@ -37,3 +37,5 @@ Slide With Plot
 ========================================================
 
 ![plot of chunk unnamed-chunk-2](Introduction-figure/unnamed-chunk-2.png) 
+
+
