@@ -19,10 +19,10 @@ output: html_document
 
 ---
 
-## Powerpoint Slides:
+### Powerpoint Slides
 
-- [Chapter 01: Introduction](https://epwalsh.github.io/Stat101/Topics/Chapter01/Introduction.html)
-- Lecture 02
-- Lecture 03
+- [Introduction](https://epwalsh.github.io/Stat101/Topics/Chapter01/Introduction.html)
+- Chapter 1
+- Chapter 2
 
 ---
