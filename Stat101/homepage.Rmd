@@ -5,12 +5,23 @@ title: "Stat 101 - Principles of Statistics (Spring 2015)"
 output: html_document
 ---
 
+![ISU logo](Figures/logo.png)
+
 ### Welcome to the Stat 101 homepage!
+
+---
+
+>Instructor: [Evan 'Pete' Walsh](https://epwalsh.github.io/)
+
+>Lecture: MWF 3:10 - 4:00 PM Lagomar E164
+
+>Lab: Depends
 
 ---
 
 ## Powerpoint Slides:
 
+- [Introduction](https://epwalsh.github.io/Stat101/Slides/Introduction.html)
 - Lecture 01
 - Lecture 02
 
