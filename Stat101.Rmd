@@ -1,0 +1,8 @@
+---
+title: "Stat 101 - Principles of Statistics (Spring 2015)"
+#author: "Evan “Pete” Walsh"
+#date: "December 5, 2014"
+output: html_document
+---
+
+### Welcome to the Stat 101 homepage!
