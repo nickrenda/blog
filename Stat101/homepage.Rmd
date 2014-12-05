@@ -6,3 +6,9 @@ output: html_document
 ---
 
 ### Welcome to the Stat 101 homepage!
+
+---
+
+## Powerpoint Slides:
+
+---
