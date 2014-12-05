@@ -11,4 +11,7 @@ output: html_document
 
 ## Powerpoint Slides:
 
+- Lecture 01
+- Lecture 02
+
 ---
