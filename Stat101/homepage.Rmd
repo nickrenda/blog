@@ -1,3 +1,13 @@
+<style type="text/css">
+#departmentLink a {
+  color:#999999;
+  font-size:15pt;
+  text-decoration:none;
+  padding-left:2px;
+  padding-top:4px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+</style>
 ---
 title: "Stat 101 - Principles of Statistics (Spring 2015)"
 #author: "Evan “Pete” Walsh"
@@ -5,7 +15,10 @@ title: "Stat 101 - Principles of Statistics (Spring 2015)"
 output: html_document
 ---
 
-![ISU logo](Figures/logo.png)
+[![ISU logo](Figures/logo.png)](http://www.stat.iastate.edu/)
+<div id="departmentLink">
+[Department of Statistics](http://www.stat.iastate.edu/)
+</div>
 
 ---
 
