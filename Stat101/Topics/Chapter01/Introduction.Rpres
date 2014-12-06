@@ -6,27 +6,6 @@ date: December 4, 2014
 Welcome to Stat 101
 ========================================================
 
-"Statistics show that people who have more birthdays tend to live longer."
 
-For more details on authoring R presentations click the
-**Help** button on the toolbar.
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
-========================================================
-
-```{r}
-summary(cars)
-```
-
-Slide With Plot
-========================================================
-
-```{r, echo=FALSE}
-plot(cars)
-```
 
 
