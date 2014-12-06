@@ -7,19 +7,32 @@ output: html_document
 
 ![ISU logo](Figures/logo.png)
 
+---
+
 ### Welcome to the Stat 101 homepage!
 
 ---
 
->Instructor: [Evan 'Pete' Walsh](https://epwalsh.github.io/)
+>Instructor: [Evan 'Pete' Walsh](https://epwalsh.github.io/)  
+Email: [epwalsh@iastate.edu](epwalsh@iastate.edu)  
+Office: [Snedecor](https://www.google.com/maps/place/Snedecor+Hall,+Iowa+State+University,+Ames,+IA+50011/@42.0285115,-93.64972,17z/data=!3m1!4b1!4m2!3m1!1s0x87ee70a51d9e0f59:0x3d4f5fedf84d192e) 2410D  
+Office hours: TBA
 
->Lecture: MWF 3:10 - 4:00 PM Lagomar E164
+>Lecture: MWF 3:10 - 4:00 PM Lagomar E164  
+Lab: Depends
 
->Lab: Depends
+>Grades will be posted on [Blackboard](https://bb.its.iastate.edu/)
 
 ---
 
-### Powerpoint Slides
+### Course Content
+
+- Syllabus
+- Office hour schedule
+
+---
+
+### Lecture Slides
 
 - [Introduction](https://epwalsh.github.io/Stat101/Topics/Chapter01/Introduction.html)
 - Chapter 01
