@@ -14,7 +14,6 @@
 #date: "December 5, 2014"
 output: html_document
 ---
-## Stat 101 - Principles of Statistics (Spring 2015)
 
 [![ISU logo](Figures/logo.png)](http://www.stat.iastate.edu/)
 <div id="departmentLink">
@@ -22,6 +21,8 @@ output: html_document
 </div>
 
 ---
+
+## Stat 101 - Principles of Statistics (Spring 2015)
 
 ### Welcome to the Stat 101 homepage!
 
