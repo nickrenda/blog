@@ -37,13 +37,27 @@ header {
     font-size:.8em;
     line-height:1em;
     padding-left:30px;
+    padding-top:0px;
 }
 
 #contactInfo p {
     line-height: 1em;
     padding:0;
-    padding-top:0px;
     padding-left:30px;
+    margin:10px 0px 8px 0px;
+}
+
+#contactInfo a {
+  padding:0;
+  padding-left:30px;
+  text-decoration:none; 
+  color:black;
+  font-weight:bold;
+  font-size:.9em;
+}
+
+#contactInfo a:hover {
+  color:#AAAAAA;
 }
 
 #nav-menu {
@@ -63,15 +77,6 @@ header {
     padding:10px;
     text-decoration: none;
     line-height: 2.3em;
-}
-
-#contactInfo a {
-  text-decoration:none; 
-  color:black;
-}
-
-#contactInfo a:hover {
-  color:#AAAAAA;
 }
 
 .current {
