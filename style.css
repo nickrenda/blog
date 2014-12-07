@@ -71,7 +71,7 @@ header {
 }
 
 #contactInfo a:hover {
-  color:white;
+  color:#AAAAAA;
 }
 
 .current {
@@ -86,7 +86,7 @@ header {
     background-color:#888888;
 }
 
-.about, .sched, .research, .travel, .resources {
+.tab {
     color:black;
     border-color:black;
     border-style:solid;
@@ -97,7 +97,7 @@ header {
     border-bottom:none;
 }
 
-.about:hover, .sched:hover, .research:hover, .travel:hover, .resources:hover {
+.tab:hover {
     color:black;
     border-color:black;
     border-style:solid;
