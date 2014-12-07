@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvettica, sans-serif;
-    background-color: #EEEEEE;
+    background-color: white;
 }
 
 header {
@@ -108,12 +108,12 @@ header {
     border-bottom:none;
 }
 
-.blog, .cv, .stat, .github {
+.link {
     color:black;
 }
 
-.blog:hover, .cv:hover, .stat:hover, .github:hover {
-    color:white;
+.link:hover {
+    color:#AAAAAA;
 }
 
 section {
@@ -177,4 +177,18 @@ footer {
     margin-left:auto;
     padding:10px;
     text-align: center;
+}
+
+.logo {
+  height:30px;
+  width:30px;
+}
+
+.logo:hover {
+  height:35px;
+  width:35px;
+}
+
+#github {
+  padding-left:10px;
 }
