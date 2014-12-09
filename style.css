@@ -173,10 +173,7 @@ p a:hover {
 .mainImage {
     float:left;
     margin:0px 20px 0px 0px;
-    border-top-right-radius:20px;
-    border-top-left-radius:20px;
-    border-bottom-right-radius:20px;
-    border-bottom-left-radius:20px;
+    border-radius:30px;
 }
 
 footer {
