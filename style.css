@@ -81,14 +81,14 @@ header {
 
 .current {
     color:black;
-    border-color:black;
+    border-color:#DDDDDD;
     border-style:solid;
     border-width:3px;
     border-top-right-radius:10px;
     border-top-left-radius:10px;
-    border-bottom-color:white;
+    border-bottom-color:#DDDDDD;
     border-bottom-width:5px;
-    background-color:white;
+    background-color:#DDDDDD;
 }
 
 .tab {
@@ -98,7 +98,7 @@ header {
     border-width:1px;
     border-top-right-radius:10px;
     border-top-left-radius:10px;
-    background-color:#EEEEEE;
+    background-color:white;
     border-bottom:none;
 }
 
@@ -109,7 +109,7 @@ header {
     border-width:3px;
     border-top-right-radius:10px;
     border-top-left-radius:10px;
-    background-color:#AAAAAA;
+    background-color:#CCCCCC;
     border-bottom:none;
 }
 
@@ -129,13 +129,14 @@ section {
 
 .main {
     height:425px;
-    border-color:black;
+    border-color:#DDDDDD;
     border-style:solid;
     border-width:3px;
     border-top-right-radius:20px;
     border-bottom-right-radius:20px;
     border-bottom-left-radius:20px;
     padding:0px;
+    background-color:#DDDDDD;
 }
 
 .main h3 {
@@ -157,11 +158,11 @@ section {
 }
 
 p a {
-    color:black;
+  color:black;
 }
 
 p a:hover {
-    color:#AAAAAA;
+    color:#08b5ee;
 }
 
 .projectLinks, .classHours {
