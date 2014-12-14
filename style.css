@@ -158,11 +158,13 @@ section {
 }
 
 p a {
-  color:black;
+  text-decoration:none;
+  color:#3b8eec;
 }
 
 p a:hover {
-    color:#08b5ee;
+    color:#0846ee;
+    text-decoration:underline;
 }
 
 .projectLinks, .classHours {
