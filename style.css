@@ -159,11 +159,11 @@ section {
 
 p a {
   text-decoration:none;
-  color:#3b8eec;
+  color:#428bca;
 }
 
 p a:hover {
-    color:#0846ee;
+    color:#2a6496;
     text-decoration:underline;
 }
 
