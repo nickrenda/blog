@@ -128,7 +128,7 @@ section {
 }
 
 .main {
-    height:425px;
+    /*height:425px;*/
     border-color:#DDDDDD;
     border-style:solid;
     border-width:3px;
@@ -139,7 +139,7 @@ section {
     background-color:#DDDDDD;
 }
 
-.main h3 {
+.main h3, h4 {
     padding:0px;
     padding-left:20px;
     line-height:.8em;
@@ -154,7 +154,9 @@ section {
 .images {
     box-shadow: 3px 3px 5px 1px #AAAAAA;
     height:150px;
-    width:150px;   
+    width:150px; 
+    margin-bottom: 15px;
+    margin-left: 3px;
 }
 
 p a {
