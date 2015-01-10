@@ -42,31 +42,44 @@ Lab: Depends
 
 ### Course Content
 
-- Syllabus
-- Office hour schedule
+- [Syllabus](Files/STAT101_G_H_S15.pdf)
+- Office hours: TBA
 
 ---
 
 ### Lecture Slides
+
+**Unit 1**
 
 - [Introduction](https://epwalsh.github.io/Stat101/Topics/Chapter01/Introduction.html)
 - Chapter 01
 - Chapter 02
 - Chapter 03
 - Chapter 04
+
+**Unit 2**
+
 - Chapter 05
 - Chapter 06
 - Chapter 07
 - Chapter 08
+
+**Unit 3**
+
 - Chapter 09
 - Chapter 10
 - Chapter 11
 - Chapter 12
-- Chapter 13
-- Chapter 14
-- Chapter 15
+
+**Unit 4**
+
+- Chapter 15 Part I
 - Chapter 16
 - Chapter 17
+
+**Unit 5**
+
+- Chapter 15 Part II
 - Chapter 18
 - Chapter 19
 - Chapter 20
@@ -82,6 +95,5 @@ Lab: Depends
 ---
 
 <div style="text-align:center">          
-  <small>© 2014 Evan P. Walsh</small><br>
-  <small>Last updated December 2014</small>           
+  <small>© 2014 [Evan P. Walsh](http://epwalsh.github.io)</small><br>         
 </div>
