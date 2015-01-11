@@ -141,7 +141,7 @@ section {
     padding:0px;
 }
 
-.main h3, h4 {
+.main h3, h4, h5 {
     padding:0px;
     padding-left:20px;
     line-height:.8em;
@@ -171,8 +171,22 @@ p a:hover {
     text-decoration:underline;
 }
 
-.projectLinks, .classHours {
+.projectLinks, .classes {
     padding-left:20px;
+}
+
+.classes h4 {
+    color:#428bca;
+}
+
+.classes a {
+  text-decoration:none;
+  color:#428bca;
+}
+
+.classes a:hover {
+  color:#2a6496;
+  text-decoration:underline;
 }
 
 .mainImage {
@@ -202,4 +216,15 @@ footer {
 
 #github {
   padding-left:10px;
+}
+
+blockquote {
+  margin-left:20px;
+  margin-top:-10px;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
+}
+
+.position p {
+  margin-top:-20px;
 }
