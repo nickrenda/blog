@@ -2,6 +2,7 @@ Introduction
 ========================================================
 author: Evan "Pete" Walsh
 date: January 12, 2015
+navigation: slide
 
 ## Welcome to STAT 101 - Principles of Statistics
 
