@@ -51,13 +51,14 @@ header {
   padding:0;
   padding-left:30px;
   text-decoration:none; 
-  color:black;
+  color:#428bca;
   font-weight:bold;
   font-size:.9em;
 }
 
 #contactInfo a:hover {
-  color:#AAAAAA;
+  color:#2a6496;
+  text-decoration:underline;
 }
 
 #nav-menu {
@@ -71,6 +72,7 @@ header {
 
 #nav-menu li {
     float:left;
+    padding-right:2px;
 }
 
 #nav-menu a {
@@ -81,36 +83,34 @@ header {
 
 .current {
     color:black;
-    border-color:#DDDDDD;
-    border-style:solid;
-    border-width:3px;
-    border-top-right-radius:10px;
-    border-top-left-radius:10px;
-    border-bottom-color:#DDDDDD;
-    border-bottom-width:5px;
-    background-color:#DDDDDD;
-}
-
-.tab {
-    color:black;
     border-color:black;
     border-style:solid;
     border-width:1px;
     border-top-right-radius:10px;
     border-top-left-radius:10px;
+    border-bottom-color:white;
+    /*border-bottom-width:5px;*/
+}
+
+.tab {
+    color:black;
+    /*border-color:black;
+    border-style:solid;
+    border-width:1px;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
     background-color:white;
-    border-bottom:none;
+    border-bottom:none;*/
 }
 
 .tab:hover {
-    color:black;
-    border-color:black;
+    background-color:#EEE;
+    border-color:#EEE;
     border-style:solid;
-    border-width:3px;
+    border-width:0px;
     border-top-right-radius:10px;
     border-top-left-radius:10px;
-    background-color:#CCCCCC;
-    border-bottom:none;
+    border-bottom-color:black;
 }
 
 .link {
@@ -129,14 +129,16 @@ section {
 
 .main {
     /*height:425px;*/
-    border-color:#DDDDDD;
-    border-style:solid;
-    border-width:3px;
-    border-top-right-radius:20px;
+    border-top-color:black;
+    border-top-style:solid;
+    border-top-width:1px;
+    /*border-top-right-radius:20px;
     border-bottom-right-radius:20px;
-    border-bottom-left-radius:20px;
+    border-bottom-left-radius:20px;*/
+    border-bottom-color:#BBB;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
     padding:0px;
-    background-color:#DDDDDD;
 }
 
 .main h3, h4 {
@@ -174,8 +176,9 @@ p a:hover {
 }
 
 .mainImage {
-    float:left;
-    margin:0px 20px 0px 0px;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
     width:300px;
     height:188px;
 }
@@ -194,8 +197,7 @@ footer {
 }
 
 .logo:hover {
-  height:35px;
-  width:35px;
+  opacity: 0.5;
 }
 
 #github {
