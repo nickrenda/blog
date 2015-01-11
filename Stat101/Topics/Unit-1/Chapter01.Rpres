@@ -6,7 +6,7 @@ navigation: slide
 
 ## Welcome to STAT 101 - Principles of Statistics
 
-Couse page: [http://epwalsh.github.io/Stat101/homepage.html](http://epwalsh.github.io/Stat101/homepage.html)
+Couse page: [http://epwalsh.public.iastate.edu/Stat101.html](http://epwalsh.public.iastate.edu/Stat101.html)
 
 Attendance
 ========================================================
@@ -43,7 +43,7 @@ Syllabus Highlights
 Course Resources
 ========================================================
 
-[Course webpage](http://epwalsh.github.io/Stat101/homepage.html)
+Course webpage: [epwalsh.public.iastate.edu/Stat101](http://epwalsh.public.iastate.edu/Stat101.html)
 - Lecture slides 
 - Office hours
 

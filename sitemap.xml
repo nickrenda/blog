@@ -17,7 +17,12 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/myClassList.html</loc>
+  <loc>http://epwalsh.github.io/coursework.html</loc>
+  <lastmod>2014-08-28T03:32:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://epwalsh.github.io/teaching.html</loc>
   <lastmod>2014-08-28T03:32:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -27,22 +32,17 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/research.html</loc>
-  <lastmod>2014-08-28T03:33:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>http://epwalsh.github.io/travel.html</loc>
   <lastmod>2014-08-28T03:33:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/CV.pdf</loc>
+  <loc>http://epwalsh.github.io/Files/CV.pdf</loc>
   <lastmod>2014-08-24T23:55:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/HonorsPaper.pdf</loc>
+  <loc>http://epwalsh.github.io/Files/HonorsPaper.pdf</loc>
   <lastmod>2014-08-26T02:39:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
