@@ -185,3 +185,125 @@ Marginal Distributions
 - Look at percentages for each variable seperately (ignoring the other variable)
 - "Margins" of contingency table
 - Same as looking at two variables seperately
+
+Contingency table with marginal distributions
+========================================================
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
+
+Marginal distribution of education
+========================================================
+
+
+```
+        Education Count Proportion
+1       < HS Grad   190      0.083
+2 Advanced Degree   363      0.159
+3    College Grad   528      0.232
+4         HS Grad   724      0.318
+5    Some College   473      0.208
+6           Total  2278           
+```
+
+Ignore the other categorical variable
+
+Marginal distribution of marital status
+========================================================
+
+
+```
+  Marital status Count Proportion
+1       Divorced   204      0.333
+2        Married  2074      0.667
+3      Separated    55      1.333
+4          Total  2278           
+```
+
+This time we ignore the **education** variable
+
+Conditional Distributions
+========================================================
+
+- Looks at percentages for one variable contingent upon (conditioned on) a particular category for the other variable
+- Compare conditional distributions to marginal distributions for the same variable
+- Differences indicate a potential dependence (association) between the two variables
+
+Example: education
+========================================================
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
+
+Distribution of marital status conditioned on education = **College grad**
+
+
+```
+     education   div  marr   sep total
+3 College Grad    41   487     9   528
+2  Proportion: 0.078 0.922 0.017      
+```
+
+Your turn
+========================================================
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
+
+1. What is the conditional distribution of marital status given education level is "Some college"
+2. What is the conditional distribution of education given marital status is "divorced"
+3. What is the overall proportion of divorced people?
+4. What is the overall proportion of married college grads?
+
+Mosaic plot
+========================================================
+
+- Graphical summary of contitional distributions in contingency table
+- Similar to segmented bar charts (in textbook)
+
+Example
+========================================================
+
+![plot of chunk unnamed-chunk-11](Chapter02-figure/unnamed-chunk-11-1.png) 
+
+Mosaic plot and assocations
+========================================================
+
+- Association
+    - The lines (segments) in the mosaic plot do not line up
+    - Indicates conditional distributions are different
+- No association
+    - The lines (segments) in the mosaic plot line up to form a near perfect horizontal line
+    - Indicates the conditional distributions are all the same
+    
+Example
+========================================================
+
+Are the conditional distributions of marital status the same across education levels?
+
+![plot of chunk unnamed-chunk-12](Chapter02-figure/unnamed-chunk-12-1.png) 
+

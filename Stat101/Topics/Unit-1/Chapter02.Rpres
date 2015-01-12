@@ -173,7 +173,7 @@ Education level and marital status
 library(reshape2)
 sum1 <- Wage %>% group_by(education, maritl) %>%
   summarize(count=length(maritl))
-tab1 <- dcast(sum1, education~maritl, mean)[,c(1:3,5)]
+tab1 <- dcast(sum1, education~maritl, mean, value.var="count")[,c(1:3,5)]
 tab1
 ```
 
@@ -188,3 +188,115 @@ Marginal Distributions
 - Look at percentages for each variable seperately (ignoring the other variable)
 - "Margins" of contingency table
 - Same as looking at two variables seperately
+
+Contingency table with marginal distributions
+========================================================
+
+```{r echo=FALSE}
+tab1$total <- c(sum(tab1[1,2:3]), sum(tab1[2, 2:3]), sum(tab1[3,2:3]), sum(tab1[4,2:3]), sum(tab1[5,2:3]))
+newrow <- c("Total", sum(tab1$Divorced), sum(tab1$Married), sum(tab1$Separated), sum(tab1$total))
+names(tab1) <- c("education", "div", "marr", "sep", "total")
+tab2 <- rbind(tab1, newrow)
+tab2
+```
+
+Marginal distribution of education
+========================================================
+
+```{r echo=FALSE}
+out <- tab2[,c(1,5)]
+names(out) <- c("Education", "Count")
+out$Proportion <- as.numeric(out$Count) / as.numeric(out$Count[6])
+out$Proportion <- round(out$Proportion, digits=3)
+out$Proportion[6] <- ""
+out
+```
+
+Ignore the other categorical variable
+
+Marginal distribution of marital status
+========================================================
+
+```{r echo=FALSE}
+out <- data.frame(cbind(c("Divorced", "Married", "Separated", "Total"), as.numeric(tab2[6,2:5])))
+names(out) <- c("Marital status", "Count")
+out$Proportion <- as.numeric(out$Count) / as.numeric(out$Count[4])
+out$Proportion <- round(out$Proportion, digits=3)
+out$Proportion[4] <- ""
+out
+```
+
+This time we ignore the **education** variable
+
+Conditional Distributions
+========================================================
+
+- Looks at percentages for one variable contingent upon (conditioned on) a particular category for the other variable
+- Compare conditional distributions to marginal distributions for the same variable
+- Differences indicate a potential dependence (association) between the two variables
+
+Example: education
+========================================================
+
+```{r echo=FALSE}
+tab2
+```
+
+Distribution of marital status conditioned on education = **College grad**
+
+```{r echo=FALSE}
+out <- tab2[3,]
+newrow <- c("Proportion:", round(as.numeric(out[1,2:4]) / as.numeric(out[1,5]), digits=3), "")
+rbind(out, newrow)
+```
+
+Your turn
+========================================================
+
+```{r echo=FALSE}
+tab2
+```
+
+1. What is the conditional distribution of marital status given education level is "Some college"
+2. What is the conditional distribution of education given marital status is "divorced"
+3. What is the overall proportion of divorced people?
+4. What is the overall proportion of married college grads?
+
+Mosaic plot
+========================================================
+
+- Graphical summary of contitional distributions in contingency table
+- Similar to segmented bar charts (in textbook)
+
+Example
+========================================================
+
+```{r echo=FALSE}
+mos <- tab2[1:5, 1:4]
+mos <- as.numeric(c(mos$div, mos$marr, mos$sep))
+dim(mos) <- c(5,3)
+dimnames(mos) <- list(Education = c("<HS", "Advanced Degree", "College Grad", 
+                               "HS Grad", "Some College"),
+                 Marital = c("Divorced", "Married", "Separated"))
+mosaicplot(mos, color=T, main="Eduation and Marital Status")
+```
+
+Mosaic plot and assocations
+========================================================
+
+- Association
+    - The lines (segments) in the mosaic plot do not line up
+    - Indicates conditional distributions are different
+- No association
+    - The lines (segments) in the mosaic plot line up to form a near perfect horizontal line
+    - Indicates the conditional distributions are all the same
+    
+Example
+========================================================
+
+Are the conditional distributions of marital status the same across education levels?
+
+```{r echo=FALSE}
+mosaicplot(mos, color=T, main="Eduation and Marital Status")
+```
+
