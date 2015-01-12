@@ -51,6 +51,7 @@ Syllabus Highlights
     - Written homeworks will be handed in at the beginning of class
     - Solutions will be posted on Blackboard and on course webpage
 - Lecture quizzes
+    - Given at end of class
     - Timing will  be random
     - Will usually complete in a small group
 - 5 unit assessments
