@@ -28,6 +28,21 @@ incremental: true
 - Who am I?
     - [epwalsh.public.iastate.edu](http://epwalsh.public.iastate.edu)
 
+Course Resources
+========================================================
+
+Course webpage: [epwalsh.public.iastate.edu/Stat101](http://epwalsh.public.iastate.edu/Stat101.html)
+- Lecture slides 
+- Office hours
+- Syllabus
+- Additional resources
+
+[Blackboard](https://bb.its.iastate.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1)
+- Assignments and grades will be posted to Blackboard
+- Announcements (or via email)
+- Office hours
+- Syllabus
+
 Syllabus Highlights
 ========================================================
 
@@ -39,17 +54,6 @@ Syllabus Highlights
     - Will usually complete in a small group
 - 5 unit assessments
 - Midterm and final exams
-
-Course Resources
-========================================================
-
-Course webpage: [epwalsh.public.iastate.edu/Stat101](http://epwalsh.public.iastate.edu/Stat101.html)
-- Lecture slides 
-- Office hours
-
-[Blackboard](https://bb.its.iastate.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1)
-- Assignments and grades will be posted to Blackboard
-- Announcements
 
 Chapter 01
 ========================================================
@@ -66,6 +70,7 @@ Statistics
 
 - The field of statistics is about understanding data and making informed decisions
 - Need to examine and understand variability to make decisions
+    - Example: predicting height
 - Our goal is to describe, quantify, explain, and/or predict variability in data
 
 Statistics and Mathematics
@@ -178,7 +183,7 @@ incremental:true
     - All Stat 101 students from the Spring 2004 through Spring 2007 semesters
 - What is the sample?
     - Only Stat 101 students who completed the survey
-- What are the 5 W's?
+- What are the 5 W's? Examine data table
     
 What the data looks like
 ========================================================
@@ -217,3 +222,21 @@ incremental: true
     - To provide interesting examples to use during the course
 - How?
     - General survey
+
+Example
+========================================================
+
+Data was collected on over 50,000 round cut diamonds
+
+
+```
+  carat       cut color clarity price
+1  0.23     Ideal     E     SI2   326
+2  0.21   Premium     E     SI1   326
+3  0.23      Good     E     VS1   327
+4  0.29   Premium     I     VS2   334
+5  0.31      Good     J     SI2   335
+6  0.24 Very Good     J    VVS2   336
+```
+
+Identify the **Who** and the **What**

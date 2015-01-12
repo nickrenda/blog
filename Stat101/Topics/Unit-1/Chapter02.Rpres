@@ -300,3 +300,5 @@ Are the conditional distributions of marital status the same across education le
 mosaicplot(mos, color=T, main="Eduation and Marital Status")
 ```
 
+
+
