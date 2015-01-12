@@ -46,7 +46,6 @@ Course webpage: [epwalsh.public.iastate.edu/Stat101](http://epwalsh.public.iasta
 Syllabus Highlights
 ========================================================
 
-- Please read the syllabus
 - Online and written homework - no extensions
     - Written homeworks will be handed in at the beginning of class
     - Solutions will be posted on Blackboard and on course webpage
@@ -54,7 +53,7 @@ Syllabus Highlights
     - Given at end of class
     - Timing will  be random
     - Will usually complete in a small group
-- 5 unit assessments
+- 5 unit "quizzes"
 - Midterm and final exams
 
 Syllabus Highlights
@@ -62,7 +61,7 @@ Syllabus Highlights
 
 - Weekly mandatory labs
     - Bring your book and be prepared to work on homework if you finish lab early
-    - Bring calculator and laptop as well
+    - Bring calculator and laptop as well - install JMP
     - No makeups
     - One lab will dropped at the end of the semester
 - Absences due to school activities will not be penalized
