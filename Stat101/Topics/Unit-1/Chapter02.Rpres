@@ -1,0 +1,190 @@
+Chapter 02
+========================================================
+author: Displaying and Describing Categorical Data
+date: January 14, 2015
+
+Chapter Outline
+========================================================
+
+- Review - 5 W's of data
+- Review - Categorical variables
+- Distribution of one categorical variable
+- Relationship between two categorical variables
+
+
+The 5 W's of data
+========================================================
+
+- Who
+    - Cases, rows in data file
+- What
+    - Variables, columns in data file
+- Where
+    - Where did the data come from?
+- When 
+    - When were the data collected?
+- Why
+    - Why did we collect data?
+
+
+Categorical Variables
+========================================================
+
+> Variables with labels as values
+
+Example:
+- Gender
+- Eye color
+- Year in school
+
+Example
+========================================================
+
+<center>
+
+sex    | age    | year   | height  | eye color
+------ | ------ | ------ | ------- | ---------
+female | 18     | first  | 68      | blue 
+male   | 20     | third  | 70      | hazel
+female | 18     | first  | 67      | green
+male   | 22     | fourth | 62      | brown
+...    | ...    | ...    | ...     | ...
+
+</center>
+
+> Rows are cases (students)
+
+> Columns are variables (characteristics of students)
+
+Categorical variables: ```year```, ```eyecolor```, ```sex```
+
+Summarizing a single categorical variable
+========================================================
+
+- Number, proportion, or percentage of Who's in each category
+- Summarize with
+    - Frequency table
+    - bar chart
+    - pie chart
+    
+Frequency table
+========================================================
+
+- Lists the frequencies and number or proportion of Who's in each category
+- Compare numbers and/or proportions
+
+Example: Breakdown of education level of Mid-Atlantic respondents to a national survey
+
+```{r echo=FALSE}
+library(ISLR)
+library(dplyr)
+Wage$education <- gsub("([1-9]\\. )", "", Wage$education)
+Wage$maritl <- gsub("([1-9]\\. )", "", Wage$maritl)
+Wage %>% group_by(education) %>%
+  summarize(frequency = length(education),
+            relative.freq = frequency / 2068)
+```
+
+Bar Chart
+========================================================
+
+- Displays either number or percentage for each category
+- Compare heights of bars
+- Do not need to have all categories in display
+- There are spaces between the bars
+- Order of the bars does not matter
+
+Example: Education
+========================================================
+
+```{r echo=FALSE}
+library(ggplot2)
+ggplot(Wage, aes(factor(education), fill=factor(education))) + 
+  geom_bar() + theme(legend.position="none")
+```
+
+Pie Chart
+========================================================
+
+- Displays percentage of whole for each category
+- Compare sizes of pie slices
+- Must have all categories in display
+
+Example: Education
+========================================================
+
+```{r echo=FALSE}
+ggplot(Wage, aes(x = factor(1), fill=factor(education))) +
+  geom_bar(width=1) + coord_polar(theta="y")
+```
+
+Describing the relationship between two categorical variables
+========================================================
+
+- Is there an association between the two categorical variables?
+- Two variables
+    - Variable of interest, i.e. **Response variable**
+    - Other variable, i.e. **Explanatory variable**
+    - The explanatory variable is being used to "explain" the differences in the response variable
+    
+Example
+========================================================
+incremental:true
+
+Suppose we have the following variables:
+- What political party are you a member of?
+- Who did you vote for last election?
+
+> Which is the explanatory variable and which is the response variable?
+
+- Political party could explain who people vote for, so political party would be the explanatory variable and who people voted for would be the response variable
+
+Describing the relationship between two categorical variables
+========================================================
+
+- Is the distribution of the reponse variable different for different categories of the explanatory variable?
+    - If so, then there is an **association** between the variables
+- Is the distribution of the response variable approximately the same for the difference categories of the other variable?
+    - There there is NOT an association between the two variables
+    
+Example
+========================================================
+incremental:true
+
+- If the proportion of people that voted for Candidate A versus Candidate B is different for democrats and republicans, is there an association between the two variables?
+    - YES
+- If the proportion of people that voted for Candidate A versus Candidate B is the SAME for democrats and republicans, is there an association between the two variables?
+    - NO
+    
+Describing the relationship between two categorical variables
+========================================================
+
+Data = two-way table, i.e. **Contingency Table**
+- Rows are categories of the explanatory variable
+- Columns are categories of the response variable
+- Table entries: number of observations belonging to particular category of explanatory variable and particular category of response variable
+
+Example: Education
+========================================================
+
+Education level and marital status
+
+```{r echo=FALSE}
+library(reshape2)
+sum1 <- Wage %>% group_by(education, maritl) %>%
+  summarize(count=length(maritl))
+tab1 <- dcast(sum1, education~maritl, mean)[,c(1:3,5)]
+tab1
+```
+
+- What is the response?
+    - Marital status (columns)
+- What is the explanatory variable?
+    - Education (rows)
+    
+Marginal Distributions
+========================================================
+
+- Look at percentages for each variable seperately (ignoring the other variable)
+- "Margins" of contingency table
+- Same as looking at two variables seperately
