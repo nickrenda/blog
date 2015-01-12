@@ -222,9 +222,9 @@ Marginal distribution of marital status
 
 ```
   Marital status Count Proportion
-1       Divorced   204      0.333
-2        Married  2074      0.667
-3      Separated    55      1.333
+1       Divorced   204       0.09
+2        Married  2074       0.91
+3      Separated    55      0.024
 4          Total  2278           
 ```
 

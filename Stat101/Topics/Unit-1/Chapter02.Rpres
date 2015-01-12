@@ -206,7 +206,7 @@ Marginal distribution of education
 ```{r echo=FALSE}
 out <- tab2[,c(1,5)]
 names(out) <- c("Education", "Count")
-out$Proportion <- as.numeric(out$Count) / as.numeric(out$Count[6])
+out$Proportion <- as.numeric(as.character(out$Count)) / as.numeric(as.character(out$Count[6]))
 out$Proportion <- round(out$Proportion, digits=3)
 out$Proportion[6] <- ""
 out
@@ -220,7 +220,7 @@ Marginal distribution of marital status
 ```{r echo=FALSE}
 out <- data.frame(cbind(c("Divorced", "Married", "Separated", "Total"), as.numeric(tab2[6,2:5])))
 names(out) <- c("Marital status", "Count")
-out$Proportion <- as.numeric(out$Count) / as.numeric(out$Count[4])
+out$Proportion <- as.numeric(as.character(out$Count)) / as.numeric(as.character(out$Count[4]))
 out$Proportion <- round(out$Proportion, digits=3)
 out$Proportion[4] <- ""
 out
@@ -246,7 +246,7 @@ Distribution of marital status conditioned on education = **College grad**
 
 ```{r echo=FALSE}
 out <- tab2[3,]
-newrow <- c("Proportion:", round(as.numeric(out[1,2:4]) / as.numeric(out[1,5]), digits=3), "")
+newrow <- c("Proportion:", round(as.numeric(as.character(out[1,2:4])) / as.numeric(as.character(out[1,5])), digits=3), "")
 rbind(out, newrow)
 ```
 
