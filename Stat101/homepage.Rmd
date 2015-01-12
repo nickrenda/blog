@@ -90,6 +90,7 @@ Lab: Depends
 
 - [Khan Academy educational videos on statistics](https://www.khanacademy.org/math/probability)
 - [Introductory examples from Lock5](http://lock5stat.com/statkey/)
+- [viShiny](http://epwalsh.shinyapps.io/viShiny)
 
 ---
 
