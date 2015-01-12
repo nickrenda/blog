@@ -11,7 +11,7 @@ Couse page: [http://epwalsh.public.iastate.edu/Stat101.html](http://epwalsh.publ
 Attendance
 ========================================================
 
-- Sing the attendance sheet that is being passed around
+- Sign the attendance sheet that is being passed around
 - If you are not registered or not on the list, see me after class
 
 Getting to know each other
@@ -21,7 +21,7 @@ incremental: true
 - Who are you? Take a minute to fill out a half sheet of paper will the following:
     - Name
     - Where are you from?
-    - Degree
+    - Major
     - Year
     - Interesting fact
     - What is ONE word you think of when you hear the word "statistics?"
