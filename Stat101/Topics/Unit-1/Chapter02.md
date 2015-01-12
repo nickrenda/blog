@@ -3,6 +3,12 @@ Chapter 02
 author: Displaying and Describing Categorical Data
 date: January 14, 2015
 
+Announcements
+========================================================
+
+- Textbook
+- Add/drops
+
 Chapter Outline
 ========================================================
 
