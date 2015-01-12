@@ -103,6 +103,26 @@ ggplot(Wage, aes(factor(education), fill=factor(education))) +
   geom_bar() + theme(legend.position="none")
 ```
 
+Other types of bar charts
+========================================================
+
+Stacked bar chart
+
+```{r echo=FALSE}
+qplot(factor(education), data=Wage, geom="bar", fill=factor(race))
+```
+
+Other types of bar charts
+========================================================
+
+Side-by-side bar chart
+
+```{r echo=FALSE}
+ggplot(Wage, aes(factor(education), fill=factor(jobclass))) + 
+  geom_bar(position="dodge") 
+```
+
+
 Pie Chart
 ========================================================
 

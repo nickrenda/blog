@@ -40,7 +40,7 @@ Course webpage: [epwalsh.public.iastate.edu/Stat101](http://epwalsh.public.iasta
 [Blackboard](https://bb.its.iastate.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1)
 - Assignments and grades will be posted to Blackboard
 - Announcements (or via email)
-- Office hours
+- Office hours schedule
 - Syllabus
 
 Syllabus Highlights
@@ -48,12 +48,35 @@ Syllabus Highlights
 
 - Please read the syllabus
 - Online and written homework - no extensions
-- Labs - no makeups
+    - Written homeworks will be handed in at the beginning of class
+    - Solutions will be posted on Blackboard and on course webpage
 - Lecture quizzes
     - Timing will  be random
     - Will usually complete in a small group
 - 5 unit assessments
 - Midterm and final exams
+
+Syllabus Highlights
+========================================================
+
+- Weekly mandatory labs
+    - Bring your book and be prepared to work on homework if you finish lab early
+    - Bring calculator and laptop as well
+    - No makeups
+    - One lab will dropped at the end of the semester
+- Absences due to school activities will not be penalized
+- In class:
+    - Show up on time, late will count as absent
+    - Don't be afraid to ask questions!
+    
+Syllabus Highlights
+========================================================
+
+- Office hours
+    - Come with specific questions
+    - You should have tried to figure it out on your own before coming in
+- Office hours is a free resource for you
+    - Why spend money on a tutor when you can just come to office hours?
 
 Chapter 01
 ========================================================
