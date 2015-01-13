@@ -432,9 +432,40 @@ Your turn
 **3.** What is the overall proportion of divorced people?
 
 
+========================================================
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
+
+**3.** What is the overall proportion of divorced people?
+
+
 ```r
 204 / 2278 = 0.0896
 ```
+
+========================================================
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
+
+**4.** What proportion fall into the category of married and college grad?
 
 ========================================================
 
@@ -468,7 +499,7 @@ One more type of plot
 Example
 ========================================================
 
-![plot of chunk unnamed-chunk-22](Chapter02-figure/unnamed-chunk-22-1.png) 
+![plot of chunk unnamed-chunk-24](Chapter02-figure/unnamed-chunk-24-1.png) 
 
 Mosaic plot and associations
 ========================================================
@@ -485,7 +516,7 @@ Example
 
 Are the conditional distributions of marital status the same across education levels?
 
-![plot of chunk unnamed-chunk-23](Chapter02-figure/unnamed-chunk-23-1.png) 
+![plot of chunk unnamed-chunk-25](Chapter02-figure/unnamed-chunk-25-1.png) 
 
 
 
