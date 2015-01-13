@@ -8,6 +8,7 @@ Announcements
 
 - Textbook
 - Add/drops
+- If you had me sign an add/drop slip last class or your name was not on the signup sheet, then please sign the form I have before leaving
 
 What you thought of when you heard statistics
 ========================================================
@@ -328,7 +329,7 @@ dimnames(mos) <- list(Education = c("<HS", "Advanced Degree", "College Grad",
 mosaicplot(mos, color=T, main="Eduation and Marital Status")
 ```
 
-Mosaic plot and assocations
+Mosaic plot and associations
 ========================================================
 
 - Association

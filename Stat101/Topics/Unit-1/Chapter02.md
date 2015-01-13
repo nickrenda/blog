@@ -8,6 +8,7 @@ Announcements
 
 - Textbook
 - Add/drops
+- If you had me sign an add/drop slip last class or your name was not on the signup sheet, then please sign the form I have before leaving
 
 What you thought of when you heard statistics
 ========================================================
@@ -317,7 +318,7 @@ Example
 
 ![plot of chunk unnamed-chunk-14](Chapter02-figure/unnamed-chunk-14-1.png) 
 
-Mosaic plot and assocations
+Mosaic plot and associations
 ========================================================
 
 - Association
