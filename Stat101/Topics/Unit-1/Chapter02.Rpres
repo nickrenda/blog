@@ -365,15 +365,60 @@ tab2
 tab2
 ```
 
-1. What is the conditional distribution of marital status given education level is "Some college"
+**1.** What is the conditional distribution of marital status given education level is "Some college"?
 
 ```{r echo=FALSE}
+out <- tab2[5,]
+newrow <- c("Proportion:", round(as.numeric(as.character(out[1,2:4])) / as.numeric(as.character(out[1,5])), digits=3), "")
+rbind(out, newrow)
+```
 
+========================================================
+
+```{r echo=FALSE}
+tab2
+```
+
+**2.** What is the conditional distribution of education given marital status is "divorced"?
+
+```{r echo=FALSE}
+divorced <- as.numeric(tab2$div)
+proportion <- round(divorced / divorced[6], digits=3)
+proportion[6] <- ""
+out <- data.frame(cbind(tab2$education, divorced, proportion))
+names(out)[1] <- "education"
+out
+```
+
+========================================================
+
+```{r echo=FALSE}
+tab2
+```
+
+**3.** What is the overall proportion of divorced people?
+
+```{r eval=FALSE}
+204 / 2278 = 0.0896
+```
+
+========================================================
+
+```{r echo=FALSE}
+tab2
+```
+
+**4.** What proportion fall into the category of married and college grad?
+
+```{r eval=FALSE}
+487 / 2278 = 0.213784
 ```
 
 
-Mosaic plot
+One more type of plot
 ========================================================
+
+## Mosaic Plot
 
 - Graphical summary of contitional distributions in contingency table
 - Similar to segmented bar charts (in textbook)

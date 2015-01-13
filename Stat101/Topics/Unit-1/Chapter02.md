@@ -381,13 +381,86 @@ Your turn
 6           Total 204 2074  55  2278
 ```
 
-1. What is the conditional distribution of marital status given education level is "Some college"
+**1.** What is the conditional distribution of marital status given education level is "Some college"?
 
 
+```
+     education  div marr   sep total
+5 Some College   52  421    11   473
+2  Proportion: 0.11 0.89 0.023      
+```
 
-
-Mosaic plot
 ========================================================
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
+
+**2.** What is the conditional distribution of education given marital status is "divorced"?
+
+
+```
+        education divorced proportion
+1       < HS Grad       16      0.078
+2 Advanced Degree       22      0.108
+3    College Grad       41      0.201
+4         HS Grad       73      0.358
+5    Some College       52      0.255
+6           Total      204           
+```
+
+========================================================
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
+
+**3.** What is the overall proportion of divorced people?
+
+
+```r
+204 / 2278 = 0.0896
+```
+
+========================================================
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
+
+**4.** What proportion fall into the category of married and college grad?
+
+
+```r
+487 / 2278 = 0.213784
+```
+
+
+One more type of plot
+========================================================
+
+## Mosaic Plot
 
 - Graphical summary of contitional distributions in contingency table
 - Similar to segmented bar charts (in textbook)
@@ -395,7 +468,7 @@ Mosaic plot
 Example
 ========================================================
 
-![plot of chunk unnamed-chunk-16](Chapter02-figure/unnamed-chunk-16-1.png) 
+![plot of chunk unnamed-chunk-22](Chapter02-figure/unnamed-chunk-22-1.png) 
 
 Mosaic plot and associations
 ========================================================
@@ -412,7 +485,7 @@ Example
 
 Are the conditional distributions of marital status the same across education levels?
 
-![plot of chunk unnamed-chunk-17](Chapter02-figure/unnamed-chunk-17-1.png) 
+![plot of chunk unnamed-chunk-23](Chapter02-figure/unnamed-chunk-23-1.png) 
 
 
 
