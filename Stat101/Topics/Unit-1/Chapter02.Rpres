@@ -7,8 +7,8 @@ Announcements
 ========================================================
 
 - Add/drops
-- If you had me sign an add/drop slip last class or your name was not on the signup sheet, then please sign the form I have before leaving
 - Textbook
+    - ***Intro Stats***, 4th Edition, Richard D. DeVeaux, Paul F. Velleman, & David E. Bock, Addison Wesley
 
 What you thought of when you heard statistics
 ========================================================
@@ -36,15 +36,23 @@ words2 <- c("math", "coins","data",'analysis','help','percentages',
 wordcloud(words2, random.order=F, scale=c(6,1),colors=brewer.pal(4,"Dark2"), min.freq=1)
 ```
 
-
-Chapter Outline
+Chapter 02
 ========================================================
+type:section
+
+## Chapter Outline
 
 - Review - 5 W's of data
 - Review - Categorical variables
 - Distribution of one categorical variable
 - Relationship between two categorical variables
 
+Data
+========================================================
+
+- **Data**: Information that quantifies or describes people/places/things
+- By itself, i.e. without context, data/numbers don't mean anything
+- We use the 5 W's to bring context/meaning to the data
 
 The 5 W's of data
 ========================================================
@@ -59,17 +67,41 @@ The 5 W's of data
     - When were the data collected?
 - Why
     - Why did we collect data?
-
-
-Categorical Variables
+    
+Variables
 ========================================================
 
-> Variables with labels as values
+- The "What" are the variables
+- They descibe the "Who"
+- So far we have seen two types of variables
+    - **Categorical**
+    - **Quantitative**
+- In this chapter we will focus entirely on understanding **categorical** variables
+    - Also called **qualitative** variables or **attribute** variables
+
+
+Categorical Variables vs. Quantitative
+========================================================
+
+**Categorical**
+- Variables with labels as values (sometimes numbers)
+- Categorical variables are an attribute of the "Who"
+- Usually don't have units
 
 Example:
 - Gender
 - Eye color
-- Year in school
+
+***
+
+**Quantitative**
+- Variables with numbers as values ALWAYS
+- Quantify or measure an attribute of the "Who"
+- Almost always have units
+
+Example:
+- Height (inches)
+- Age (years)
 
 Example
 ========================================================
@@ -86,11 +118,12 @@ male   | 22     | fourth | 62      | brown
 
 </center>
 
-> Rows are cases (students)
+- Rows are cases (students)
+- Columns are variables (characteristics of students)
 
-> Columns are variables (characteristics of students)
+Categorical variables: ***sex***, ***year***, ***eye color***
 
-Categorical variables: ```year```, ```eyecolor```, ```sex```
+Quantitative variables: ***age***, ***height***
 
 Summarizing a single categorical variable
 ========================================================
@@ -137,31 +170,7 @@ ggplot(Wage, aes(factor(education), fill=factor(education))) +
   geom_bar() + theme(legend.position="none")
 ```
 
-Other types of bar charts 
-========================================================
-
-(for more than one categorical variable)
-
-## Stacked bar chart
-
-```{r echo=FALSE}
-qplot(factor(education), data=Wage, geom="bar", fill=factor(race))
-```
-
-Other types of bar charts
-========================================================
-
-(for more than one categorical variable)
-
-## Side-by-side bar chart
-
-```{r echo=FALSE}
-ggplot(Wage, aes(factor(education), fill=factor(jobclass))) + 
-  geom_bar(position="dodge") 
-```
-
-
-Pie Chart - back to one categorical variable
+Pie Chart 
 ========================================================
 
 - Displays percentage of whole for each category
@@ -187,18 +196,20 @@ Describing the relationship between two categorical variables
     
 Example
 ========================================================
-incremental:true
 
 Suppose we have the following variables:
 - What political party are you a member of?
 - Who did you vote for last election?
 
-> Which is the explanatory variable and which is the response variable?
+Which is the explanatory variable and which is the response variable?
 
+- We are probably more interested in who people voted for
 - Political party could explain who people vote for, so political party would be the explanatory variable and who people voted for would be the response variable
 
-Describing the relationship between two categorical variables
+Two categorical variables
 ========================================================
+
+### Questions we will ask ourselves:
 
 - Is the distribution of the reponse variable different for different categories of the explanatory variable?
     - If so, then there is an **association** between the variables
@@ -207,7 +218,6 @@ Describing the relationship between two categorical variables
     
 Example
 ========================================================
-incremental:true
 
 - If the proportion of people that voted for Candidate A versus Candidate B is different for democrats and republicans, is there an association between the two variables?
     - YES
@@ -225,13 +235,23 @@ Data = two-way table, i.e. **Contingency Table**
 Example: Education
 ========================================================
 
-Education level and marital status
+Data was collected from a national phone survey. Two of the questions asked were "what is your highest level of education" and "what is your marital status?"
+
+We are interested in using education to explain marital status.
 
 ```{r echo=FALSE}
 library(reshape2)
 sum1 <- Wage %>% group_by(education, maritl) %>%
   summarize(count=length(maritl))
 tab1 <- dcast(sum1, education~maritl, mean, value.var="count")[,c(1:3,5)]
+tab1
+```
+
+
+Response vs. Explanatory
+========================================================
+
+```{r echo=FALSE}
 tab1
 ```
 
@@ -243,12 +263,16 @@ tab1
 Marginal Distributions
 ========================================================
 
-- Look at percentages for each variable seperately (ignoring the other variable)
+- When we start with the joint distribution (contingency table) of two categorical variables **A** and **B**, we may just be interested in the distribution of variable **A**
+- The **marginal** distribution of a variable **A** is just the distribution of **A** regardless of variable **B**
+- The marginal distribution of **A** "ignores" variable **B**
 - "Margins" of contingency table
 - Same as looking at two variables seperately
 
-Contingency table with marginal distributions
+Finding the marginal distribution with a contingency table
 ========================================================
+
+To find the marginal distribution of **education**, sum across levels of **marital status**
 
 ```{r echo=FALSE}
 tab1$total <- c(sum(tab1[1,2:3]), sum(tab1[2, 2:3]), sum(tab1[3,2:3]), sum(tab1[4,2:3]), sum(tab1[5,2:3]))
@@ -270,7 +294,15 @@ out$Proportion[6] <- ""
 out
 ```
 
-Ignore the other categorical variable
+
+Finding the marginal distribution of marital status
+========================================================
+
+This time we want to ignore the **education** variable, so we take the sum of **marital status** across all levels of **education**
+
+```{r echo=FALSE}
+tab2
+```
 
 Marginal distribution of marital status
 ========================================================
@@ -284,23 +316,30 @@ out$Proportion[4] <- ""
 out
 ```
 
-This time we ignore the **education** variable
 
 Conditional Distributions
 ========================================================
 
+- We may be interested in how variable **A** is distributed for a certain level/category of variable **B**
+- For this we want to examine the **CONDITIONAL** distribution of **A** given some level of **B**
 - Looks at percentages for one variable contingent upon (conditioned on) a particular category for the other variable
+
+Conditional Distributions
+========================================================
+
+What conditional distributions can tell you
+
 - Compare conditional distributions to marginal distributions for the same variable
 - Differences indicate a potential dependence (association) between the two variables
 
-Example: education
+Example: education and marital status
 ========================================================
 
 ```{r echo=FALSE}
 tab2
 ```
 
-Distribution of marital status conditioned on education = **College grad**
+Distribution of **marital status** conditioned on **education** = "College grad"
 
 ```{r echo=FALSE}
 out <- tab2[3,]
@@ -319,6 +358,19 @@ tab2
 2. What is the conditional distribution of education given marital status is "divorced"
 3. What is the overall proportion of divorced people?
 4. What is the overall proportion of married college grads?
+
+========================================================
+
+```{r echo=FALSE}
+tab2
+```
+
+1. What is the conditional distribution of marital status given education level is "Some college"
+
+```{r echo=FALSE}
+
+```
+
 
 Mosaic plot
 ========================================================

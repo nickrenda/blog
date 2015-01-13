@@ -7,23 +7,31 @@ Announcements
 ========================================================
 
 - Add/drops
-- If you had me sign an add/drop slip last class or your name was not on the signup sheet, then please sign the form I have before leaving
 - Textbook
+    - ***Intro Stats***, 4th Edition, Richard D. DeVeaux, Paul F. Velleman, & David E. Bock, Addison Wesley
 
 What you thought of when you heard statistics
 ========================================================
 
 ![plot of chunk unnamed-chunk-1](Chapter02-figure/unnamed-chunk-1-1.png) 
 
-
-Chapter Outline
+Chapter 02
 ========================================================
+type:section
+
+## Chapter Outline
 
 - Review - 5 W's of data
 - Review - Categorical variables
 - Distribution of one categorical variable
 - Relationship between two categorical variables
 
+Data
+========================================================
+
+- **Data**: Information that quantifies or describes people/places/things
+- By itself, i.e. without context, data/numbers don't mean anything
+- We use the 5 W's to bring context/meaning to the data
 
 The 5 W's of data
 ========================================================
@@ -38,17 +46,41 @@ The 5 W's of data
     - When were the data collected?
 - Why
     - Why did we collect data?
-
-
-Categorical Variables
+    
+Variables
 ========================================================
 
-> Variables with labels as values
+- The "What" are the variables
+- They descibe the "Who"
+- So far we have seen two types of variables
+    - **Categorical**
+    - **Quantitative**
+- In this chapter we will focus entirely on understanding **categorical** variables
+    - Also called **qualitative** variables or **attribute** variables
+
+
+Categorical Variables vs. Quantitative
+========================================================
+
+**Categorical**
+- Variables with labels as values (sometimes numbers)
+- Categorical variables are an attribute of the "Who"
+- Usually don't have units
 
 Example:
 - Gender
 - Eye color
-- Year in school
+
+***
+
+**Quantitative**
+- Variables with numbers as values ALWAYS
+- Quantify or measure an attribute of the "Who"
+- Almost always have units
+
+Example:
+- Height (inches)
+- Age (years)
 
 Example
 ========================================================
@@ -65,11 +97,12 @@ male   | 22     | fourth | 62      | brown
 
 </center>
 
-> Rows are cases (students)
+- Rows are cases (students)
+- Columns are variables (characteristics of students)
 
-> Columns are variables (characteristics of students)
+Categorical variables: ***sex***, ***year***, ***eye color***
 
-Categorical variables: ```year```, ```eyecolor```, ```sex```
+Quantitative variables: ***age***, ***height***
 
 Summarizing a single categorical variable
 ========================================================
@@ -114,26 +147,7 @@ Example: Education
 
 ![plot of chunk unnamed-chunk-3](Chapter02-figure/unnamed-chunk-3-1.png) 
 
-Other types of bar charts 
-========================================================
-
-(for more than one categorical variable)
-
-## Stacked bar chart
-
-![plot of chunk unnamed-chunk-4](Chapter02-figure/unnamed-chunk-4-1.png) 
-
-Other types of bar charts
-========================================================
-
-(for more than one categorical variable)
-
-## Side-by-side bar chart
-
-![plot of chunk unnamed-chunk-5](Chapter02-figure/unnamed-chunk-5-1.png) 
-
-
-Pie Chart - back to one categorical variable
+Pie Chart 
 ========================================================
 
 - Displays percentage of whole for each category
@@ -143,7 +157,7 @@ Pie Chart - back to one categorical variable
 Example: Education
 ========================================================
 
-![plot of chunk unnamed-chunk-6](Chapter02-figure/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-4](Chapter02-figure/unnamed-chunk-4-1.png) 
 
 Describing the relationship between two categorical variables
 ========================================================
@@ -156,18 +170,20 @@ Describing the relationship between two categorical variables
     
 Example
 ========================================================
-incremental:true
 
 Suppose we have the following variables:
 - What political party are you a member of?
 - Who did you vote for last election?
 
-> Which is the explanatory variable and which is the response variable?
+Which is the explanatory variable and which is the response variable?
 
+- We are probably more interested in who people voted for
 - Political party could explain who people vote for, so political party would be the explanatory variable and who people voted for would be the response variable
 
-Describing the relationship between two categorical variables
+Two categorical variables
 ========================================================
+
+### Questions we will ask ourselves:
 
 - Is the distribution of the reponse variable different for different categories of the explanatory variable?
     - If so, then there is an **association** between the variables
@@ -176,7 +192,6 @@ Describing the relationship between two categorical variables
     
 Example
 ========================================================
-incremental:true
 
 - If the proportion of people that voted for Candidate A versus Candidate B is different for democrats and republicans, is there an association between the two variables?
     - YES
@@ -194,7 +209,23 @@ Data = two-way table, i.e. **Contingency Table**
 Example: Education
 ========================================================
 
-Education level and marital status
+Data was collected from a national phone survey. Two of the questions asked were "what is your highest level of education" and "what is your marital status?"
+
+We are interested in using education to explain marital status.
+
+
+```
+        education Divorced Married Separated
+1       < HS Grad       16     174        14
+2 Advanced Degree       22     341         1
+3    College Grad       41     487         9
+4         HS Grad       73     651        20
+5    Some College       52     421        11
+```
+
+
+Response vs. Explanatory
+========================================================
 
 
 ```
@@ -214,12 +245,16 @@ Education level and marital status
 Marginal Distributions
 ========================================================
 
-- Look at percentages for each variable seperately (ignoring the other variable)
+- When we start with the joint distribution (contingency table) of two categorical variables **A** and **B**, we may just be interested in the distribution of variable **A**
+- The **marginal** distribution of a variable **A** is just the distribution of **A** regardless of variable **B**
+- The marginal distribution of **A** "ignores" variable **B**
 - "Margins" of contingency table
 - Same as looking at two variables seperately
 
-Contingency table with marginal distributions
+Finding the marginal distribution with a contingency table
 ========================================================
+
+To find the marginal distribution of **education**, sum across levels of **marital status**
 
 
 ```
@@ -246,7 +281,22 @@ Marginal distribution of education
 6           Total  2278           
 ```
 
-Ignore the other categorical variable
+
+Finding the marginal distribution of marital status
+========================================================
+
+This time we want to ignore the **education** variable, so we take the sum of **marital status** across all levels of **education**
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
 
 Marginal distribution of marital status
 ========================================================
@@ -260,16 +310,23 @@ Marginal distribution of marital status
 4          Total  2278           
 ```
 
-This time we ignore the **education** variable
 
 Conditional Distributions
 ========================================================
 
+- We may be interested in how variable **A** is distributed for a certain level/category of variable **B**
+- For this we want to examine the **CONDITIONAL** distribution of **A** given some level of **B**
 - Looks at percentages for one variable contingent upon (conditioned on) a particular category for the other variable
+
+Conditional Distributions
+========================================================
+
+What conditional distributions can tell you
+
 - Compare conditional distributions to marginal distributions for the same variable
 - Differences indicate a potential dependence (association) between the two variables
 
-Example: education
+Example: education and marital status
 ========================================================
 
 
@@ -283,7 +340,7 @@ Example: education
 6           Total 204 2074  55  2278
 ```
 
-Distribution of marital status conditioned on education = **College grad**
+Distribution of **marital status** conditioned on **education** = "College grad"
 
 
 ```
@@ -311,6 +368,24 @@ Your turn
 3. What is the overall proportion of divorced people?
 4. What is the overall proportion of married college grads?
 
+========================================================
+
+
+```
+        education div marr sep total
+1       < HS Grad  16  174  14   190
+2 Advanced Degree  22  341   1   363
+3    College Grad  41  487   9   528
+4         HS Grad  73  651  20   724
+5    Some College  52  421  11   473
+6           Total 204 2074  55  2278
+```
+
+1. What is the conditional distribution of marital status given education level is "Some college"
+
+
+
+
 Mosaic plot
 ========================================================
 
@@ -320,7 +395,7 @@ Mosaic plot
 Example
 ========================================================
 
-![plot of chunk unnamed-chunk-14](Chapter02-figure/unnamed-chunk-14-1.png) 
+![plot of chunk unnamed-chunk-16](Chapter02-figure/unnamed-chunk-16-1.png) 
 
 Mosaic plot and associations
 ========================================================
@@ -337,7 +412,7 @@ Example
 
 Are the conditional distributions of marital status the same across education levels?
 
-![plot of chunk unnamed-chunk-15](Chapter02-figure/unnamed-chunk-15-1.png) 
+![plot of chunk unnamed-chunk-17](Chapter02-figure/unnamed-chunk-17-1.png) 
 
 
 

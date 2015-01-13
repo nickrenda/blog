@@ -52,7 +52,7 @@ Lab: Depends
 **Unit 1**
 
 - [Chapter 01](https://epwalsh.github.io/Stat101/Topics/Unit-1/Chapter01.html)
-- Chapter 02
+- [Chapter 02](https://epwalsh.github.io/Stat101/Topics/Unit-1/Chapter02.html)
 - Chapter 03
 - Chapter 04
 
