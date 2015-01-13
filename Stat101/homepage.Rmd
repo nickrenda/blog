@@ -31,19 +31,19 @@ output: html_document
 >Instructor: [Evan 'Pete' Walsh](https://epwalsh.github.io/)  
 Email: [epwalsh@iastate.edu](epwalsh@iastate.edu)  
 Office: [Snedecor](https://www.google.com/maps/place/Snedecor+Hall,+Iowa+State+University,+Ames,+IA+50011/@42.0285115,-93.64972,17z/data=!3m1!4b1!4m2!3m1!1s0x87ee70a51d9e0f59:0x3d4f5fedf84d192e) 2410D  
-Office hours: TBA
+Office hours: Thursday 3:10 - 5:00 PM Snedecor 3205
 
 >Lecture: MWF 3:10 - 4:00 PM Lagomar E164  
 Lab: Depends
 
->Grades will be posted on [Blackboard](https://bb.its.iastate.edu/)
+>Grades and assignments will be posted on [Blackboard](https://bb.its.iastate.edu/)
 
 ---
 
 ### Course Content
 
 - [Syllabus](Files/STAT101_G_H_S15.pdf)
-- Office hours: TBA
+- [Office hour schedule](Files/officeHours.pdf)
 
 ---
 
