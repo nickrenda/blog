@@ -6,9 +6,9 @@ date: January 14, 2015
 Announcements
 ========================================================
 
-- Textbook
 - Add/drops
 - If you had me sign an add/drop slip last class or your name was not on the signup sheet, then please sign the form I have before leaving
+- Textbook
 
 What you thought of when you heard statistics
 ========================================================
@@ -114,22 +114,26 @@ Example: Education
 
 ![plot of chunk unnamed-chunk-3](Chapter02-figure/unnamed-chunk-3-1.png) 
 
-Other types of bar charts
+Other types of bar charts 
 ========================================================
 
-Stacked bar chart
+(for more than one categorical variable)
+
+## Stacked bar chart
 
 ![plot of chunk unnamed-chunk-4](Chapter02-figure/unnamed-chunk-4-1.png) 
 
 Other types of bar charts
 ========================================================
 
-Side-by-side bar chart
+(for more than one categorical variable)
+
+## Side-by-side bar chart
 
 ![plot of chunk unnamed-chunk-5](Chapter02-figure/unnamed-chunk-5-1.png) 
 
 
-Pie Chart
+Pie Chart - back to one categorical variable
 ========================================================
 
 - Displays percentage of whole for each category

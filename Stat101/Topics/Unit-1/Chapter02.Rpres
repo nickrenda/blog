@@ -6,14 +6,20 @@ date: January 14, 2015
 Announcements
 ========================================================
 
-- Textbook
 - Add/drops
 - If you had me sign an add/drop slip last class or your name was not on the signup sheet, then please sign the form I have before leaving
+- Textbook
 
 What you thought of when you heard statistics
 ========================================================
 
 ```{r echo=FALSE}
+# ask foreign students what brought them to Iowa
+# talk about Anton and his English
+# talk about your connection to Iowa State from St. Lawrence
+# talk about Ivan Ramler
+# talk about sport statistics, moneyball, hockey and football
+# gambling - Ed Thorpe Beat the Dealer, roulette odds and expected payout
 library(tm)
 library(wordcloud)
 words2 <- c("math", "coins","data",'analysis','help','percentages',
@@ -131,10 +137,12 @@ ggplot(Wage, aes(factor(education), fill=factor(education))) +
   geom_bar() + theme(legend.position="none")
 ```
 
-Other types of bar charts
+Other types of bar charts 
 ========================================================
 
-Stacked bar chart
+(for more than one categorical variable)
+
+## Stacked bar chart
 
 ```{r echo=FALSE}
 qplot(factor(education), data=Wage, geom="bar", fill=factor(race))
@@ -143,7 +151,9 @@ qplot(factor(education), data=Wage, geom="bar", fill=factor(race))
 Other types of bar charts
 ========================================================
 
-Side-by-side bar chart
+(for more than one categorical variable)
+
+## Side-by-side bar chart
 
 ```{r echo=FALSE}
 ggplot(Wage, aes(factor(education), fill=factor(jobclass))) + 
@@ -151,7 +161,7 @@ ggplot(Wage, aes(factor(education), fill=factor(jobclass))) +
 ```
 
 
-Pie Chart
+Pie Chart - back to one categorical variable
 ========================================================
 
 - Displays percentage of whole for each category
