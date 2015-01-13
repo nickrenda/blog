@@ -9,6 +9,12 @@ Announcements
 - Textbook
 - Add/drops
 
+What you thought of when you heard statistics
+========================================================
+
+![plot of chunk unnamed-chunk-1](Chapter02-figure/unnamed-chunk-1-1.png) 
+
+
 Chapter Outline
 ========================================================
 
@@ -105,21 +111,21 @@ Bar Chart
 Example: Education
 ========================================================
 
-![plot of chunk unnamed-chunk-2](Chapter02-figure/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-3](Chapter02-figure/unnamed-chunk-3-1.png) 
 
 Other types of bar charts
 ========================================================
 
 Stacked bar chart
 
-![plot of chunk unnamed-chunk-3](Chapter02-figure/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-4](Chapter02-figure/unnamed-chunk-4-1.png) 
 
 Other types of bar charts
 ========================================================
 
 Side-by-side bar chart
 
-![plot of chunk unnamed-chunk-4](Chapter02-figure/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-5](Chapter02-figure/unnamed-chunk-5-1.png) 
 
 
 Pie Chart
@@ -132,7 +138,7 @@ Pie Chart
 Example: Education
 ========================================================
 
-![plot of chunk unnamed-chunk-5](Chapter02-figure/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-6](Chapter02-figure/unnamed-chunk-6-1.png) 
 
 Describing the relationship between two categorical variables
 ========================================================
@@ -309,7 +315,7 @@ Mosaic plot
 Example
 ========================================================
 
-![plot of chunk unnamed-chunk-13](Chapter02-figure/unnamed-chunk-13-1.png) 
+![plot of chunk unnamed-chunk-14](Chapter02-figure/unnamed-chunk-14-1.png) 
 
 Mosaic plot and assocations
 ========================================================
@@ -326,7 +332,7 @@ Example
 
 Are the conditional distributions of marital status the same across education levels?
 
-![plot of chunk unnamed-chunk-14](Chapter02-figure/unnamed-chunk-14-1.png) 
+![plot of chunk unnamed-chunk-15](Chapter02-figure/unnamed-chunk-15-1.png) 
 
 
 

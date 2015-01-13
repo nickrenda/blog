@@ -9,6 +9,27 @@ Announcements
 - Textbook
 - Add/drops
 
+What you thought of when you heard statistics
+========================================================
+
+```{r echo=FALSE}
+library(tm)
+library(wordcloud)
+words2 <- c("math", "coins","data",'analysis','help','percentages',
+           'average','challenging','required','math','timeconsuming','death','math','surveys',
+           'sports','scary','numbers','scary','difficult','suck','data','exciting',
+           'moneyball','difficult','variance','science','numbers','math',
+           'gambling','percentages','graphs','probability','terror',
+           'difficult','hard','meltdown','death','difficult','numbers',
+           'math','numbers','excel','math','graphs','whimsical','what','boring',
+           'confusing','graphs',
+           'probability','hard','numbers','difficult','charts','scary','graphs',
+           'data','rationality','probability','concern','data','patterns',
+           'money','science','experiments','probability','facts')
+wordcloud(words2, random.order=F, scale=c(6,1),colors=brewer.pal(4,"Dark2"), min.freq=1)
+```
+
+
 Chapter Outline
 ========================================================
 
