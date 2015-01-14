@@ -9,6 +9,12 @@ Announcements
 - Add/drops
 - Textbook
     - ***Intro Stats***, 4th Edition, Richard D. DeVeaux, Paul F. Velleman, & David E. Bock, Addison Wesley
+    
+What people think of statistics
+========================================================
+
+![cloud](http://www.jyukawa.com/images/7050f11-wordle.png)
+
 
 What you thought of when you heard statistics
 ========================================================
