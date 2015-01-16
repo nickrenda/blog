@@ -99,6 +99,19 @@ img {
 <li><a href="Files/officeHours.pdf">Office hour schedule</a></li>
 </ul>
 <hr />
+<div id="download-in-class-worksheets" class="section level4">
+<h4>Download in-class worksheets</h4>
+<p><select id="WSdropdown"> <option value>None</option> <option value="Topics/Unit-1/Dolphins-Questions.docx">Ch 02 Dolphin Worksheet</option> <option value="Topics/Unit-1/Dolphins-Solutions.docx">Ch 02 Dolphin Worksheet Solutions</option> </select></p>
+<script>
+    document.getElementById("WSdropdown").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>
+
+<hr />
+</div>
 </div>
 <div id="lecture-slides" class="section level3">
 <h3>Lecture Slides</h3>
