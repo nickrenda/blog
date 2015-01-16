@@ -160,12 +160,12 @@ section {
     margin-left: 3px;
 }
 
-p a {
+.main a {
   text-decoration:none;
   color:#428bca;
 }
 
-p a:hover {
+.main a:hover {
     color:#2a6496;
     text-decoration:underline;
 }
