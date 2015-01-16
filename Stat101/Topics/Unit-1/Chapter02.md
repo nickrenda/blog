@@ -524,6 +524,13 @@ Are the conditional distributions of marital status the same across education le
 
 ![plot of chunk unnamed-chunk-25](Chapter02-figure/unnamed-chunk-25-1.png) 
 
+Announcements
+========================================================
+
+- First online and written homeoworks due next Friday (1/23)
+- Anymore add/drops?
+- No class Monday for Martin Luther King, Jr. Day
+    - We will start Chapter 3 on Wednesday
 
 Dolphin Therapy Study
 ========================================================
