@@ -479,4 +479,117 @@ mosaicplot(mos, color=T, main="Eduation and Marital Status")
 ```
 
 
+Dolphin Therapy Study
+========================================================
 
+Typo: Question 10 should read:
+
+#### 10. Interpret the proportion you computed for question **9** in the first cell in the table
+
+Dolphin Therapy Study
+========================================================
+
+## 1. What are the 5 W's?
+
+- Who: 30 people aged 18-65 with clinical diagnosis of mild to moderate depression
+- What: Treatment group (control or dolphin group) and whether or not there was improvement in level of depression
+- Where: Island off the coast of Honduras
+- When: Does not say but it must have been before 2005 because that is when the article was published.
+- Why: To determine if swimming with dolphins rather than swimming without dolphins improved levels of depression.
+- How: People were randomly assigned to swim with dolphins or swim without dolphins and all
+participated for 2 weeks
+
+Dolphin Therapy Study
+========================================================
+
+#### 2. What is the explanatory variable in this study?
+
+**Treatment variable** - swimming or not swimming with dolphins
+
+#### 3. What is the response variable in this study?
+
+Improvement or no improvement in depression levels
+
+Dolphin Therapy Study
+========================================================
+
+#### Frequency table
+
+                | No improvement | improvement | total |
+--------------- | -------------- | ----------- | ----- |
+control group   |    12          |   3         |  15   |
+dolphin therapy |    5           |   10        |  15   |
+total           |   17           |  13         | 30    |
+
+#### 5. Compute the percent of the overall sample (all 30 subjects) that improved
+
+```{r eval=FALSE}
+13 / 30 * 100 = .43 * 100 = 43%
+```
+
+Dolphin Therapy Study
+========================================================
+
+#### 6. For the subjects in the control group, what proportion improved?
+
+```{r eval=FALSE}
+3 / 15 = 0.2
+```
+
+#### 7. Compute the marginal distribution of the improvement variable
+
+No improvement: 17 / 30 = 0.57
+
+Improvement: 13 / 30 = 0.43
+
+#### 8. Compute the marginal distribution for the treatment variable
+
+Control group: 15 / 30 = 0.5
+
+Dolphin therapy group: 15 / 30 = 0.5
+
+Dolphin Therapy Study
+========================================================
+
+#### 9. Compute the conditional distribution for the improvement variable conditioned on treatment group
+
+Conditioned on control group:
+
+                | No improvement | improvement | total |
+--------------- | -------------- | ----------- | ----- |
+control group   | 12 / 15 = 0.8  | 3 / 15 = 0.2|  1    |
+
+Conditioned on therapy group:
+
+                | No improvement | improvement    | total |
+--------------- | -------------- | -------------- | ----- |
+dolphin therapy | 5 / 15 = 0.33  | 10 / 15 = 0.67 |  1    |
+
+Dolphin Therapy Study
+========================================================
+
+#### 10. Interpret the proportion you computed for question 9 in the first cell in the table
+
+"The proportion of people in the control group that did not show any improvement was 0.8."
+
+Dolphin Therapy Study
+========================================================
+
+```{r echo=FALSE}
+x <- c(0.2, 0.8, 0.67, 0.33)
+dim(x) <- c(2, 2)
+dimnames(x) <- list(Treatment = c("Dolphin", "Control"),
+                    Improvement = c("Yes", "No"))
+mosaicplot(x, color=c("red", "grey86"), main="Improvement Group vs. Treatment Group")
+```
+
+Dolphin Therapy Study
+========================================================
+
+#### 11. Are the conditional distributions of the improvement groups given treatment group (control or dolphin) different? Explain
+
+Yes, they are different. Looking across the mosaic plot in a horizontal fashion, the lies separating the improvement groups do not match up.
+
+#### 12. Is there an association between the improvement groups and the treatment groups?
+
+Yes, since the conditional distributions are different as stated above.
