@@ -47,7 +47,7 @@ Lab: Depends
 
 ---
 
-#### Download in-class worksheets:
+#### Download in-class worksheets
 
 <select id="WSdropdown">
   <option value="">None</option>
