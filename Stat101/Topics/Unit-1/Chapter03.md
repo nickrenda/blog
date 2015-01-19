@@ -727,3 +727,131 @@ s & = \sqrt{\frac{(y_{1}-\bar{y})^{2} + (y_{2}-\bar{y})^{2}+...+(y_{n}-\bar{y})^
 & = \sqrt{\frac{\sum_{i=1}^{n}(y_{i}-\bar{y})^{2}}{n-1}}
 \end{align*}
 $$
+
+Short Example
+========================================================
+
+- Data set (n = 5)
+
+
+```
+11 5 6 6 7
+```
+
+- Compute the standard deviation
+
+Calculate the standard deviation
+========================================================
+
+ $x_{i}$ | $x_{i} - \bar{x}$ | $(x_{i}-\bar{x})^{2}$
+-------- | ----------------- | ---------------------
+ 11      |                   |       
+ 5       |                   |
+ 6       |                   |
+ 6       |                   |
+ 7       |                   |  
+         |    sum            |
+         |   $s^{2}$         |
+         |   $s$             |
+
+Calculate the standard deviation
+========================================================
+
+ $x_{i}$ | $x_{i} - \bar{x}$ | $(x_{i}-\bar{x})^{2}$
+-------- | ----------------- | ---------------------
+ 11      |      4            |       16
+ 5       |      -2           | 4
+ 6       |      -1           | 1
+ 6       |       -1          | 1
+ 7       |      0            |  0
+         |    sum            | 22
+         |   $s^{2}$         | $22/(5-1)=5.5$
+         |   $s$             | $\sqrt{5.5}=2.35$
+         
+Standard deviation
+========================================================
+
+- Usually calculate using computer or calculator
+    - Choose $n-1$ option on calculator
+- If calculating by hand, it is recommended that you make a table
+
+Example: baseball salary
+========================================================
+
+- The standard deviation for baseball salaries is 451.12 thousand dollars.
+- How would you interpret this value?
+- "The average distance of a player's salary to the mean of all players' salaries of 545.93 thousand dollars is 451.12 thousand dollars."
+- "The deviation between the mean salary and the salary of each player is an average of 451.12 thousand dollars."
+
+Properties of S
+========================================================
+
+- Which observations affect the value of s?
+    - All are used in the computation, so all affect s
+- What effect do outliers have on the standard deviation?
+    - Outliers increase the value of the standard deviation
+    
+Properties of s
+========================================================
+
+- The standard deviation can never be negative
+- Can the standard deviation be 0?
+    - Yes, but only when all observations are equal
+- So $s \geq 0$
+- $s$ has the same units as the data
+- Variance = $s^{2}$
+
+Comparing standard deviations
+========================================================
+
+![plot of chunk unnamed-chunk-34](Chapter03-figure/unnamed-chunk-34-1.png) 
+
+***
+
+![plot of chunk unnamed-chunk-35](Chapter03-figure/unnamed-chunk-35-1.png) 
+
+Comparing standard deviations
+========================================================
+
+![plot of chunk unnamed-chunk-36](Chapter03-figure/unnamed-chunk-36-1.png) 
+
+***
+
+![plot of chunk unnamed-chunk-37](Chapter03-figure/unnamed-chunk-37-1.png) 
+
+Comparing standard deviations
+========================================================
+
+- Distributions that are more bell shaped typically have a smaller standard deviation than those that are skewed
+
+Comparing standard deviations
+========================================================
+
+![plot of chunk unnamed-chunk-38](Chapter03-figure/unnamed-chunk-38-1.png) 
+
+***
+
+![plot of chunk unnamed-chunk-39](Chapter03-figure/unnamed-chunk-39-1.png) 
+
+Comparing standard deviations
+========================================================
+
+- Distributions with bell shape tend to have smaller standard deviation than those that are uniform
+
+Comparing standard deviations
+========================================================
+
+![plot of chunk unnamed-chunk-40](Chapter03-figure/unnamed-chunk-40-1.png) 
+
+***
+
+![plot of chunk unnamed-chunk-41](Chapter03-figure/unnamed-chunk-41-1.png) 
+
+Comparing standard deviations
+========================================================
+
+- Distributions with large gaps tend to have larger standard deviations than those without gaps
+
+Example
+========================================================
+
