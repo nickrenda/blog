@@ -1,0 +1,688 @@
+Chapter03
+========================================================
+author: Displaying and Summarizing Quantitative Data
+date: Week 2
+
+Chapter Outline
+========================================================
+
+- Review: Quantitative variables
+- Describing quantitative variables
+- describing quantitative variables numerically
+
+Variable with numbers as values
+========================================================
+
+- Age
+- Weight
+- Height
+- Number of siblings
+
+Describing one quantitative variable
+========================================================
+
+- Distribution of variable
+    - summary of different values observed for the variable
+    - includes the "3 s's": shape, center, and spread
+    - spread is also known as variation or variability
+- Always start with making a picture
+    - **histogram**
+    - **stem-and-leaf display**
+    
+Example: baseball data
+========================================================
+
+- This data was collected from the MLB over the course of a season, the variable of interest is **Salary**
+
+
+```{r echo=FALSE}
+library(ISLR)
+library(ggplot2)
+qplot(Salary, data=Hitters, geom="histogram", binwidth=100, color=I("white"))
+#hist(Hitters$Salary, xlab="Salary", main="")
+```
+
+- X-axis is the variable (Salary in this case)
+- Y-axis is the count of players that fall into each "bin" of salary
+
+Bins of the histogram
+========================================================
+
+- On the previous slide the bins were 100 units wide 
+- The choice of bin width is arbitrary, usually decided by the program that is creating the plot
+
+```{r echo=FALSE}
+qplot(Salary, data=Hitters, geom="histogram", binwidth=200, color=I("white"))
+```
+
+- Here the binwidth was chosen to be 200
+
+Histograms
+========================================================
+
+- Axis
+    - X-axis is the quantitative variable
+    - Y-axis is the count
+- Bins will always have equal width
+- The height of the bars represent the count of the "whos" belonging in each bin
+
+Stem-and-leaf plot
+========================================================
+
+- Alternative to historgram
+- Generally used for smaller data sets (Salary data is too big)
+- Group data like histogram
+
+Stem-and-leaf plot
+========================================================
+
+This data on the waiting time between eruptions of Old Faithful
+
+```{r echo=FALSE}
+set.seed(1)
+stem(sample(faithful$waiting, 50))
+```
+
+Stem-and-leaf plot
+========================================================
+
+- **Leaf** 
+    - Contains the last digit of the values
+    - Arranged in increasing order way from stem
+- **Stem**
+    - Contains the rest of the values
+    - Usually arranged in increasing order from top to bottom
+    - JMP actually does the opposite, however
+- **Key**
+    - decodes value of stem and leaf
+- Can think of stem-and-leaf plot as like a histogram turned on its side
+
+Interpreting histograms and stem and leaf plots
+========================================================
+
+- Shape
+    - Number of modes
+    - Symmetry
+    - Outliers
+    
+Looking at distributions
+========================================================
+
+- Shape
+    - How many humps? (called **modes**)
+        - None = uniform
+        - One = unimodal
+        - Two = bimodal
+        - Three or more = multimodal
+        
+Looking at distributions
+========================================================
+
+- Shape
+    - Is it symmetric?
+        - Symmetric = roughly equal on both sides of middle
+        
+    - Skewed = more values on one side
+        - Skewed right = more smaller values - trails off to the right
+        - Skewed left = more larger values - trails off to the left
+        
+Looking at distributions
+========================================================
+
+- Shape 
+    - Are there any outliers?
+        - Far off from other points
+        - Can impact statistical methods
+        
+Example: Baseball salary
+========================================================
+
+- How many modes?
+    - One = unimodal
+- Skewed?
+    - Yes, skewed right
+- Outliers?
+    - Potentially a few in above 2000 (thousand $) 
+    - Especially in the 2501 - 2600 bin
+    
+*** 
+
+```{r echo=FALSE}
+qplot(Salary, data=Hitters, geom="histogram", binwidth=100, color=I("white"))
+```
+
+Example: Baseball salary
+========================================================
+
+- There is data on 322 players
+- Would it be appropriate to make a stem-and-leaf display?
+
+Example: Old Faithful
+========================================================
+
+- How many modes?
+    - Two = bimodal
+- Skewed?
+    - No
+    - Not quite symmetric though
+- Outliers?
+    - None
+
+***
+
+```{r echo=FALSE}
+qplot(waiting, data=faithful, geom="histogram", binwidth=5, color=I("white"))
+```
+
+Example: Old Faithful
+========================================================
+
+We could make the same conclusions from the stem-and-leaf plots
+
+```{r echo=FALSE}
+set.seed(1)
+stem(sample(faithful$waiting, 50))
+```
+
+Example: Subset of Stat 101 Data
+========================================================
+
+- Students were asked "How many brothers do you have?"
+- A random sample of 100 Stat 101 students were examined
+
+Data summary:
+
+```{r echo=FALSE}
+brothers <- c(rep(0,34),rep(1,45),rep(2,14),rep(3,4),rep(4,2),5)
+table(brothers)
+```
+
+- First row: how many brothers
+- Second row: # of students with that many brothers
+
+Example: Subset of Stat 101 data
+========================================================
+
+```{r echo=FALSE}
+table(brothers)
+qplot(brothers, geom="histogram", color=I("white"), binwidth=1)
+```
+
+***
+
+Second row determines bar heigths
+
+Example: Subset of Stat 101 data
+========================================================
+
+```{r echo=FALSE}
+table(brothers)
+stem(brothers)
+```
+
+Second row shows how many numbers in each row of stem-and-leaf plot
+
+Looking at distributions
+========================================================
+
+- Center
+    - Where is the typical value located?
+        - **Median**
+        - **Mean**
+- Spread (variation)
+    - How far apart are the values?
+        - **Range**
+        - **Interquartile range** (IQR)
+        - **Standard deviation** (s)
+
+Median
+========================================================
+
+- 50th percentile
+    - 50% of the observations are below the median
+    - 50% of the observations are above the median
+- Median is the middle number
+- Measures the center of the observations
+- Different calcuation when 
+    - n is odd
+    - n is even
+    
+Median (n is odd)
+========================================================
+
+- Order the data from smallest to largest
+- Median is the middle number on the list
+- $(n+1) / 2$ numbers from the bottom
+    - Ex: If $n = 11$, median is the $(n+1) / 2 = 6^{th}$ number from the bottom
+    - Ex: If $n = 37$, median is the $(n+1) / 2 = 19^{th}$ number from the bottom
+    
+Example
+========================================================
+
+- 11 numbers
+
+```{r echo=FALSE}
+set.seed(1)
+x <- sample(1:53, 11)
+cat(x)
+```
+
+- Sort the numbers
+
+```{r echo=FALSE}
+cat(sort(x))
+```
+
+- Median is the $(11 + 1) / 2 = 6^{th}$ number, which is **29**
+
+Median (n is even)
+========================================================
+
+- Order the data from smallest to largest
+- Median is the average of the two middle numbers
+- (n+1) / 2 will be halfway between these two numbers
+    - Ex. If $n = 10$, $(10 + 1) / 2 = 5.5$
+        - Median is average of 5th and 6th numbers from bottom
+        
+Example
+========================================================
+
+- 10 numbers
+
+```{r echo=FALSE}
+set.seed(1)
+x <- sample(1:53, 10)
+cat(x)
+```
+
+- Sort the numbers
+
+```{r echo=FALSE}
+x <- sort(x)
+cat(x)
+```
+
+- Median is average of 5th and 6th numbers from bottom, which is **29.5**
+
+Properties of the median
+========================================================
+
+- Which observations affect the median?
+    - Only the middle number(s)
+    
+- These were our numbers before:
+
+```{r echo=FALSE}
+cat(x)
+```
+
+- Suppose we changed the last number to 1000
+
+```{r echo=FALSE}
+x2 <- x
+x2[length(x2)] <- 1000
+cat(x2)
+```
+
+- Median is still 29.5
+
+Range
+========================================================
+
+- Measures variation (spread)
+- Minimum - 0th percentile
+- Maximum - 100th percentile
+- Rangle = maximum - minimum
+- Total variability of the observations
+
+Example
+========================================================
+
+```{r echo=FALSE}
+cat(x)
+```
+
+- Minimum = 3
+- Maximum = 46
+- Range = 46 - 3 = 43
+
+Properties of the range
+========================================================
+
+- Which observations affect the range?
+    - Only the minimum and the maximum
+    
+```{r echo=FALSE}
+cat(x2)
+```
+
+- Range of data is 1000 - 3 = 997
+
+Properties of the range
+========================================================
+incremental:true
+
+- If the distribution of a quantitative variable shifts (i.e., a set value is added to all observations or a set value is subtracted from all observations) does the range change?
+    - No. If the minimum and the maximum change by the same amount, the range stays the same
+    
+```{r echo=FALSE}
+cat(x)
+```
+
+- Range is 43. Now shift data by 100
+
+```{r echo=FALSE}
+cat(x + 100)
+```
+
+- Range is 146 - 103 = 43
+
+IQR (Interquartile range)
+========================================================
+
+- Measures variation (spread)
+- IQR = Q3 - Q1
+    - Q1 = 25th percentile (first quartile)
+    - Q3 = 75th percentile (third quartile)
+- Measures the variability of the middle 50%
+
+Finding Q1 and Q3
+========================================================
+
+- In general
+    - Q1 is the median of the lower half of the ordered observations
+    - Q3 is the median of the upper half of the ordered observtaions
+Note: 
+    - Actual calculations from textbook and JMP are slightly different
+    
+Example
+========================================================
+
+```{r echo=FALSE}
+cat(x)
+```
+
+- Q1 = median of lower half = 15
+- Q3 = median of upper half = 44
+- IQR = 44 - 15 = 29
+
+5-Number summary
+========================================================
+
+- Minimum
+- Q1
+- Median
+- Q3
+- Maximum
+
+Example
+========================================================
+
+```{r echo=FALSE}
+cat(x)
+```
+
+- Minimum = 3
+- Q1 = 15
+- Median = 29.5
+- Q3 = 44
+- Maximum = 46
+
+Example
+========================================================
+
+On your own or with a neighbor compute the 5 number summary of this sample of waiting times in between eruptions at Old Faithful
+
+```{r echo=FALSE}
+set.seed(1)
+ffl <- sample(faithful$waiting, 11)
+ffl <- sort(ffl)
+cat(ffl)
+```
+
+- Minimum
+- Q1
+- Median
+- Q3
+- Maximum
+
+Solution
+========================================================
+
+```{r echo=FALSE}
+cat(ffl)
+summary(ffl)
+```
+
+Example: subset of Stat 101 students
+========================================================
+
+- Stat 101 students were asked "How many brothers do you have?"
+- Took random sample of **100**
+- What is the IQR?
+
+***
+
+```{r echo=FALSE}
+qplot(brothers, geom="histogram", color=I("white"), binwidth=1)
+```
+
+Example: subset of Stat 101 students
+========================================================
+
+- IQR is the range of the middle 50%
+- The middle of the bottom 50% is:
+    - between the 25th and 26th numbers: 0
+- The middle of the top 50% is:
+    - between the 75th and 76th numbers: 1
+- IQR = 1 - 0 = 1
+
+*** 
+
+```{r echo=FALSE}
+qplot(brothers, geom="histogram", color=I("white"), binwidth=1)
+```
+
+Mean
+========================================================
+
+- Ordinary average
+    - Add up all observations
+    - Divide by the number of observations (n)
+    
+Formula
+- $n$ observations
+- $y_{1}, y_{2}, ..., y_{n}$ are the observations
+
+$$ \bar{y} = \frac{y_{1},y_{2},...,y_{n}}{n} = \frac{\sum_{i=1}^{n}y_{i}}{n} $$
+
+Example
+========================================================
+
+```{r echo=FALSE}
+cat(x)
+```
+
+$$ \bar{y} = \frac{3 + 10 + 15 + ... + 44 + 45 + 46}{10} = \frac{273}{10} = 27.3 $$
+
+Properties of the mean
+========================================================
+incremental:true
+
+- Which observations affect the mean?
+    - All of them!
+    
+- Example
+    - Suppose we change the largest value to 1000
+```{r echo=FALSE}
+cat(x)
+x2 <- x
+x2[length(x2)] <- 1000
+cat(x2)
+```
+
+Properties of the mean
+========================================================
+
+```{r echo=FALSE}
+cat(x)
+x2 <- x
+x2[length(x2)] <- 1000
+cat(x2)
+```
+
+Mean goes from 27.3 to 122.7
+
+Standard Deviation
+========================================================
+
+- Denoted by the letter s
+- Measures the variability (spread) from mean
+    - Values closer to mean = smaller contribution to s
+    - Values far away from mean = larger contribution to s
+- S depends on how far way values are "on average" from the mean
+
+Example
+========================================================
+
+- Consider the following three sets of numbers
+
+```{r echo=FALSE}
+A <- rep(20, 5)
+B <- seq(10,30,by=5)
+C <- c(seq(5,20,by=5),50)
+```
+
+A
+
+```{r echo=FALSE}
+cat(A)
+```
+
+B
+
+```{r echo=FALSE}
+cat(B)
+```
+
+C
+
+```{r echo=FALSE}
+cat(C)
+```
+
+Example
+========================================================
+
+- What is the same about all three sets of numbers?
+    - The mean is 20
+    
+- What is different?
+    - The shape and spread are different
+    - Variability is different
+    
+Quantifying the variability
+========================================================
+
+Calculate the deviations from the mean
+
+ A  | $x_{i} - \bar{x}$ |  B  | $y_{i} - \bar{y}$ |  C  | $z_{i} - \bar{z}$ 
+--- | ----------------- | --- | ----------------- | --- | ----------------- 
+ 20 |                   |  10 |                   |  5  |                    
+ 20 |                   |  15 |                   |  10 |                    
+ 20 |                   |  20 |                   |  15 |                    
+ 20 |                   |  25 |                   |  20 |                    
+ 20 |                   |  30 |                   |  50 |                    
+
+Quantifying the variability
+========================================================
+
+Calculate the deviations from the mean
+
+ A  | $x_{i} - \bar{x}$ |  B  | $y_{i} - \bar{y}$ |  C  | $z_{i} - \bar{z}$ 
+--- | ----------------- | --- | ----------------- | --- | ----------------- 
+ 20 |        0          |  10 |         -10       |  5  |       -15           
+ 20 |        0          |  15 |          -5       |  10 |       -10          
+ 20 |        0          |  20 |          0        |  15 |       -5          
+ 20 |        0          |  25 |         5         |  20 |       0           
+ 20 |        0          |  30 |         10        |  50 |       30            
+
+Quantifying the variability
+========================================================
+
+- How can we convert this to 1 number to describe the variability?
+- Aveage?
+    - What is the average deviation for each sample?
+- We want to know the average distance, so we don't want negative numbers
+    - How do we get rid of negatives? Square the deviations
+    
+Quantifying the variability
+========================================================
+
+ A  | $x_{i} - \bar{x}$ | $(x_{i}-\bar{x})^{2}$ |  B  | $y_{i} - \bar{y}$ | $(y_{i}-\bar{y})^{2}$ |  C  | $z_{i} - \bar{z}$ | $(z_{i}-\bar{z})^{2}$ 
+--- | ----------------- | --------------------- | --- | ----------------- | --------------------- | --- | ----------------- | ---------------------
+ 20 |        0          |                       |  10 |         -10       |                       |  5  |       -15         |  
+ 20 |        0          |                       |  15 |          -5       |                       |  10 |       -10         | 
+ 20 |        0          |                       |  20 |          0        |                       |  15 |       -5          |
+ 20 |        0          |                       |  25 |         5         |                       |  20 |       0           |
+ 20 |        0          |                       |  30 |         10        |                       |  50 |       30          |  
+
+
+Quantifying the variability
+========================================================
+
+Calculate the squared deviations
+
+ A  | $x_{i} - \bar{x}$ | $(x_{i}-\bar{x})^{2}$ |  B  | $y_{i} - \bar{y}$ | $(y_{i}-\bar{y})^{2}$ |  C  | $z_{i} - \bar{z}$ | $(z_{i}-\bar{z})^{2}$ 
+--- | ----------------- | --------------------- | --- | ----------------- | --------------------- | --- | ----------------- | ---------------------
+ 20 |        0          |         0             |  10 |         -10       |           100         |  5  |       -15         |  225
+ 20 |        0          |         0             |  15 |          -5       |         25            |  10 |       -10         | 100
+ 20 |        0          |         0             |  20 |          0        |           0           |  15 |       -5          | 25
+ 20 |        0          |         0             |  25 |         5         |           25          |  20 |       0           | 0
+ 20 |        0          |         0             |  30 |         10        |           100         |  50 |       30          | 900
+
+
+Quantifying the variability
+========================================================
+
+Average the squared deviations, but divide by $n-1$, not $n$
+
+ A  | $x_{i} - \bar{x}$ | $(x_{i}-\bar{x})^{2}$ |  B  | $y_{i} - \bar{y}$ | $(y_{i}-\bar{y})^{2}$ |  C  | $z_{i} - \bar{z}$ | $(z_{i}-\bar{z})^{2}$ 
+--- | ----------------- | --------------------- | --- | ----------------- | --------------------- | --- | ----------------- | ---------------------
+ 20 |        0          |         0             |  10 |         -10       |           100         |  5  |       -15         |  225
+ 20 |        0          |         0             |  15 |          -5       |         25            |  10 |       -10         | 100
+ 20 |        0          |         0             |  20 |          0        |           0           |  15 |       -5          | 25
+ 20 |        0          |         0             |  25 |         5         |           25          |  20 |       0           | 0
+ 20 |        0          |         0             |  30 |         10        |           100         |  50 |       30          | 900
+    |     sum           |         0             |     |                   |           250         |     |                   | 1250
+    |    $s^{2}$        | $\frac{0}{5-1}=0$     |     |                   | $\frac{250}{5-1}=62.5$|     |                   | $\frac{1250}{5-1}=312.5$        
+
+
+Quantifying the variability
+========================================================
+
+- In the process we squared the deviations to get rid of the negative values
+- How do we "un-square" a value?
+    - Square root
+    
+Standard deviation
+
+ Dataset |  $s^{2}$  | $s$ 
+-------- | --------- | ----
+ A       |   0       | 0
+ B       | 62.5      | 7.91
+ C       | 312.5     | 17.68
+ 
+Properties of standard deviation
+========================================================
+
+- The standard deviation represent how far, on average, each value is from the mean
+- Standard deviation can never be negative because we squared the deviations
+- Formula
+
+$$ 
+\begin{align*}
+s & = \sqrt{\frac{(y_{1}-\bar{y})^{2} + (y_{2}-\bar{y})^{2}+...+(y_{n}-\bar{y})^{2}}{n-1}} \\
+& = \sqrt{\frac{\sum_{i=1}^{n}(y_{i}-\bar{y})^{2}}{n-1}}
+\end{align*}
+$$
