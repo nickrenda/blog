@@ -229,7 +229,7 @@ brothers
 
 ***
 
-Second row determines bar heigths
+Second row determines bar heights
 
 Example: Subset of Stat 101 data
 ========================================================
@@ -490,10 +490,11 @@ Solution
 54 62 62 63 64 71 79 80 81 83 85
 ```
 
-```
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  54.00   62.50   71.00   71.27   80.50   85.00 
-```
+- Min = 54
+- Q1 = 62.5
+- Median = 71.0
+- Q3 = 80.5
+- Max = 85.0
 
 Example: subset of Stat 101 students
 ========================================================
@@ -855,3 +856,105 @@ Comparing standard deviations
 Example
 ========================================================
 
+- The mean age of my 695 Facebook friends is 25.3 years
+- The standard deviation is 9.27 years
+- Interpret the value of standard deviation
+
+***
+
+![plot of chunk unnamed-chunk-42](Chapter03-figure/unnamed-chunk-42-1.png) 
+
+Interpreting standard deviation
+========================================================
+
+- Which interpretation(s) are correct?
+    - The ages of my Facebook friends are 9.27 years away from the mean age of 25.3 years
+    - The ages of my Facebook friends are 9.27 years away from the mean age of 25.3 years, on average
+    - The average distance from the ages of my Facebook friends to the mean age of 25.3 years is 9.27
+    - The average distance from the typical ages of my Facebook friends to the mean age of 25.3 years is 9.27 years
+    - The typical deviation from the ages of my Facebook friends to the mean age of 25.3 years is 9.27
+    
+Interpreting standard deviation
+========================================================
+
+- Which interpretation(s) are correct?
+    - ~~The ages of my Facebook friends are 9.27 years away from the mean age of 25.3 years~~
+    - **The ages of my Facebook friends are 9.27 years away from the mean age of 25.3 years, on average**
+    - **The average distance from the ages of my Facebook friends to the mean age of 25.3 years is 9.27**
+    - ~~The average distance from the typical ages of my Facebook friends to the mean age of 25.3 years is 9.27 years~~
+    - **The typical deviation from the ages of my Facebook friends to the mean age of 25.3 years is 9.27**
+    
+Comparison of the mean and median
+========================================================
+
+- Median = 50th percentile (middle number)
+
+- Mean = fair share value (balancing point)
+
+- Generally similar when distribution is symmetric with no outliers
+- Generally different when either distribution is skewed or outliers are present
+
+Influence of outliers on the mean and median
+========================================================
+
+- Consider the income in a small town of 6 people
+    - $25,000, $27,000, $29,000, $35,000, $37,000, $38,000
+- Mean income is $31,830
+- Median income is $32,000
+
+Influence of outliers on the mean and median
+========================================================
+
+- Bill Gates moves to town
+    - $25,000, $27,000, $29,000, $35,000, $37,000, $38,000, $100,000,000
+- The mean income is $14,313,000
+- The median income is $35,000
+
+Influence of outliers
+========================================================
+
+- Summaries not affected by outliers are called **robust** or **resistant**
+- Center
+    - Median: robust
+    - Mean: not robust
+- Variation
+    - Range: not robust
+    - IQR: robust
+    - s = not robust
+    
+Influence of skewness on the mean and median
+========================================================
+
+- The observations in the tail influence the mean
+- These observations do not (usually) influence the median
+    - Skewed to the right (large values)
+        - Mean > median
+    - Skewed to the left (small values)
+        - Mean < median
+
+Mean vs. Median
+========================================================
+
+- Always question when mean are reported for skewed data
+    - Income
+    - Housing prices
+    - Course grades
+- Median is a better measure of the "typical" value for skewed data
+
+Comparison of range, IQR, and standard deviation
+========================================================
+
+- Report range and IQR when you report median value
+- report standard deviation when you report mean value
+
+Which summaries are best?
+========================================================
+
+- Five number summary
+    - Distribution is skewed 
+    - Outliers are present
+- Mean and standard deviation
+    - Distribution is symmetric with no outliers
+- Need to look at a picture of your data to determine which is best
+    - Usually looking a histrogram will do
+    
