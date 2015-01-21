@@ -3,12 +3,21 @@ Chapter03
 author: Displaying and Summarizing Quantitative Data
 date: Week 2
 
+Announcements
+========================================================
+
+- Anymore add/drops?
+- Lab
+    - Bring laptops if you can
+- JMP not working?
+
 Chapter Outline
 ========================================================
 
 - Review: Quantitative variables
-- Describing quantitative variables
-- describing quantitative variables numerically
+- Describing a single quantitative variable
+- Describing a single quantitative variable numerically
+- We will deal with multiple quantitative variables in Chapter 4
 
 Variable with numbers as values
 ========================================================
@@ -24,7 +33,7 @@ Describing one quantitative variable
 - Distribution of variable
     - summary of different values observed for the variable
     - includes the "3 s's": shape, center, and spread
-    - spread is also known as variation or variability
+        - spread is also known as variation or variability
 - Always start with making a picture
     - **histogram**
     - **stem-and-leaf display**
@@ -69,7 +78,7 @@ Histograms
 Stem-and-leaf plot
 ========================================================
 
-- Alternative to historgram
+- Alternative to histogram
 - Generally used for smaller data sets (Salary data is too big)
 - Group data like histogram
 
