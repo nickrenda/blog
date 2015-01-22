@@ -1,4 +1,4 @@
-Chapter03
+Chapter 03
 ========================================================
 author: Displaying and Summarizing Quantitative Data
 date: Week 2
@@ -10,6 +10,12 @@ Announcements
 - Lab
     - Bring laptops if you can
 - JMP not working?
+
+```{r echo=FALSE, eval=FALSE}
+# Taking notes vs not taking notes
+# Study on reading from paper book as opposed to e-book
+```
+
 
 Chapter Outline
 ========================================================

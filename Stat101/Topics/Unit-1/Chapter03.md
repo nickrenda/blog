@@ -1,4 +1,4 @@
-Chapter03
+Chapter 03
 ========================================================
 author: Displaying and Summarizing Quantitative Data
 date: Week 2
@@ -10,6 +10,9 @@ Announcements
 - Lab
     - Bring laptops if you can
 - JMP not working?
+
+
+
 
 Chapter Outline
 ========================================================
@@ -44,7 +47,7 @@ Example: baseball data
 - This data was collected from the MLB over the course of a season, the variable of interest is **Salary**
 
 
-![plot of chunk unnamed-chunk-1](Chapter03-figure/unnamed-chunk-1-1.png) 
+![plot of chunk unnamed-chunk-2](Chapter03-figure/unnamed-chunk-2-1.png) 
 
 - X-axis is the variable (Salary in this case)
 - Y-axis is the count of players that fall into each "bin" of salary
@@ -55,7 +58,7 @@ Bins of the histogram
 - On the previous slide the bins were 100 units wide 
 - The choice of bin width is arbitrary, usually decided by the program that is creating the plot
 
-![plot of chunk unnamed-chunk-2](Chapter03-figure/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-3](Chapter03-figure/unnamed-chunk-3-1.png) 
 
 - Here the binwidth was chosen to be 200
 
@@ -161,7 +164,7 @@ Example: Baseball salary
     
 *** 
 
-![plot of chunk unnamed-chunk-4](Chapter03-figure/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-5](Chapter03-figure/unnamed-chunk-5-1.png) 
 
 Example: Baseball salary
 ========================================================
@@ -182,7 +185,7 @@ Example: Old Faithful
 
 ***
 
-![plot of chunk unnamed-chunk-5](Chapter03-figure/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-6](Chapter03-figure/unnamed-chunk-6-1.png) 
 
 Example: Old Faithful
 ========================================================
@@ -234,7 +237,7 @@ brothers
 34 45 14  4  2  1 
 ```
 
-![plot of chunk unnamed-chunk-8](Chapter03-figure/unnamed-chunk-8-1.png) 
+![plot of chunk unnamed-chunk-9](Chapter03-figure/unnamed-chunk-9-1.png) 
 
 ***
 
@@ -514,7 +517,7 @@ Example: subset of Stat 101 students
 
 ***
 
-![plot of chunk unnamed-chunk-24](Chapter03-figure/unnamed-chunk-24-1.png) 
+![plot of chunk unnamed-chunk-25](Chapter03-figure/unnamed-chunk-25-1.png) 
 
 Example: subset of Stat 101 students
 ========================================================
@@ -528,7 +531,7 @@ Example: subset of Stat 101 students
 
 *** 
 
-![plot of chunk unnamed-chunk-25](Chapter03-figure/unnamed-chunk-25-1.png) 
+![plot of chunk unnamed-chunk-26](Chapter03-figure/unnamed-chunk-26-1.png) 
 
 Mean
 ========================================================
@@ -814,20 +817,20 @@ Properties of s
 Comparing standard deviations
 ========================================================
 
-![plot of chunk unnamed-chunk-34](Chapter03-figure/unnamed-chunk-34-1.png) 
+![plot of chunk unnamed-chunk-35](Chapter03-figure/unnamed-chunk-35-1.png) 
 
 ***
 
-![plot of chunk unnamed-chunk-35](Chapter03-figure/unnamed-chunk-35-1.png) 
+![plot of chunk unnamed-chunk-36](Chapter03-figure/unnamed-chunk-36-1.png) 
 
 Comparing standard deviations
 ========================================================
 
-![plot of chunk unnamed-chunk-36](Chapter03-figure/unnamed-chunk-36-1.png) 
+![plot of chunk unnamed-chunk-37](Chapter03-figure/unnamed-chunk-37-1.png) 
 
 ***
 
-![plot of chunk unnamed-chunk-37](Chapter03-figure/unnamed-chunk-37-1.png) 
+![plot of chunk unnamed-chunk-38](Chapter03-figure/unnamed-chunk-38-1.png) 
 
 Comparing standard deviations
 ========================================================
@@ -837,11 +840,11 @@ Comparing standard deviations
 Comparing standard deviations
 ========================================================
 
-![plot of chunk unnamed-chunk-38](Chapter03-figure/unnamed-chunk-38-1.png) 
+![plot of chunk unnamed-chunk-39](Chapter03-figure/unnamed-chunk-39-1.png) 
 
 ***
 
-![plot of chunk unnamed-chunk-39](Chapter03-figure/unnamed-chunk-39-1.png) 
+![plot of chunk unnamed-chunk-40](Chapter03-figure/unnamed-chunk-40-1.png) 
 
 Comparing standard deviations
 ========================================================
@@ -851,11 +854,11 @@ Comparing standard deviations
 Comparing standard deviations
 ========================================================
 
-![plot of chunk unnamed-chunk-40](Chapter03-figure/unnamed-chunk-40-1.png) 
+![plot of chunk unnamed-chunk-41](Chapter03-figure/unnamed-chunk-41-1.png) 
 
 ***
 
-![plot of chunk unnamed-chunk-41](Chapter03-figure/unnamed-chunk-41-1.png) 
+![plot of chunk unnamed-chunk-42](Chapter03-figure/unnamed-chunk-42-1.png) 
 
 Comparing standard deviations
 ========================================================
@@ -871,7 +874,7 @@ Example
 
 ***
 
-![plot of chunk unnamed-chunk-42](Chapter03-figure/unnamed-chunk-42-1.png) 
+![plot of chunk unnamed-chunk-43](Chapter03-figure/unnamed-chunk-43-1.png) 
 
 Interpreting standard deviation
 ========================================================
