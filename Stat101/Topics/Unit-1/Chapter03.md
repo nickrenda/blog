@@ -6,10 +6,9 @@ date: Week 2
 Announcements
 ========================================================
 
-- Anymore add/drops?
-- Lab
-    - Bring laptops if you can
-- JMP not working?
+- Hand in written homework now
+- Chapter 3 homework should be on Blackboard by this evening
+    - Due next Friday
 
 
 
@@ -513,11 +512,16 @@ Example: subset of Stat 101 students
 
 - Stat 101 students were asked "How many brothers do you have?"
 - Took random sample of **100**
-- What is the IQR?
+- How could you find Q1, Q2, and the IQR by just looking at the table?
 
 ***
 
-![plot of chunk unnamed-chunk-25](Chapter03-figure/unnamed-chunk-25-1.png) 
+
+```
+brothers
+ 0  1  2  3  4  5 
+34 45 14  4  2  1 
+```
 
 Example: subset of Stat 101 students
 ========================================================
@@ -549,16 +553,19 @@ $$ \bar{y} = \frac{y_{1},y_{2},...,y_{n}}{n} = \frac{\sum_{i=1}^{n}y_{i}}{n} $$
 Example
 ========================================================
 
+Find the mean of these numbers:
+
 
 ```
 3 10 15 20 29 30 31 44 45 46
 ```
 
+Solution:
+
 $$ \bar{y} = \frac{3 + 10 + 15 + ... + 44 + 45 + 46}{10} = \frac{273}{10} = 27.3 $$
 
 Properties of the mean
 ========================================================
-incremental:true
 
 - Which observations affect the mean?
     - All of them!
@@ -591,11 +598,11 @@ Mean goes from 27.3 to 122.7
 Standard Deviation
 ========================================================
 
-- Denoted by the letter s
+- Denoted by the letter **"s"**
 - Measures the variability (spread) from mean
-    - Values closer to mean = smaller contribution to s
-    - Values far away from mean = larger contribution to s
-- S depends on how far way values are "on average" from the mean
+    - Values closer to mean = smaller contribution to $s$
+    - Values far away from mean = larger contribution to $s$
+- $S$ depends on how far way values are "on average" from the mean
 
 Example
 ========================================================
@@ -665,7 +672,7 @@ Quantifying the variability
 ========================================================
 
 - How can we convert this to 1 number to describe the variability?
-- Aveage?
+- Average?
     - What is the average deviation for each sample?
 - We want to know the average distance, so we don't want negative numbers
     - How do we get rid of negatives? Square the deviations
@@ -804,7 +811,7 @@ Properties of S
 - What effect do outliers have on the standard deviation?
     - Outliers increase the value of the standard deviation
     
-Properties of s
+Properties of S
 ========================================================
 
 - The standard deviation can never be negative
