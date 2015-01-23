@@ -514,7 +514,7 @@ Formula
 - $n$ observations
 - $y_{1}, y_{2}, ..., y_{n}$ are the observations
 
-$$ \bar{y} = \frac{y_{1},y_{2},...,y_{n}}{n} = \frac{\sum_{i=1}^{n}y_{i}}{n} $$
+$$ \bar{y} = \frac{y_{1}+y_{2}+...+y_{n}}{n} = \frac{\sum_{i=1}^{n}y_{i}}{n} $$
 
 Example
 ========================================================
