@@ -512,7 +512,7 @@ Example: subset of Stat 101 students
 
 - Stat 101 students were asked "How many brothers do you have?"
 - Took random sample of **100**
-- How could you find Q1, Q2, and the IQR by just looking at the table?
+- How could you find Q1, Q3, and the IQR by just looking at the table?
 
 ***
 
