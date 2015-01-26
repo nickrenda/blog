@@ -1,0 +1,185 @@
+Chapter 03 Supplement
+========================================================
+author: Standard Deviation Examples
+date: January 26, 2015
+
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 1
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s1.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 2
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s2.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 3
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s3.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 4
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s4.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 5
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s5.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 6
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s6.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 7
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s7.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 8
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s8.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 9
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s9.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 10
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s10.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 11
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s11.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 12
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s12.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 13
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s13.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 14
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s14.png")
+grid.raster(img)
+```
+
+Deterimine which distribution has the greater standard deviation
+========================================================
+
+## Question 15
+
+```{r fig.width=5, fig.height=5, echo=F}
+library(png)
+library(grid)
+img <- readPNG("s15.png")
+grid.raster(img)
+```
