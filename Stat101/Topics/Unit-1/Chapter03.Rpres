@@ -798,14 +798,14 @@ Comparing standard deviations
 
 ```{r echo=FALSE}
 qplot(rnorm(1000), geom="histogram", color=I("white"), binwidth=0.5) + 
-  scale_x_continuous(limits=c(-5,5))
+  scale_x_continuous(limits=c(-5,5)) + theme(text = element_text(size=20)) + xlab("")
 ```
 
 ***
 
 ```{r echo=FALSE}
 qplot(rnorm(1000,0,2), geom="histogram", color=I("white"), binwidth=0.5) + 
-  scale_x_continuous(limits=c(-5,5))
+  scale_x_continuous(limits=c(-5,5)) + theme(text = element_text(size=20)) + xlab("")
 ```
 
 Comparing standard deviations
@@ -813,14 +813,14 @@ Comparing standard deviations
 
 ```{r echo=FALSE}
 qplot(rchisq(1000,2), geom="histogram", color=I("white"), binwidth=0.5) + 
-  scale_x_continuous(limits=c(0,15))
+  scale_x_continuous(limits=c(0,15)) + theme(text = element_text(size=20)) + xlab("")
 ```
 
 ***
 
 ```{r echo=FALSE}
 qplot(rnorm(1000,7.5,1.5), geom="histogram", color=I("white"), binwidth=0.5) + 
-  scale_x_continuous(limits=c(0,15))
+  scale_x_continuous(limits=c(0,15)) + theme(text = element_text(size=20)) + xlab("")
 ```
 
 Comparing standard deviations
@@ -833,14 +833,14 @@ Comparing standard deviations
 
 ```{r echo=FALSE}
 qplot(rnorm(1000,0,2), geom="histogram", color=I("white"), binwidth=0.5) + 
-  scale_x_continuous(limits=c(-5,5))
+  scale_x_continuous(limits=c(-5,5)) + theme(text = element_text(size=20)) + xlab("")
 ```
 
 ***
 
 ```{r echo=FALSE}
 qplot(runif(1000,-5,5), geom="histogram", color=I("white"), binwidth=0.5) + 
-  scale_x_continuous(limits=c(-5,5))
+  scale_x_continuous(limits=c(-5,5)) + theme(text = element_text(size=20)) + xlab("")
 ```
 
 Comparing standard deviations
@@ -853,14 +853,14 @@ Comparing standard deviations
 
 ```{r echo=FALSE}
 qplot(rbeta(1000,0.5,0.5), geom="histogram", color=I("white"), binwidth=0.05) + 
-  scale_x_continuous(limits=c(0,1))
+  scale_x_continuous(limits=c(0,1)) + theme(text = element_text(size=20)) + xlab("")
 ```
 
 ***
 
 ```{r echo=FALSE}
 qplot(runif(1000), geom="histogram", color=I("white"), binwidth=0.05) + 
-  scale_x_continuous(limits=c(0,1))
+  scale_x_continuous(limits=c(0,1)) + theme(text = element_text(size=20)) + xlab("")
 ```
 
 Comparing standard deviations
@@ -883,7 +883,7 @@ fb <- rnorm(600,24,8)
 fb <- fb[fb > 15]
 fb <- c(fb, runif(95,20,60))
 qplot(fb, geom="histogram", color=I("white"), fill=I("steel blue"), binwidth=5) + 
-  xlab("Age")
+  xlab("Age") + theme(text = element_text(size=20))
 ```
 
 Interpreting standard deviation
