@@ -193,3 +193,116 @@ Choosing a graph for quantitative variables
 - Want to compare distributions for groups?
     - Boxplots (especially if there are more than 2 groups)
     
+Cats
+========================================================
+
+- What is the exact number of cats that you think is appropriate for one residence/family to have in the home at one period in time?
+- Is this a quantitative or categorical variable?
+- What are some categorical variables that could explain how many cats are appropriate for one residence?
+    - Whether or not you own a cat
+    
+Cats
+========================================================
+
+- Suppose we want to examine the relationship between whether or not you own a cat and how many cats you think is acceptable to have in residence
+- What's the first think we should do?
+    - 5 w's
+    
+Cats: the 5 W's
+========================================================
+
+- Who
+    - 60 adults
+- What
+    - Whether or not you own a cat and the number of acceptable cats
+- Where 
+    - Minnesota
+- When
+    - Spring 2012
+- Why
+    - To see if there is a relationship between whether or not you own a cat and the number of acceptable cats
+- How
+    - Online survey through Facebook
+    
+Cats
+========================================================
+
+
+```
+            NumberCats
+CatOwnership  0  1  2  3  4  5  6  8
+         no   4  5 13  5  3  0  0  0
+         yes  0  2 10  8  3  4  2  1
+```
+
+![plot of chunk unnamed-chunk-8](Chapter04-figure/unnamed-chunk-8-1.png) 
+
+Cat owners
+========================================================
+
+![plot of chunk unnamed-chunk-9](Chapter04-figure/unnamed-chunk-9-1.png) 
+
+Non-cat owners
+========================================================
+
+![plot of chunk unnamed-chunk-10](Chapter04-figure/unnamed-chunk-10-1.png) 
+
+Cats
+========================================================
+
+![plot of chunk unnamed-chunk-11](Chapter04-figure/unnamed-chunk-11-1.png) 
+
+Cats
+========================================================
+
+- Which measures of center and spread would be appropriate to examine?
+- If data is symmetric, it would be more appropriate to use the mean and standard deviation
+- If data is not symmetric, it would be more appropriate to use the median and IQR
+- Cat owners were skewed right witha potential outlier and non-cat owners were bell-shaped
+- We want to use the same measures for both, so lets go with median and IQR
+
+5-number summary
+========================================================
+
+- Cat owners
+
+
+```
+   Min. 1st Qu.  Median 3rd Qu.    Max. 
+      1       2       3       4       8 
+```
+
+- Non-cat owners
+
+
+```
+   Min. 1st Qu.  Median 3rd Qu.    Max. 
+   0.00    1.00    2.00    2.75    4.00 
+```
+
+Cats
+========================================================
+
+- Now suppose we want to compare the groups
+    - Which type of graph should be used to compare the groups (owners vs. non-owners)?
+    
+Cat Owners
+========================================================
+
+- Check for outliers
+    - Recall: $Q1 = 2$ and $Q3 = 4$
+- $IQR = 4 - 2 = 2$
+- Check for low outliers
+    - $Q1 - 1.5*IQR = 2 - 1.5*2 = -1$
+    - No values less than -1, so there are no low outliers
+- Check for high outliers
+    - $Q3 + 1.5*IQR = 4 + 1.5*2 = 7$
+    - There is a value in the dataset equal to 8, so 1 outlier
+    - The next highest value in the dataset is 6, so that is how far out the whisker on the boxplot will go
+
+
+Cats - comparing groups
+========================================================
+
+![plot of chunk unnamed-chunk-14](Chapter04-figure/unnamed-chunk-14-1.png) 
+
