@@ -12,7 +12,10 @@
 #title: "Stat 101 - Principles of Statistics (Spring 2015)"
 #author: "Evan “Pete” Walsh"
 #date: "December 5, 2014"
-output: html_document
+output:
+  html_document:
+    includes:
+      in_header: header.html
 ---
 
 [![ISU logo](Figures/logo.png)](http://www.stat.iastate.edu/)
