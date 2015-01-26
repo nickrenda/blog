@@ -53,7 +53,7 @@ Lab: Depends
   <option value="">None</option>
   <option value="Topics/Unit-1/Dolphins-Questions.docx">Ch 02 Dolphin Worksheet (.docx)</option>
   <option value="Topics/Unit-1/Dolphins-Solutions.docx">Ch 02 Dolphin Worksheet Solutions (.docx)</option>
-  <option value="Topics/Unit-1/Chapter03-2-Solutions.pdf">Ch 03 Standard Deviations (pdf)</option>
+  <option value="Topics/Unit-1/Chapter03-2-Solutions.pdf">Ch 03 Standard Deviation Solutions (pdf)</option>
 </select>
 
 <script>
@@ -73,7 +73,7 @@ Lab: Depends
 - [Chapter 01](Topics/Unit-1/Chapter01.html)
 - [Chapter 02](Topics/Unit-1/Chapter02.html)
 - [Chapter 03](Topics/Unit-1/Chapter03.html)
-- [Chapter 03 Supplement: Standard deviation](Topics/Unit-1/Chapter03-2.html)
+    - [Supplement: Standard Deviations](Topics/Unit-1/Chapter03-2.html)
 - [Chapter 04](Topics/Unit-1/Chapter04.html)
 
 **Unit 2**
