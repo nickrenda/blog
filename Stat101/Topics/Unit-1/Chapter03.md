@@ -821,6 +821,16 @@ Properties of S
 - $s$ has the same units as the data
 - Variance = $s^{2}$
 
+Review: Standard deviation
+========================================================
+
+$$ 
+\begin{align*}
+s & = \sqrt{\frac{(y_{1}-\bar{y})^{2} + (y_{2}-\bar{y})^{2}+...+(y_{n}-\bar{y})^{2}}{n-1}} \\
+& = \sqrt{\frac{\sum_{i=1}^{n}(y_{i}-\bar{y})^{2}}{n-1}}
+\end{align*}
+$$
+
 Comparing standard deviations
 ========================================================
 
@@ -903,6 +913,10 @@ Interpreting standard deviation
     - ~~The average distance from the typical ages of my Facebook friends to the mean age of 25.3 years is 9.27 years~~
     - **The typical deviation from the ages of my Facebook friends to the mean age of 25.3 years is 9.27**
     
+Summary of important points of Chapter 3
+========================================================
+type:section
+
 Comparison of the mean and median
 ========================================================
 
