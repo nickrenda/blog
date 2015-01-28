@@ -18,7 +18,7 @@ Announcements
 ========================================================
 
 <br>
-[viShiny: Visualizing variability](http://epwalsh.shinyapps.io/viShiny)
+[Visualizing variability](http://epwalsh.shinyapps.io/viShiny)
 
 
 Chapter Outline
@@ -47,6 +47,7 @@ Relationship between a categorical variable and quantitative variable
 - Compare distribution of quantitative variable between these groups
 - Response variable = quantitative variable
 - Explanatory variable = categorical variable
+- Examples?
 
 Example: Stat 101 student data
 ========================================================
