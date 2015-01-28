@@ -6,6 +6,15 @@ date: Week 3
 Announcements
 ========================================================
 
+- Quiz grades
+    - Quiz 1 was attendance from first week
+    - Quiz 2 was the actual quiz from last Friday
+- I will return your written homeworks as soon I get those back from the graders
+- Solutions are on BB
+- Online homework solutions
+    - Will be available on BB at 8:01 AM on Fridays (right after due date)
+
+
 Chapter Outline
 ========================================================
 
@@ -13,6 +22,7 @@ Chapter Outline
 - Boxplots
     - Side-by-side boxplots
 - Outliers
+    - How do we define outliers?
 
 Variables
 ========================================================
@@ -21,6 +31,8 @@ Variables
     - Values = labels or categories
 - **Quantitative**
     - Values = numbers
+    
+- Think qualities vs. quantities/measurements
     
 Relationship between a categorical variable and quantitative variable
 ========================================================
@@ -40,9 +52,9 @@ Example: Stat 101 student data
 
 - Symmetric
 - Bimodal
-    - One around 65, the other around 70-75
+    - One around 65, the other around 72
 - Outliers
-    - Low - below 45 inches
+    - Low - around 50 inches
 
 ***
 
@@ -80,18 +92,18 @@ Height and Gender
     - Unimodal
     - Outliers 
         - low outlier for females, high for females
-        - low for males
+        - low for males, high for males
     
 5-Number Summary
 ========================================================
 
        | Female | Male 
 ------ | ------ | -----
-Min    | 44     | 58
-Q1     | 64     | 70
-Median | 66     | 72
-Q3     | 68     | 73
-Max    | 82     | 85
+Min    | 50     | 60
+Q1     | 64     | 71
+Median | 65     | 73
+Q3     | 67     | 75
+Max    | 74     | 83
 
 Boxplot
 ========================================================
@@ -155,10 +167,10 @@ Example
 ========================================================
 
 - Female heights
-    - Median- Q1 > Q3 - median
-        - Left skewed
+    - Median- Q1 $\approx$ Q3 - median
+        - Approximately symmetric
     - Q1 - Min > Max - Q3
-        - Left skewed, or just outlier
+        - Left skewed? No, just due to outlier
         
 ***
 
@@ -228,12 +240,13 @@ Cats
 ========================================================
 
 
-```
-            NumberCats
-CatOwnership  0  1  2  3  4  5  6  8
-         no   4  5 13  5  3  0  0  0
-         yes  0  2 10  8  3  4  2  1
-```
+
+     
+ Number of Cats  | 0   | 1   | 2   | 3   | 4   | 5   |  6  | 7   | 8  
+---------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
+ no              | 4   | 5   | 13  | 5   | 3   | 0   | 0   | 0   | 0  
+ yes             | 0   | 2   | 10  | 8   | 3   | 4   | 2   | 0   | 1  
+
 
 ![plot of chunk unnamed-chunk-8](Chapter04-figure/unnamed-chunk-8-1.png) 
 

@@ -9,6 +9,8 @@ Announcements
 - Quiz grades
     - Quiz 1 was attendance from first week
     - Quiz 2 was the actual quiz from last Friday
+- I will return your written homeworks as soon I get those back from the graders
+- Solutions are on BB
 - Online homework solutions
     - Will be available on BB at 8:01 AM on Fridays (right after due date)
 
@@ -20,6 +22,7 @@ Chapter Outline
 - Boxplots
     - Side-by-side boxplots
 - Outliers
+    - How do we define outliers?
 
 Variables
 ========================================================
@@ -28,6 +31,8 @@ Variables
     - Values = labels or categories
 - **Quantitative**
     - Values = numbers
+    
+- Think qualities vs. quantities/measurements
     
 Relationship between a categorical variable and quantitative variable
 ========================================================
@@ -43,13 +48,14 @@ Example: Stat 101 student data
 ```{r echo=FALSE}
 library(ggplot2)
 set.seed(2)
-males <- c(rnorm(90,74,4),86, 60)
-females <- c(42, rnorm(90,60,4), 72, 74)
+males <- c(rnorm(200,73,2.4),83, 60)
+females <- c(50, rnorm(200,65,2.4), 72, 74)
 height <- c(males, females)
-qplot(height, geom="histogram", color=I("white"), fill=I("steel blue"), binwidth=5) +
+p <- qplot(height, geom="histogram", color=I("white"), fill=I("steel blue"), binwidth=2) +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
         text = element_text(size=20))
+p
 ```
 
 Example: Stat 101 student data
@@ -57,18 +63,14 @@ Example: Stat 101 student data
 
 - Symmetric
 - Bimodal
-    - One around 65, the other around 70-75
+    - One around 65, the other around 72
 - Outliers
-    - Low - below 45 inches
+    - Low - around 50 inches
 
 ***
 
 ```{r echo=FALSE}
-qplot(height, geom="histogram", color=I("white"), fill=I("steel blue"), binwidth=5) +
-  theme(axis.text.y = element_blank(),
-        axis.ticks.y = element_blank(),
-        text = element_text(size=20))
-
+p
 ```
 
 Example: Stat 101 student data
@@ -96,7 +98,7 @@ Histograms of height for female and male students
 ```{r echo=FALSE}
 sex <- c(rep("Male", length(males)), rep("Female", length(females)))
 df <- data.frame(height, sex)
-ggplot(df, aes(x=height)) + geom_histogram(binwidth=5,color=I("white"), fill=I("steel blue")) +
+ggplot(df, aes(x=height)) + geom_histogram(binwidth=2,color=I("white"), fill=I("steel blue")) +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
         text = element_text(size=20)) +
@@ -111,18 +113,18 @@ Height and Gender
     - Unimodal
     - Outliers 
         - low outlier for females, high for females
-        - low for males
+        - low for males, high for males
     
 5-Number Summary
 ========================================================
 
        | Female | Male 
 ------ | ------ | -----
-Min    | 44     | 58
-Q1     | 64     | 70
-Median | 66     | 72
-Q3     | 68     | 73
-Max    | 82     | 85
+Min    | 50     | 60
+Q1     | 64     | 71
+Median | 65     | 73
+Q3     | 67     | 75
+Max    | 74     | 83
 
 Boxplot
 ========================================================
@@ -191,10 +193,10 @@ Example
 ========================================================
 
 - Female heights
-    - Median- Q1 > Q3 - median
-        - Left skewed
+    - Median- Q1 $\approx$ Q3 - median
+        - Approximately symmetric
     - Q1 - Min > Max - Q3
-        - Left skewed, or just outlier
+        - Left skewed? No, just due to outlier
         
 ***
 
@@ -272,15 +274,22 @@ cats <- read.csv("~/GitHub/epwalsh.github.com/Stat101/Data/cats.csv")
 cats$cats[which(cats$cats == 1)] <- "yes"
 cats$cats[which(cats$cats == 0)] <- "no"
 names(cats) <- c("CatOwnership", "NumberCats")
-table(cats)
+#table(cats)
 ```
+
+     
+ Number of Cats  | 0   | 1   | 2   | 3   | 4   | 5   |  6  | 7   | 8  
+---------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
+ no              | 4   | 5   | 13  | 5   | 3   | 0   | 0   | 0   | 0  
+ yes             | 0   | 2   | 10  | 8   | 3   | 4   | 2   | 0   | 1  
+
 
 ```{r echo=FALSE}
 ggplot(cats, aes(x=NumberCats)) + 
   geom_histogram(binwidth=1,color=I("white"), fill=I("medium sea green")) +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
-        text = element_text(size=20))
+        text = element_text(size=20)) + ggtitle("Marginal Distribution of Number of Cats")
 ```
 
 Cat owners
