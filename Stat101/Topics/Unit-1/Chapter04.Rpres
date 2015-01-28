@@ -10,9 +10,15 @@ Announcements
     - Quiz 1 was attendance from first week
     - Quiz 2 was the actual quiz from last Friday
 - I will return your written homeworks as soon I get those back from the graders
-- Solutions are on BB
+    - Solutions are on BB
 - Online homework solutions
     - Will be available on BB at 8:01 AM on Fridays (right after due date)
+
+Announcements
+========================================================
+
+<br>
+[viShiny: Visualizing variability](http://epwalsh.shinyapps.io/viShiny)
 
 
 Chapter Outline
@@ -180,14 +186,18 @@ Interpreting boxplots
             - Q1 - Min < Max - Q3 = skewed right or large outliers
             - Q1 - Min > Max - Q3 = skewed left or large outliers
             
-Interpreting boxplots
+Boxplot pros vs cons
 ========================================================
 
-- Modes
-    - Cannot be determined through boxplots
-- Outliers
-    - Potential outliers are marked with dots outside of whiskers
-    - May or may not be potential outliers in histogram
+- Cons
+    - Multiple modes cannot be distinguished through boxplots
+- Pros
+    - Easy, quick way of summarizing data that includes a lot of information
+        - Center, spread/variability, skewness
+    - Great for comparing distributions
+    - Easy to distinguish outliers
+        - Potential outliers are marked with dots outside of whiskers
+        - May or may not be potential outliers in histogram
     
 Example
 ========================================================
@@ -241,14 +251,14 @@ Cats
 - What is the exact number of cats that you think is appropriate for one residence/family to have in the home at one period in time?
 - Is this a quantitative or categorical variable?
 - What are some categorical variables that could explain how many cats are appropriate for one residence?
-    - Whether or not you own a cat
+
     
 Cats
 ========================================================
 
 - Suppose we want to examine the relationship between whether or not you own a cat and how many cats you think is acceptable to have in residence
 - What's the first think we should do?
-    - 5 w's
+
     
 Cats: the 5 W's
 ========================================================
@@ -330,9 +340,10 @@ Cats
 ========================================================
 
 - Which measures of center and spread would be appropriate to examine?
-- If data is symmetric, it would be more appropriate to use the mean and standard deviation
-- If data is not symmetric, it would be more appropriate to use the median and IQR
-- Cat owners were skewed right witha potential outlier and non-cat owners were bell-shaped
+- Recall:
+    - If data is symmetric, it would be more appropriate to use the mean and standard deviation
+    - If data is not symmetric, it would be more appropriate to use the median and IQR
+- Cat owners were skewed right with a potential outlier and non-cat owners were bell-shaped
 - We want to use the same measures for both, so lets go with median and IQR
 
 5-number summary
