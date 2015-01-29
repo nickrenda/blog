@@ -1,53 +1,19 @@
 ---
-title: "Histograms"
+title: "Misleading Plots"
 runtime: shiny
 output: html_document
 ---
 
-This R Markdown document is made interactive using Shiny. Unlike the more traditional workflow of creating static reports, you can now create documents that allow your readers to change the assumptions underlying your analysis and see the results immediately. 
+The ability to visualize and analyzing data for trends and associations is vital in just about every field nowadays. The advancement in computers and software has made it possible for nearly anyone to create graphics from data and do some sort of statistical analysis. The ease and availability of these tools has been a great thing, for the most part. However, data can be also easily be mishandled and misinterpreted.
 
-To learn more, see [Interactive Documents](http://rmarkdown.rstudio.com/authoring_shiny.html).
+## Histograms can be misleading
 
-## Inputs and Outputs
 
-You can embed Shiny inputs and outputs in your document. Outputs are automatically updated whenever inputs change.  This demonstrates how a standard R plot can be made interactive by wrapping it in the Shiny `renderPlot` function. The `selectInput` and `sliderInput` functions create the input widgets used to drive the plot.
-
-```{r, echo=FALSE}
-x <- c(rnorm(30,-1,2), rnorm(30,1,2))
-df <- data.frame(x)
-
-inputPanel(
-  sliderInput("bw_adjust", label = "Bandwidth adjustment:",
-              min = 0.2, max = 2, value = 1, step = 0.2)
-)
-
-gv <- reactive({
-  df %>% ggvis(~x) %>% 
-      add_tooltip(toolTipFunc(df$x), "hover") %>% 
-      layer_histograms(width=input$bw_adjust)
-})
-
-gv %>% bind_shiny()
+```{r defineWidget, echo=FALSE}
+library(ggvis)
+source("hist_widget.R")
+set.seed(2)
+x <- c(rnorm(1500,-1,2), rnorm(200,2.2,0.2))
+widget(x)
 ```
-
-## Embedded Application
-
-It's also possible to embed an entire Shiny application within an R Markdown document using the `shinyAppDir` function. This example embeds a Shiny application located in another directory:
-
-```{r, echo=FALSE}
-shinyAppDir(
-  system.file("examples/06_tabsets", package="shiny"),
-  options=list(
-    width="100%", height=550
-  )
-)
-```
-
-Note the use of the `height` parameter to determine how much vertical space the embedded application should occupy.
-
-You can also use the `shinyApp` function to define an application inline rather then in an external directory.
-
-In all of R code chunks above the `echo = FALSE` attribute is used. This is to prevent the R code within the chunk from rendering in the document alongside the Shiny components.
-
-
 
