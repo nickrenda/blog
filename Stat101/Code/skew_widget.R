@@ -34,7 +34,7 @@ skew_widget <- function() {
         qplot(x, geom="histogram", 
               binwidth=0.05, colour=I("black"), fill = I("#333333")) + 
           xlab("") +
-          geom_vline(xintercept=c(mu, mid), colour=c('blue',"green"), linetype = "longdash", size=0.75) +
+          geom_vline(xintercept=c(mu, mid), colour=c('blue',"green"), linetype = "longdash", size=2) +
           theme(panel.grid.major = element_line(colour = "#CCCCCC"),
                 panel.grid.minor = element_line(colour = "#CCCCCC"),
                 panel.background = element_rect(fill = "white"),

@@ -6,13 +6,7 @@ date: Week 3
 Announcements
 ========================================================
 
-- Quiz grades
-    - Quiz 1 was attendance from first week
-    - Quiz 2 was the actual quiz from last Friday
-- I will return your written homeworks as soon I get those back from the graders
-    - Solutions are on BB
-- Online homework solutions
-    - Will be available on BB at 8:01 AM on Fridays (right after due date)
+- Hand in homeworks at the front
     
 ```{r echo=FALSE, eval=FALSE}
 # skewed distributions and distributions with limits to the range
@@ -280,8 +274,7 @@ Cats: the 5 W's
     - Spring 2012
 - Why
     - To see if there is a relationship between whether or not you own a cat and the number of acceptable cats
-- How
-    - Online survey through Facebook
+
     
 Cats
 ========================================================
@@ -347,11 +340,7 @@ Cats
 ========================================================
 
 - Which measures of center and spread would be appropriate to examine?
-- Recall:
-    - If data is symmetric, it would be more appropriate to use the mean and standard deviation
-    - If data is not symmetric, it would be more appropriate to use the median and IQR
-- Cat owners were skewed right with a potential outlier and non-cat owners were bell-shaped
-- We want to use the same measures for both, so lets go with median and IQR
+
 
 5-number summary
 ========================================================

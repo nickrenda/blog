@@ -6,13 +6,11 @@ output: html_document
 
 ### Misleading histograms
 
-> Below is a histogram of a nice unimodal, bell-shaped, symmetric distribution... Right? Wrong. Adjust the binwidths and find out.
+> The way data is represented can potentially be misleading. Below is a histogram of a nice unimodal, bell-shaped, symmetric distribution... Right? Wrong. Adjust the binwidths and find out.
 
 ```{r echo=FALSE}
 source("hist_widget.R")
-set.seed(2)
-x <- c(rnorm(1500,-1,2), rnorm(200,2.2,0.4))
-hist_widget(x)
+hist_widget()
 ```
 
 ### The effect of skewness on mean and median
@@ -22,5 +20,14 @@ hist_widget(x)
 ```{r echo=FALSE}
 source("skew_widget.R")
 skew_widget()
+```
+
+### How limits on the range of the data can affect shape
+
+> Data that have a natural limit to their range, for example grades (between 0 and 100), the shape of the distribution will depend on how close the center is to these limits and how big the variability is.
+
+```{r echo=FALSE}
+source("limit_widget.R")
+limit_widget()
 ```
 

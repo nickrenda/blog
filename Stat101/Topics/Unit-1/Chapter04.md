@@ -6,13 +6,10 @@ date: Week 3
 Announcements
 ========================================================
 
-- Quiz grades
-    - Quiz 1 was attendance from first week
-    - Quiz 2 was the actual quiz from last Friday
-- I will return your written homeworks as soon I get those back from the graders
-    - Solutions are on BB
-- Online homework solutions
-    - Will be available on BB at 8:01 AM on Fridays (right after due date)
+- Hand in homeworks at the front
+    
+
+
 
 Announcements
 ========================================================
@@ -52,7 +49,7 @@ Relationship between a categorical variable and quantitative variable
 Example: Stat 101 student data
 ========================================================
 
-![plot of chunk unnamed-chunk-1](Chapter04-figure/unnamed-chunk-1-1.png) 
+![plot of chunk unnamed-chunk-2](Chapter04-figure/unnamed-chunk-2-1.png) 
 
 Example: Stat 101 student data
 ========================================================
@@ -65,7 +62,7 @@ Example: Stat 101 student data
 
 ***
 
-![plot of chunk unnamed-chunk-2](Chapter04-figure/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-3](Chapter04-figure/unnamed-chunk-3-1.png) 
 
 Example: Stat 101 student data
 ========================================================
@@ -89,7 +86,7 @@ Example: Stat 101 student data
 Histograms of height for female and male students
 ========================================================
     
-![plot of chunk unnamed-chunk-3](Chapter04-figure/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-4](Chapter04-figure/unnamed-chunk-4-1.png) 
 
 Height and Gender
 ========================================================
@@ -144,7 +141,7 @@ Boxplot
 Boxplots of height by sex
 ========================================================
 
-![plot of chunk unnamed-chunk-4](Chapter04-figure/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-5](Chapter04-figure/unnamed-chunk-5-1.png) 
 
 Interpreting boxplots
 ========================================================
@@ -185,7 +182,7 @@ Example
         
 ***
 
-![plot of chunk unnamed-chunk-5](Chapter04-figure/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-6](Chapter04-figure/unnamed-chunk-6-1.png) 
 
 Example
 ========================================================
@@ -198,7 +195,7 @@ Example
         
 ***
         
-![plot of chunk unnamed-chunk-6](Chapter04-figure/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-7](Chapter04-figure/unnamed-chunk-7-1.png) 
 
 What to do with outliers?
 ========================================================
@@ -244,8 +241,7 @@ Cats: the 5 W's
     - Spring 2012
 - Why
     - To see if there is a relationship between whether or not you own a cat and the number of acceptable cats
-- How
-    - Online survey through Facebook
+
     
 Cats
 ========================================================
@@ -259,19 +255,14 @@ Cats
  yes             | 0   | 2   | 10  | 8   | 3   | 4   | 2   | 0   | 1  
 
 
-![plot of chunk unnamed-chunk-8](Chapter04-figure/unnamed-chunk-8-1.png) 
+![plot of chunk unnamed-chunk-9](Chapter04-figure/unnamed-chunk-9-1.png) 
 
 Cat owners
 ========================================================
 
-![plot of chunk unnamed-chunk-9](Chapter04-figure/unnamed-chunk-9-1.png) 
-
-Non-cat owners
-========================================================
-
 ![plot of chunk unnamed-chunk-10](Chapter04-figure/unnamed-chunk-10-1.png) 
 
-Cats
+Non-cat owners
 ========================================================
 
 ![plot of chunk unnamed-chunk-11](Chapter04-figure/unnamed-chunk-11-1.png) 
@@ -279,12 +270,13 @@ Cats
 Cats
 ========================================================
 
+![plot of chunk unnamed-chunk-12](Chapter04-figure/unnamed-chunk-12-1.png) 
+
+Cats
+========================================================
+
 - Which measures of center and spread would be appropriate to examine?
-- Recall:
-    - If data is symmetric, it would be more appropriate to use the mean and standard deviation
-    - If data is not symmetric, it would be more appropriate to use the median and IQR
-- Cat owners were skewed right with a potential outlier and non-cat owners were bell-shaped
-- We want to use the same measures for both, so lets go with median and IQR
+
 
 5-number summary
 ========================================================
@@ -329,5 +321,5 @@ Cat Owners
 Cats - comparing groups
 ========================================================
 
-![plot of chunk unnamed-chunk-14](Chapter04-figure/unnamed-chunk-14-1.png) 
+![plot of chunk unnamed-chunk-15](Chapter04-figure/unnamed-chunk-15-1.png) 
 
