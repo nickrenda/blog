@@ -1,0 +1,14 @@
+---
+title: "Roster"
+author: 
+date: "January 30, 2015"
+output: pdf_document
+fontsize: 12pt
+---
+
+```{r, echo=FALSE}
+roster <- read.csv("~/GitHub/epwalsh.github.com/Stat101/Files/roster.csv")
+roster$signature <- "________________________"
+roster
+```
+

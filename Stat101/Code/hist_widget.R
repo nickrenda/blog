@@ -1,3 +1,5 @@
+suppressPackageStartupMessages(library(ggvis))
+
 toolTipFunc <- function(value) {
   function(y) {
     if (is.null(y)) return(NULL)
@@ -7,7 +9,7 @@ toolTipFunc <- function(value) {
   }
 }
 
-widget <- function(data) {
+hist_widget <- function(data) {
   shinyApp(
     
     ui = fluidPage(
@@ -15,7 +17,7 @@ widget <- function(data) {
       fluidRow(column(8,
         ggvisOutput("plot"))),
       fluidRow(column(8,
-        sliderInput("binwidth_adjust", "Binwidth adjustment", 0.2, 2, value=1.5, step=0.1)))
+        sliderInput("binwidth_adjust", "Adjust binwidth", 0.2, 2, value=1.5, step=0.1)))
     ),
     
     server = function(input, output) {
@@ -26,7 +28,8 @@ widget <- function(data) {
         binwidth <- input$binwidth_adjust
         df %>% ggvis(~data) %>% 
           add_tooltip(toolTipFunc(df$data), "hover") %>% 
-          layer_histograms(width = binwidth)
+          layer_histograms(width = binwidth) %>%
+          add_axis("x", title = "")
       })
       
       gv %>% bind_shiny("plot")  }

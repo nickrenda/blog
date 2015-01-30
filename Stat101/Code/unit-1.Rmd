@@ -1,0 +1,26 @@
+---
+title: "Unit 1 Topics"
+runtime: shiny
+output: html_document
+---
+
+### Misleading histograms
+
+> Below is a histogram of a nice unimodal, bell-shaped, symmetric distribution... Right? Wrong. Adjust the binwidths and find out.
+
+```{r echo=FALSE}
+source("hist_widget.R")
+set.seed(2)
+x <- c(rnorm(1500,-1,2), rnorm(200,2.2,0.4))
+hist_widget(x)
+```
+
+### The effect of skewness on mean and median
+
+> This plot is meant to illustrate how the skewness of a distribution changes the relationship between the mean and the median. The mean is represented by the blue dashed line, while the median is the green dashed line.
+
+```{r echo=FALSE}
+source("skew_widget.R")
+skew_widget()
+```
+
