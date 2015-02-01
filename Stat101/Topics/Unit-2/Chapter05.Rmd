@@ -1,0 +1,140 @@
+---
+title: "Chapter 5"
+author: "The Standard Deviation as a Ruler and the Normal Model"
+output: 
+  ioslides_presentation:
+    logo: ISU.png
+---
+
+## Chapter Outline
+
+- Standardizing observations for comparisons
+- The normal model
+- 68-95-99.7 rule for the normal model
+- Finding percentiles and areas for given observations from a normal model
+- Finding observations for given percentiles or areas from a normal model
+
+# Standardizing observations
+
+## Comparing two variables
+
+- ACT score
+- SAT score
+- Different scale
+- Measuring similar values
+- How do you compare them?
+
+## Example 1
+
+- The average score on the ACT English exam is 21.0, with a standard deviation of 4.0. The average score on the SAT verbal exam is 520 with a standard deviation of 100.
+    - Albert scores a 27 on the ACT English exam
+    - Alfred scores a 770 on the SAT Verbal exam
+- Who has the better score? Albert or Alfred?
+
+## Standardizing observations
+
+- $y =$ observation of quantitative variable
+- How does the value of $y$ relate to the mean value?
+- How does the value of $y$ for this quantitative variable relate to another observation of a different quantitative variable?
+
+## Standardizing variables
+
+$$z = \frac{y - \bar{y}}{s}$$
+
+- $z$ has no units (just a number)
+- Puts observations on same scale
+    - Mean (center) at 0
+    - Standard deviation (spread) of 1
+- Does not change overall shape of the distribution
+
+## Standardizing variables
+
+- $z =$ # of standard deviations observation is away from mean
+    - Negative $z$: observation is below mean
+        - Ex: $z=-1.5\Rightarrow$ observation is 1.5 standard devations below mean
+    - Positive $z$: observation is above mean
+        - Ex: $z=0.5\Rightarrow$ observation is 0.5 standard deviations above mean
+
+## Recall: Example 1
+
+- The average score on the ACT English exam is 21.0, with a standard deviation of 4.0. The average score on the SAT verbal exam is 520 with a standard deviation of 100.
+    - Albert scores a 27 on the ACT English exam
+    - Alfred scores a 770 on the SAT Verbal exam
+- How do we answer who has the better score?
+    - Compute z-scores and compare
+    
+## Example 1
+
+- Albert $$z = \frac{27-21}{4} = 1.5$$
+- Alfred $$z = \frac{770 - 520}{100} = 2.5$$
+- Who has the better scores?
+    - Albert's score is 1.5 standard deviations above the mean, while Alfred's score is 2.5 standard deviations above the mean
+    
+## Example 2
+
+- The average score on the ACT Math exam is 20.7 with a standard deviation of 4.1. The average score on the SAT Math exam is 510 with a standard deviation of 100
+    - Alberta scores a 15 on the ACT Math exam
+    - Fredda scores a 340 on the SAT Math exam
+- Who has the better score? Alberta or Fredda?
+
+## Example 2
+
+- Alberta $$z = \frac{15-20.7}{4.1} = -1.39$$
+- Fredda $$z = \frac{340 - 510}{100} = -1.70$$
+- Who has the better score?
+    - Alberta because she has a larger z-score
+    - Alberta is only 1.39 standard deviations below the mean while Fredda is 1.70 standard deviations below the mean
+    
+## Distributions and standardizing
+
+- Standardizing
+    - Allows you to make comparisons of observations between different variables
+    - Without the distribution information, you still don't know anything about the percentile value of your observation
+    - This percentile value depends on the distribution
+    
+## Models for data distributions
+
+- Different models according to different aspects of distributions
+    - Shape
+    - Center
+    - Variability
+    
+# The Normal Model
+
+## Normal Model
+
+- Shape
+    - Unimodal
+    - Symmetric
+    - Bell-shaped
+- Determined by two parameters
+    - Mean $(\mu)$
+    - Standard deviation $(\sigma)$
+    
+## Connection to data
+
+- No data distribution follows a normal model exactly
+- Many data distributions are very close though
+- How do you know?
+    - Histogram
+    - Normal Quantile Plot (will learn in lab)
+    
+## Example
+
+```{r echo=FALSE, message=FALSE}
+library(ggplot2)
+set.seed(1)
+female_height <- rnorm(150, 66.5, 2)
+N <- length(female_height)
+bw <- 1
+dnorm.count <- function(x, mean = 0, sd = 1, log = FALSE, n = 1, binwidth = 1) {
+  n * binwidth * dnorm(x = x, mean = mean, sd = sd, log = log)
+}
+ggplot(data.frame(female_height), aes(female_height)) + 
+  geom_histogram(aes(y=..count..),binwidth=bw,colour="black", fill="#333333") +
+  stat_function(geom="line", fun=dnorm.count, colour=("green"), size=1.5,
+                arg=list(mean=66.5,sd=2, binwidth=bw, n = N)) + xlab("Height") + ylab("Count")
+#   theme(axis.text.y = element_blank(),
+#         axis.ticks.y = element_blank())
+```
+
