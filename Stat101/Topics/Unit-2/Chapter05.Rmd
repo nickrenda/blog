@@ -133,8 +133,395 @@ dnorm.count <- function(x, mean = 0, sd = 1, log = FALSE, n = 1, binwidth = 1) {
 ggplot(data.frame(female_height), aes(female_height)) + 
   geom_histogram(aes(y=..count..),binwidth=bw,colour="black", fill="#333333") +
   stat_function(geom="line", fun=dnorm.count, colour=("green"), size=1.5,
-                arg=list(mean=66.5,sd=2, binwidth=bw, n = N)) + xlab("Height") + ylab("Count")
-#   theme(axis.text.y = element_blank(),
-#         axis.ticks.y = element_blank())
+                arg=list(mean=66.5,sd=2, binwidth=bw, n = N)) + 
+  xlab("Height") + ylab("Count") + 
+  ggtitle("Distribution of Female Heights with Normal Model Overlayed")
 ```
 
+## A closer look at the normal model
+
+- Mean $\mu$ 
+    - Locates the center of the distribution
+    - Splits the curve in half
+- Standard deviation $\sigma$
+    - Controls the variability of curve
+    - Ruler of distribution
+- Write as $N(\mu, \sigma)$
+
+## Example
+
+- Height of men is normally distributed 
+    - Mean $\mu = 70$ inches
+    - Standard deviation $\sigma = 3$ inches
+- So, the height of men is distributed $N(70,3)$
+- What percent of men have heights less than 70 inches? 
+    - 50%
+- What percent of men have heights greater than 70 inches?
+    - 50%
+    
+## Example - Height of men
+
+```{r echo=FALSE}
+x <- seq(60, 80, by=0.05)
+y <- dnorm(x,70,3)
+mHeights <- data.frame(x,y)
+male_height <- qplot(x,y, mHeights, geom="line") 
+male_height
+```
+
+# 68-95-99.7 rule
+
+## 68-95-99.7 rule
+
+- Approximately 68% of observations are within 1 $\sigma$ of the mean $\mu$
+- If $\mu = 0$ and $\sigma = 1$, approximately 68% of the observations are between -1 and 1
+
+## 68-95-99.7 rule
+
+```{r echo=FALSE}
+x1 <- seq(-4,4,by=0.01)
+y1 <- dnorm(x1)
+normDF <- data.frame(x1,y1)
+plotNorm68 <- qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -1 & x1 <= 1), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=c(-1,1), y=c(0,0), xend=c(-1,1), yend=c(dnorm(-1),dnorm(1)))) +
+  xlab("z") + ylab("") + annotate("text", x=0, y=0.15, label="68%", size=14)
+plotNorm68
+```
+
+## 68-95-99.7 rule
+
+- Approximately 95% of observations are within $2\sigma$ of the mean $\mu$
+- If $\mu = 0$ and $\sigma = 1$, approximately 95% of the observations are between $-2$ and $2$
+
+## 68-95-99.7 rule
+
+```{r echo=FALSE}
+plotNorm95 <- qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -2 & x1 <= 2), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=c(-2,2), y=c(0,0), xend=c(-2,2), yend=c(dnorm(-2),dnorm(2)))) +
+  xlab("z") + ylab("") + annotate("text", x=0, y=0.15, label="95%", size=14)
+plotNorm95
+```
+
+## 68-95-99.7 rule
+
+- Approximately 99.7% of observations are within $3\sigma$ of the mean $\mu$
+- If $\mu = 0$ and $\sigma = 1$, approximately 99.7% of the observations are between $-3$ and $3$
+
+## 68-95-99.7 rule
+
+```{r echo=FALSE}
+plotNorm99 <- qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -3 & x1 <= 3), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=c(-3,3), y=c(0,0), xend=c(-3,3), yend=c(dnorm(-3),dnorm(3)))) +
+  xlab("z") + ylab("") + annotate("text", x=0, y=0.15, label="99.7%", size=14)
+plotNorm99
+```
+
+## Example - Height of men
+
+- Height of men $\sim N(70, 3)$
+- 68-95-99.7 rule
+    - 68% of men will have heights between which two values?
+        - $\mu-\sigma = 70 - 3 = 67$ inches
+        - $\mu+\sigma = 70 + 3 = 73$ inches
+
+## Example - Height of men
+
+```{r echo=FALSE}
+male_height + geom_segment(aes(x=61, y=0, xend=61, yend=dnorm(61,70,3))) +
+  geom_segment(aes(x=64, y=0, xend=64, yend=dnorm(64,70,3))) +
+  geom_segment(aes(x=67, y=0, xend=67, yend=dnorm(67,70,3))) +
+  geom_segment(aes(x=73, y=0, xend=73, yend=dnorm(73,70,3))) +
+  geom_segment(aes(x=76, y=0, xend=76, yend=dnorm(76,70,3))) +
+  geom_segment(aes(x=79, y=0, xend=79, yend=dnorm(79,70,3))) +
+  geom_ribbon(data=subset(mHeights, x >= 61 & x <= 79), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.2) +
+  geom_ribbon(data=subset(mHeights, x >= 64 & x <= 76), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.3) +
+  geom_ribbon(data=subset(mHeights, x >= 67 & x <= 73), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.3)
+```
+
+## 68% rule implies
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 67 & x <= 73), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=67, y=0, xend=67, yend=dnorm(67,70,3))) +
+  geom_segment(aes(x=73, y=0, xend=73, yend=dnorm(73,70,3))) +
+  xlab("z") + ylab("") + annotate("text", x=70, y=0.05, label="68%", size=14)
+```
+
+## 68% rule implies
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 67 & x <= 70), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=67, y=0, xend=67, yend=dnorm(67,70,3))) +
+  geom_segment(aes(x=70, y=0, xend=70, yend=dnorm(70,70,3))) +
+  xlab("z") + ylab("") + annotate("text", x=68.5, y=0.05, label="34%", size=8)
+```
+
+## 68% rule implies
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 70 & x <= 73), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=73, y=0, xend=73, yend=dnorm(73,70,3))) +
+  geom_segment(aes(x=70, y=0, xend=70, yend=dnorm(70,70,3))) +
+  xlab("z") + ylab("") + annotate("text", x=71.5, y=0.05, label="34%", size=8)
+```
+
+## 68% rule implies
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 60 & x <= 67), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=67, y=0, xend=67, yend=dnorm(67,70,3))) +
+  xlab("z") + ylab("") + annotate("text", x=62.5, y=0.06, label="(100-68)/2\n=16%", size=8)
+```
+
+## 68% rule implies
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 67 & x <= 80), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=67, y=0, xend=67, yend=dnorm(67,70,3))) +
+  xlab("z") + ylab("") + annotate("text", x=77.4, y=0.06, label="(100-16)=84%", size=8)
+```
+
+## 68% rule implies
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 73 & x <= 80), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=73, y=0, xend=73, yend=dnorm(73,70,3))) +
+  xlab("z") + ylab("") + annotate("text", x=77.5, y=0.06, label="(100-68)/2\n=16%", size=8)
+```
+
+## 68% rule implies
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 60 & x <= 73), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=73, y=0, xend=73, yend=dnorm(73,70,3))) +
+  xlab("z") + ylab("") + annotate("text", x=62.6, y=0.06, label="(100-16)=84%", size=8)
+```
+
+## Example
+
+- Height of men $\sim N(70,3)$
+- 68-95-99.7 rule
+    - 95% of men will have heights between which two values?
+        - $\mu - 2\sigma = 70 - 2*2 = 64$ inches
+        - $\mu + 2\sigma = 70 + 2*2 = 76$ inches
+        
+## Example
+
+- Height of men $\sim N(70,3)$
+- 68-95-99.7 rule
+    - 99.7% of men will have heights between which two values?
+        - $\mu - 3\sigma = 70 - 3*2 = 61$ inches
+        - $\mu + 3\sigma = 70 + 3*2 = 79$ inches
+
+## Beyond the 68-95-99.7 rule
+
+- Z-table
+    - Connection between normal values and percentiles for standard normal model
+- Standard normal model
+    - Denoted by $Z$
+    - Mean $\mu = 0$
+    - Standard deviation $\sigma = 1$
+    
+# Finding percentiles and areas for given observations from a normal model
+    
+## Z Table
+
+- Table gives proportion of curve below a particular $z$ score (the percentile for the value $z$)
+    - $z$ values range from $-3.90$ to $3.90$ on the table
+    - Row - ones and tenths place for $z$
+    - Column - hundredths place for $z$
+    
+## Percentile for z = -1.50
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -4 & x1 <= -1.50), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=-1.5, y=0, xend=-1.5, yend=dnorm(-1.50))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution")
+  # + annotate("text", x=0, y=0.15, label="95%", size=14)
+```
+
+## Percentile for z = -1.50
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -4 & x1 <= -1.50), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=-1.5, y=0, xend=-1.5, yend=dnorm(-1.50))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution") + 
+  annotate("text", x=-2.5, y=0.2, label="P(z < -1.50)\n=0.0668", size=8)
+```
+
+## Percentile for z = 1.98
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -4 & x1 <= 1.98), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=1.98, y=0, xend=1.98, yend=dnorm(1.98))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution")
+```
+
+## Percentile for z = 1.98
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -4 & x1 <= 1.98), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=1.98, y=0, xend=1.98, yend=dnorm(1.98))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution") +
+  annotate("text", x=-2.5, y=0.2, label="P(z < 1.98)\n=0.9761", size=8)
+```
+
+## Proportion greater than z = -1.65
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -1.65), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=-1.65, y=0, xend=-1.65, yend=dnorm(-1.65))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution")
+```
+
+## Proportion greater than z = -1.65
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -1.65), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=-1.65, y=0, xend=-1.65, yend=dnorm(-1.65))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution") +
+  annotate("text", x=2.5, y=0.3, 
+           label="P(z > -1.65)\n= 1 - P(z < -1.65)\n= 1 - 0.0495\n= 0.9761", size=8)
+```
+
+## Proportion greater than z = 0.73
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= 0.73), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=0.73, y=0, xend=0.73, yend=dnorm(0.73))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution")
+```
+
+## Proportion greater than z = 0.73
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= 0.73), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=0.73, y=0, xend=0.73, yend=dnorm(0.73))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution") + 
+  annotate("text", x=2.5, y=0.3, 
+           label="P(z > 0.73)\n= 1 - P(z < 0.73)\n= 1 - 0.7673\n= 0.0.2327", size=8)
+```
+
+## Proportion between z = 0.5 and z = 1.4
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= 0.5 & x1 <= 1.4), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=0.5, y=0, xend=0.5, yend=dnorm(0.5))) +
+  geom_segment(aes(x=1.4, y=0, xend=1.4, yend=dnorm(1.4))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution")
+```
+
+## Proportion between z = 0.5 and z = 1.4
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= 0.5 & x1 <= 1.4), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=0.5, y=0, xend=0.5, yend=dnorm(0.5))) +
+  geom_segment(aes(x=1.4, y=0, xend=1.4, yend=dnorm(1.4))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution") +
+  annotate("text", x=2.5, y=0.3, 
+           label="P(0.5<z<1.4)\n=P(z<1.4)-P(z<0.5)\n=0.9192-0.6915\n=0.2277", size=8)
+```
+
+## Proportion between z = -2.3 and z = -0.05
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -2.3 & x1 <= -0.05), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=-2.3, y=0, xend=-2.3, yend=dnorm(-2.3))) +
+  geom_segment(aes(x=-0.05, y=0, xend=-0.05, yend=dnorm(-0.05))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution")
+```
+
+## Proportion between z = -2.3 and z = -0.05
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 >= -2.3 & x1 <= -0.05), aes(ymax=y1), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=-2.3, y=0, xend=-2.3, yend=dnorm(-2.3))) +
+  geom_segment(aes(x=-0.05, y=0, xend=-0.05, yend=dnorm(-0.05))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution") +
+  annotate("text", x=2.5, y=0.3, 
+           label="P(-2.3<z<-0.05)\n=P(z<-0.05)-P(z<-2.3)\n=0.4801-0.0107\n=0.0.4694", size=7)
+```
+
+
+# Finding z from a given percentile
+
+## Finding z from a given percentile
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 <= -0.15), aes(ymax=y1), ymin=0, fill="blue",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=-0.15, y=0, xend=-0.15, yend=dnorm(-0.15))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution") +
+  annotate("text", x=-1, y=0.1, label="0.4404", size=7)
+```
+
+## Finding z from a given percentile
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 <= -0.15), aes(ymax=y1), ymin=0, fill="blue",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=-0.15, y=0, xend=-0.15, yend=dnorm(-0.15))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution") +
+  annotate("text", x=-1, y=0.1, label="0.4404", size=7) +
+  annotate("text", x=-3, y=0.2, label="z = -0.15", size =8)
+```
+
+## Finding z from a given percentile
+
+```{r echo=FALSE}
+qplot(x1,y1,normDF, geom="line") + 
+  geom_ribbon(data=subset(normDF, x1 <= 2.13), aes(ymax=y1), ymin=0, fill="blue",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=2.13, y=0, xend=2.13, yend=dnorm(2.13))) +
+  xlab("z") + ylab("") + ggtitle("Standard Normal Distribution") +
+  annotate("text", x=0, y=0.1, label="0.9834", size=8)
+```
