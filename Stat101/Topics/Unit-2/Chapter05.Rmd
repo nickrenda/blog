@@ -65,10 +65,9 @@ $$z = \frac{y - \bar{y}}{s}$$
     
 ## Example 1
 
-- Albert $$z = \frac{27-21}{4} = 1.5$$
-- Alfred $$z = \frac{770 - 520}{100} = 2.5$$
+- Albert $$z = \frac{y_{1} - \bar{y}}{s} = \frac{27-21}{4} = 1.5$$
+- Alfred $$z = \frac{y_{2} - \bar{y}}{s} = \frac{770 - 520}{100} = 2.5$$
 - Who has the better scores?
-    - Albert's score is 1.5 standard deviations above the mean, while Alfred's score is 2.5 standard deviations above the mean
     
 ## Example 2
 
@@ -79,11 +78,9 @@ $$z = \frac{y - \bar{y}}{s}$$
 
 ## Example 2
 
-- Alberta $$z = \frac{15-20.7}{4.1} = -1.39$$
-- Fredda $$z = \frac{340 - 510}{100} = -1.70$$
+- Alberta $$z = \frac{y_{1} - \bar{y}}{s} = \frac{15-20.7}{4.1} = -1.39$$
+- Fredda $$z = \frac{y_{2} - \bar{y}}{s} = \frac{340 - 510}{100} = -1.70$$
 - Who has the better score?
-    - Alberta because she has a larger z-score
-    - Alberta is only 1.39 standard deviations below the mean while Fredda is 1.70 standard deviations below the mean
     
 ## Distributions and standardizing
 
@@ -121,20 +118,26 @@ $$z = \frac{y - \bar{y}}{s}$$
     
 ## Example
 
-```{r echo=FALSE, message=FALSE}
+```{r echo=FALSE, message=F}
 library(ggplot2)
 set.seed(1)
-female_height <- rnorm(150, 66.5, 2)
-N <- length(female_height)
+fHeights <- rnorm(150, 66.5, 2)
+N <- length(fHeights)
 bw <- 1
 dnorm.count <- function(x, mean = 0, sd = 1, log = FALSE, n = 1, binwidth = 1) {
   n * binwidth * dnorm(x = x, mean = mean, sd = sd, log = log)
 }
-ggplot(data.frame(female_height), aes(female_height)) + 
-  geom_histogram(aes(y=..count..),binwidth=bw,colour="black", fill="#333333") +
+female_height <- ggplot(data.frame(fHeights), aes(fHeights)) + xlab("Height") + ylab("Count") + 
+  geom_histogram(aes(y=..count..), binwidth=bw, colour="black", fill="#333333") 
+female_height + ggtitle("Distribution of Female Heights")
+```
+
+## Example
+
+```{r echo=FALSE, message=FALSE}
+female_height +
   stat_function(geom="line", fun=dnorm.count, colour=("green"), size=1.5,
-                arg=list(mean=66.5,sd=2, binwidth=bw, n = N)) + 
-  xlab("Height") + ylab("Count") + 
+                arg=list(mean=66.5, sd=2, binwidth=bw, n = N)) + 
   ggtitle("Distribution of Female Heights with Normal Model Overlayed")
 ```
 
@@ -155,9 +158,7 @@ ggplot(data.frame(female_height), aes(female_height)) +
     - Standard deviation $\sigma = 3$ inches
 - So, the height of men is distributed $N(70,3)$
 - What percent of men have heights less than 70 inches? 
-    - 50%
 - What percent of men have heights greater than 70 inches?
-    - 50%
     
 ## Example - Height of men
 
