@@ -699,3 +699,47 @@ male_height +
 - What proportion of men are between 68 and 71 inches tall?
 $$z_{1} = \frac{68 - 70}{3} = -0.67$$
 $$z_{2} = \frac{71 - 70}{3} = 0.33$$
+
+## Example 1C
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 68 & x <= 71), aes(ymax=y), ymin=0, fill="blue",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=68, y=0, xend=68, yend=dnorm(68, 70, 3))) +
+  geom_segment(aes(x=71, y=0, xend=71, yend=dnorm(71, 70, 3))) +
+  annotate("text", x=63, y=0.08, label="P(z < -0.67)\n=0.2514", size=8) +
+  annotate("text", x=63, y=0.05, label="P(z < 0.33)\n=0.6293", size=8) +
+  annotate("text", x=77, y=0.08, label="0.6293 - 0.2514\n=0.3779", size=8)
+```
+
+## Example 1D
+
+- The height of men is known to follow a normal model with mean 70 and standard deviation 3
+- 20% of men are taller than what height?
+    - Look up 0.8 in the table and work backwards to find $z$
+    - $z = 0.84$
+    - $y = 70 + 0.84(3) = 72.52$
+    
+## Example 1E
+
+- The height of men is known to follow a normal model with mean 70 and standard deviation 3
+- 65% of men are shorter than what height?
+    - Look up 0.65 in the table and work backwards to find $z$
+    - $z = 0.39$
+    - $y = 70 + 0.39(3) = 71.17$
+    
+## Unusual?
+
+- The height of men is known to follow a normal model with mean 0 and standard deviation 3
+- Would it be unusual to find a man that is more than 80 inches tall? Why or why not?
+    - His z-score is $3.33$. He is more than 3 standard deviations above the mean. So yes, that is unusual
+    - The probability of being 80" tall or more is 0.0004
+- Would it be unusual to find a man that is less than 59 inches tall? Why or why not?
+    - His z-score is -$3.67$. He is more than 3 standard deviations below the mean. So yes, that is unusual
+    - The probability of being less than or equal to 59" tall is 0.0001
+    
+## Unusual?
+
+- If you have an observation that is more than 3 standard deviations from the mean (z-score more than 3 or less than -3), it is considered to be an unusual occurence
+
