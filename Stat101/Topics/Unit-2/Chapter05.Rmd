@@ -81,6 +81,10 @@ $$z = \frac{y - \bar{y}}{s}$$
 - Alberta $$z = \frac{y_{1} - \bar{y}}{s} = \frac{15-20.7}{4.1} = -1.39$$
 - Fredda $$z = \frac{y_{2} - \bar{y}}{s} = \frac{340 - 510}{100} = -1.70$$
 - Who has the better score?
+
+## Your turn
+
+[In-class worksheet](http://epwalsh.github.io/Stat101/Topics/Unit-2/z-scores.worksheet.pdf)
     
 ## Distributions and standardizing
 
