@@ -235,9 +235,7 @@ plotNorm99
         - $\mu-\sigma = 70 - 3 = 67$ inches
         - $\mu+\sigma = 70 + 3 = 73$ inches
 
-## Example - Height of men
-
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 male_height + geom_segment(aes(x=61, y=0, xend=61, yend=dnorm(61,70,3))) +
   geom_segment(aes(x=64, y=0, xend=64, yend=dnorm(64,70,3))) +
   geom_segment(aes(x=67, y=0, xend=67, yend=dnorm(67,70,3))) +
@@ -271,7 +269,7 @@ male_height +
               colour=NA, alpha=0.5) +
   geom_segment(aes(x=67, y=0, xend=67, yend=dnorm(67,70,3))) +
   geom_segment(aes(x=70, y=0, xend=70, yend=dnorm(70,70,3))) +
-  annotate("text", x=68.5, y=0.05, label="34%", size=8)
+  annotate("text", x=68.5, y=0.05, label="?%", size=8)
 ```
 
 ## 68% rule implies
@@ -282,10 +280,19 @@ male_height +
               colour=NA, alpha=0.5) +
   geom_segment(aes(x=73, y=0, xend=73, yend=dnorm(73,70,3))) +
   geom_segment(aes(x=70, y=0, xend=70, yend=dnorm(70,70,3))) +
-  annotate("text", x=71.5, y=0.05, label="34%", size=8)
+  annotate("text", x=71.5, y=0.05, label="?%", size=8)
 ```
 
-## 68% rule implies
+## What percent is below 1 standard deviation below the mean?
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 60 & x <= 67), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=67, y=0, xend=67, yend=dnorm(67,70,3))) 
+```
+
+## What percent is below 1 standard deviation below the mean?
 
 ```{r echo=FALSE}
 male_height + 
@@ -295,7 +302,16 @@ male_height +
   annotate("text", x=62.5, y=0.06, label="(100-68)/2\n=16%", size=8)
 ```
 
-## 68% rule implies
+## What percent is above 1 standard deviation below the mean?
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 67 & x <= 80), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=67, y=0, xend=67, yend=dnorm(67,70,3))) 
+```
+
+## What percent is above 1 standard deviation below the mean?
 
 ```{r echo=FALSE}
 male_height + 
@@ -305,7 +321,16 @@ male_height +
   annotate("text", x=77.4, y=0.06, label="(100-16)=84%", size=8)
 ```
 
-## 68% rule implies
+## What percent is above 1 standard deviation above the mean?
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 73 & x <= 80), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=73, y=0, xend=73, yend=dnorm(73,70,3))) 
+```
+
+## What percent is above 1 standard deviation above the mean?
 
 ```{r echo=FALSE}
 male_height + 
@@ -315,7 +340,16 @@ male_height +
   annotate("text", x=77.5, y=0.06, label="(100-68)/2\n=16%", size=8)
 ```
 
-## 68% rule implies
+## What percent is below 1 standard deviation above the mean?
+
+```{r echo=FALSE}
+male_height + 
+  geom_ribbon(data=subset(mHeights, x >= 60 & x <= 73), aes(ymax=y), ymin=0, fill="red",
+              colour=NA, alpha=0.5) +
+  geom_segment(aes(x=73, y=0, xend=73, yend=dnorm(73,70,3))) 
+```
+
+## What percent is below 1 standard deviation above the mean?
 
 ```{r echo=FALSE}
 male_height + 
@@ -330,16 +364,12 @@ male_height +
 - Height of men $\sim N(70,3)$
 - 68-95-99.7 rule
     - 95% of men will have heights between which two values?
-        - $\mu - 2\sigma = 70 - 2*2 = 64$ inches
-        - $\mu + 2\sigma = 70 + 2*2 = 76$ inches
         
 ## Example
 
 - Height of men $\sim N(70,3)$
 - 68-95-99.7 rule
     - 99.7% of men will have heights between which two values?
-        - $\mu - 3\sigma = 70 - 3*2 = 61$ inches
-        - $\mu + 3\sigma = 70 + 3*2 = 79$ inches
 
 ## Beyond the 68-95-99.7 rule
 
