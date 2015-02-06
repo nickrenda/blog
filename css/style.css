@@ -76,8 +76,33 @@ header {
 
 #nav-menu a {
     padding:10px;
+    color:black;
     text-decoration: none;
     line-height: 2.3em;
+}
+
+#github {
+  padding-left:10px;
+}
+
+.social:hover {
+  color:black;
+}
+
+.fa-linkedin {
+  color:#007bb6;
+}
+
+.fa-facebook-official { 
+  color:#3b5998; 
+}
+
+.fa-instagram {
+  color:#777;
+}
+
+.fa-github {
+  color:#551A8B;
 }
 
 .current {
@@ -258,10 +283,6 @@ footer {
 
 .logo:hover {
   opacity: 0.5;
-}
-
-#github {
-  padding-left:10px;
 }
 
 blockquote {
