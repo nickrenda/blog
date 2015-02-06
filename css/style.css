@@ -276,6 +276,7 @@ footer {
     text-align: center;
 }
 
+/*
 .logo {
   height:30px;
   width:30px;
@@ -284,6 +285,7 @@ footer {
 .logo:hover {
   opacity: 0.5;
 }
+*/
 
 blockquote {
   margin-left:20px;
