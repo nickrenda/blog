@@ -7,47 +7,38 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://epwalsh.github.io/</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
+  <loc>http://epwalsh.com/</loc>
+  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/index.html</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
+  <loc>http://epwalsh.com/index.html</loc>
+  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/coursework.html</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
+  <loc>http://epwalsh.com/coursework.html</loc>
+  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/teaching.html</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
+  <loc>http://epwalsh.com/teaching.html</loc>
+  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/resources.html</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
+  <loc>http://epwalsh.com/resources.html</loc>
+  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/travel.html</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
+  <loc>http://epwalsh.com/travel.html</loc>
+  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.github.io/STAT-101</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
-</url>
-<url>
-  <loc>http://epwalsh.github.io/Files/CV.pdf</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
-</url>
-<url>
-  <loc>http://epwalsh.github.io/Files/HonorsPaper.pdf</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
-</url>
-<url>
-  <loc>http://epwalsh.github.io/STAT-101/Files/STAT101_G_H_S15.pdf</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
-</url>
-<url>
-  <loc>http://epwalsh.github.io/STAT-101/Files/officeHours.pdf</loc>
-  <lastmod>2015-01-16T03:14:07+00:00</lastmod>
+  <loc>http://epwalsh.com/Files/CV.pdf</loc>
+  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 </urlset>
