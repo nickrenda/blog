@@ -60,10 +60,6 @@ header {
   text-decoration:underline;
 }
 
-#nav-menu {
-
-}
-
 #nav-menu ul {
     list-style-type: none;
     padding-right:50px;
@@ -83,6 +79,13 @@ header {
 
 #github {
   padding-left:10px;
+}
+
+.social {
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
 }
 
 .social:hover {
@@ -194,19 +197,6 @@ ul.img-list li {
   box-shadow: 3px 3px 5px 1px #AAAAAA;
 }
 
-span.text-content {
-  background: rgba(0,0,0,0.5);
-	color:white;
-	cursor:pointer;
-	display:table;
-	height:150px;
-	left:0;
-	position:absolute;
-	top:0;
-	width:150px;
-  opacity:0;
-}
-
 span.text-content span {
 	display:table-cell;
 	text-align:center;
@@ -214,7 +204,7 @@ span.text-content span {
 }
 
 ul.img-list li:hover span.text-content {
-  opacity:1;
+    opacity:1;
 }
 
 span.text-content {
@@ -232,6 +222,12 @@ span.text-content {
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
+}
+
+.mainImage {
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
 }
 
 .main a {
@@ -260,12 +256,6 @@ span.text-content {
 .classes a:hover {
   color:#2a6496;
   text-decoration:underline;
-}
-
-.mainImage {
-    display:block;
-    margin-right:auto;
-    margin-left:auto;
 }
 
 footer {
