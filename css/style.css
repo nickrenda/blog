@@ -47,12 +47,12 @@ header {
 }
 
 #contactInfo a {
-  padding:0;
-  padding-left:30px;
-  text-decoration:none; 
-  color:#428bca;
-  font-weight:bold;
-  font-size:.9em;
+    font-family: "Courier New", Courier, monospace;
+    padding:0;
+    padding-left:30px;
+    text-decoration:none; 
+    color:#428bca;
+    font-size:.9em;
 }
 
 #contactInfo a:hover {
@@ -275,6 +275,11 @@ footer {
     margin-left:auto;
     padding:10px;
     text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #428bca;
 }
 
 /*
