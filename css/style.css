@@ -272,16 +272,10 @@ footer a {
     color: #428bca;
 }
 
-/*
-.logo {
-  height:30px;
-  width:30px;
+footer a:hover {
+    color: #2a6496;
+    text-decoration: underline;
 }
-
-.logo:hover {
-  opacity: 0.5;
-}
-*/
 
 blockquote {
   margin-left:20px;
