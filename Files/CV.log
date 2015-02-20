@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  16 FEB 2015 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  20 FEB 2015 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -484,7 +484,7 @@ e/2014/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr/local/texlive/2014
 -dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/arphic/gbsnu/gbsnu5e.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/arphic/gbsnu/gbsnu83.pfb>
-Output written on CV.pdf (2 pages, 112518 bytes).
+Output written on CV.pdf (2 pages, 112562 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
