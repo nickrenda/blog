@@ -63,6 +63,7 @@ header {
 #nav-menu ul {
     list-style-type: none;
     padding-right:50px;
+    padding-left: 100px;
 }
 
 #nav-menu li {
