@@ -53,6 +53,10 @@ header {
     text-decoration:none; 
     color:#428bca;
     font-size:.9em;
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
 }
 
 #contactInfo a:hover {
@@ -232,8 +236,12 @@ span.text-content {
 }
 
 .main a {
-  text-decoration:none;
-  color:#428bca;
+    text-decoration:none;
+    color:#428bca;
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
 }
 
 .main a:hover {
@@ -271,6 +279,10 @@ footer {
 footer a {
     text-decoration: none;
     color: #428bca;
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
 }
 
 footer a:hover {
