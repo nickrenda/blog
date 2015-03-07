@@ -60,20 +60,9 @@ body a {
 */
 
 
-.fa-bars {
+.fa-bars, .fa-envelope, .fa-github, .fa-linkedin {
     color: #428bca;
-}
-
-.fa-envelope {
-    color: #428bca;
-}
-
-.fa-github {
-    color: #428bca;
-}
-
-.fa-linkedin {
-    color: #428bca;
+    opacity: .9;
 }
 
 .fa {
@@ -88,7 +77,7 @@ body a {
 }
 
 #portrait {
-    box-shadow: 3px 3px 5px 1px #AAAAAA;
+    box-shadow: 0px 5px 5px 0px #AAAAAA;
 }
 
 
