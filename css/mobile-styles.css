@@ -44,7 +44,7 @@ body a {
     
 }
 
-#nav ul li:target ul {
+#nav ul li:hover ul {
     display: block;
     visibility: visible;
 }
