@@ -71,11 +71,14 @@ body a {
 }
 
 .fa {
-    -webkit-tap-highlight-color: #ccc;
     -webkit-transition: color 500ms;
     -moz-transition: color 500ms;
     -o-transition: color 500ms;
     transition: color 500ms;
+}
+
+.fa:focus {
+    color: black;
 }
 
 #primary_nav ul {
@@ -103,7 +106,8 @@ body a {
     background: #ccc;
 }
 
-#current {
+#current a {
+    color: #1c1c1c !important;
     background: #ccc;
 }
 
