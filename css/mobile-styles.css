@@ -77,7 +77,11 @@ body a {
 }
 
 #portrait {
-    box-shadow: 0px 3px 3px 3px #AAAAAA;
+    /*box-shadow: 0px 3px 3px 3px #AAAAAA;*/
+}
+
+#about {
+    padding-top: 5px;
 }
 
 
