@@ -71,14 +71,11 @@ body a {
 }
 
 .fa {
+    -webkit-tap-highlight-color: #ccc;
     -webkit-transition: color 500ms;
     -moz-transition: color 500ms;
     -o-transition: color 500ms;
     transition: color 500ms;
-}
-
-.fa:hover, .fa:active, fa:focus {
-    color: #555;
 }
 
 #primary_nav ul {
