@@ -160,6 +160,7 @@ body a {
 
 footer {
     text-align: center;
+    -webkit-tap-highlight-color: #ccc;
 }
 
 #nav-bar .fa-envelope {
@@ -178,10 +179,6 @@ footer .fa-envelope, .fa-github, .fa-linkedin {
     padding-left:.25em;
     margin-right:auto;
     margin-left:auto;
-}
-
-footer a .fa {
-    -webkit-tap-highlight-color: #ccc;
 }
 
 footer a {
