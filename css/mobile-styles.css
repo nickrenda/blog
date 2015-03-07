@@ -11,7 +11,7 @@ ul, li {
 body {
     font-family: Arial, Helvettica, sans-serif;
     background-color: white;
-    width: 100%;
+    width: 90%;
     font-size: 16px;
 }
 
@@ -95,30 +95,22 @@ body a {
 }
 
 .fa:hover {
-    color: black;
+    color: #555;
 }
 
 #portrait {
     /*box-shadow: 0px 3px 3px 3px #AAAAAA;*/
 }
 
-#about {
+#info {
     padding-top: 5px;
 }
 
-blockquote {
-    margin-left:0px;
-    margin-top:-10px;
-    color: #7a7a7a;
-    border-left: .25rem solid #e5e5e5;
+.about {
+    color: #333;
 }
 
-blockquote p {
-    padding-left:5px;
-    padding-top: 5px;
-}
-
-blockquote a {
+.about a {
     text-decoration: none;
     color: #428bca;
     -webkit-transition: color 500ms;
@@ -127,7 +119,7 @@ blockquote a {
     transition: color 500ms;
 }
 
-blockquote a:hover {
+.about a:hover {
     color: #2a6496;
 }
 
