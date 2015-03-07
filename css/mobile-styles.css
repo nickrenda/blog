@@ -106,9 +106,34 @@ body a {
     padding-top: 5px;
 }
 
+blockquote {
+    margin-left:0px;
+    margin-top:-10px;
+    color: #7a7a7a;
+    border-left: .25rem solid #e5e5e5;
+}
+
+blockquote p {
+    padding-left:5px;
+    padding-top: 5px;
+}
+
+blockquote a {
+    text-decoration: none;
+    color: #428bca;
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+}
+
+blockquote a:hover {
+    color: #2a6496;
+}
 
 footer {
     text-align: center;
+    padding-top: 5px;
 }
 
 footer a {
