@@ -43,6 +43,12 @@ body a {
     /*margin-right: -25px;*/
 }
 
+/*
+#nav-bar #title {
+    text-align: center;
+}
+*/
+
 #nav-bar ul {
     list-style-type: none;
     display: inline;
@@ -84,6 +90,10 @@ footer .fa-github {
 
 footer .fa-envelope {
     padding-left: .5em;
+}
+
+footer .fa {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .fa {
