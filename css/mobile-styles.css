@@ -136,6 +136,11 @@ body a {
     transition: color 500ms;
 }
 
+body p a {
+    text-decoration: none;
+    color: #428bca;
+}
+
 .about a:hover {
     color: #2a6496;
 }
