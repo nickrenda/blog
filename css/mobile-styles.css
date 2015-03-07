@@ -16,6 +16,10 @@ body {
     font-size: 16px;
 }
 
+body p {
+    padding-right:1em;
+}
+
 body a {
     -webkit-transition: color 500ms;
     -moz-transition: color 500ms;
