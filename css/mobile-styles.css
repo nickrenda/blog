@@ -76,7 +76,8 @@ body a {
     transition: color 500ms;
 }
 
-.fa:hover {
+.fa:hover, .fa:active, fa:focus {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     color: #555;
 }
 
