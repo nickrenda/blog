@@ -68,24 +68,6 @@ body a {
     padding-top: 8px;
 }
 
-#nav-bar .fa-envelope {
-    padding-right:.2em;   
-}
-
-.fa-bars, .fa-envelope, .fa-github, .fa-linkedin {
-/*    opacity: .9;*/
-}
-
-footer .fa-envelope, .fa-github, .fa-linkedin {
-    opacity: .9;
-    color: #428bca;
-    margin-top:2em;
-    padding-right:.25em;
-    padding-left:.25em;
-    margin-right:auto;
-    margin-left:auto;
-}
-
 .fa {
     -webkit-transition: color 500ms;
     -moz-transition: color 500ms;
@@ -178,6 +160,28 @@ footer .fa-envelope, .fa-github, .fa-linkedin {
 
 footer {
     text-align: center;
+}
+
+#nav-bar .fa-envelope {
+    padding-right:.2em;   
+}
+
+.fa-bars, .fa-envelope, .fa-github, .fa-linkedin {
+/*    opacity: .9;*/
+}
+
+footer .fa-envelope, .fa-github, .fa-linkedin {
+    opacity: .9;
+    color: #428bca;
+    margin-top:1em;
+    padding-right:.25em;
+    padding-left:.25em;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+footer a .fa {
+    -webkit-tap-highlight-color: #ccc;
 }
 
 footer a {
