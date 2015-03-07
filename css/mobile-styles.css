@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvettica, sans-serif;
+    background-color: white;
+    width: 100%;
+    font-size: 16px;
+}
+
+.small {
+  font-size: 12px; /* 75% of the baseline */
+}
+
+.large {
+  font-size: 20px; /* 125% of the baseline */
+}
