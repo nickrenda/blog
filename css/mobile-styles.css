@@ -177,12 +177,16 @@ footer .fa {
     margin-left:auto;
 }
 
-footer a {
+.social a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+footer a {
+/*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
     text-decoration: none;
     color: #428bca;
 }
 
 footer a:hover, footer a:focus {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+/*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
 }
