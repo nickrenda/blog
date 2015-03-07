@@ -26,7 +26,11 @@ body a {
 
 #nav-menu li {
     float: left;
-    padding-right:1em;
+    padding-right:10%;
+}
+
+.fa-github {
+  color:#551A8B;
 }
 
 .fa-linkedin {
