@@ -20,15 +20,35 @@ body a {
   font-size: 20px; /* 125% of the baseline */
 }
 
-#nav-menu ul {
+#nav ul {
     list-style-type: none;
     display: inline;
 }
 
-#nav-menu li {
+#nav ul li {
     float: left;
     padding-right:1em;
+    display: inline-block;
 }
+
+#nav ul li ul {
+    position: absolute;
+    top: 4.5em;
+    display: none;
+    visibility: hidden;
+}
+
+#nav ul li ul li {
+    display: block;
+    background: #CCC;
+    
+}
+
+#nav ul li:target ul {
+    display: block;
+    visibility: visible;
+}
+
 
 .fa-bars {
     color: #777;
