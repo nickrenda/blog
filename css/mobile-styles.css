@@ -172,6 +172,7 @@ footer {
 }
 
 footer .fa-envelope, .fa-github, .fa-linkedin {
+    -webkit-tap-highlight-color: #ccc;
     opacity: .9;
     color: #428bca;
     margin-top:1em;
@@ -187,6 +188,6 @@ footer a {
     color: #428bca;
 }
 
-footer a:hover {
-    color: #2a6496;
+footer a:hover, footer a:focus {
+    -webkit-tap-highlight-color: #ccc;
 }
