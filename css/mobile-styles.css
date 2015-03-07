@@ -12,3 +12,16 @@ body {
 .large {
   font-size: 20px; /* 125% of the baseline */
 }
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #428bca;
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+}
