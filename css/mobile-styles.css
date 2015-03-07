@@ -22,11 +22,13 @@ body a {
 
 #nav-menu ul {
     list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #nav-menu li {
     float: left;
-    padding-right:10%;
+    padding-right:1em;
 }
 
 .fa-github {
