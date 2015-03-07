@@ -69,14 +69,10 @@ body a {
 }
 
 .fa-github {
-  color:#551A8B;
+    color: #777;
 }
 
 .fa-linkedin {
-    color:#007bb6;
-}
-
-.fa-instagram {
     color: #777;
 }
 
