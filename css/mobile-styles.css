@@ -160,7 +160,6 @@ body a {
 
 footer {
     text-align: center;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #nav-bar .fa-envelope {
@@ -172,9 +171,8 @@ footer {
 }
 
 
-footer .fa-envelope, .fa-github, .fa-linkedin {
+footer .fa {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-/*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
     opacity: .9;
     color: #428bca;
     margin-top:1em;
@@ -184,8 +182,11 @@ footer .fa-envelope, .fa-github, .fa-linkedin {
     margin-left:auto;
 }
 
-footer a {
+footer a .fa:hover {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+footer a {
 /*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
     text-decoration: none;
     color: #428bca;
