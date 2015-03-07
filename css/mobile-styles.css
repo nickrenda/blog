@@ -5,6 +5,13 @@ body {
     font-size: 16px;
 }
 
+body a {
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+}
+
 .small {
   font-size: 12px; /* 75% of the baseline */
 }
@@ -12,6 +19,35 @@ body {
 .large {
   font-size: 20px; /* 125% of the baseline */
 }
+
+#nav-menu ul {
+    list-style-type: none;
+}
+
+#nav-menu li {
+    float: left;
+    padding-right:1em;
+}
+
+.fa-linkedin {
+    color:#007bb6;
+}
+
+.fa-instagram {
+    color: #777;
+}
+
+.fa {
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+}
+
+.fa:hover {
+    color: black;
+}
+
 
 footer {
     text-align: center;
@@ -24,4 +60,8 @@ footer a {
     -moz-transition: color 500ms;
     -o-transition: color 500ms;
     transition: color 500ms;
+}
+
+footer a:hover {
+    color: #2a6496;
 }
