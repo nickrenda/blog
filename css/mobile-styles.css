@@ -141,6 +141,15 @@ body p a {
     color: #428bca;
 }
 
+body p {
+    color: #333;
+}
+
+body h4 {
+    color: #333;
+}
+    
+
 .about a:hover {
     color: #2a6496;
 }
