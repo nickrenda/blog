@@ -22,14 +22,16 @@ body a {
 
 #nav-menu ul {
     list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 1em;
+    display: inline;
 }
 
 #nav-menu li {
     float: left;
     padding-right:1em;
+}
+
+.fa-bars {
+    color: #777;
 }
 
 .fa-github {
