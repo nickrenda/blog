@@ -57,7 +57,8 @@ body a {
 
 .fa-bars {
     color: #555;
-    padding-right:.5em;
+    padding-right:.7em;
+    padding-top: 8px;
 }
 
 .fa-bars, .fa-envelope, .fa-github, .fa-linkedin {
