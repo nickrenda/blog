@@ -99,6 +99,10 @@ body a {
     background: #ccc;
 }
 
+#current {
+    background: #ccc;
+}
+
 
 #portrait {
     display: block;
@@ -130,6 +134,16 @@ body a {
 
 .about a:hover {
     color: #2a6496;
+}
+
+#courses h4 {
+    color: #428bca;
+    margin-bottom: 0px;
+}
+
+#courses p {
+    margin-top:.2em;
+    color:#333;
 }
 
 footer {
