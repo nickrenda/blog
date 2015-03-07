@@ -66,8 +66,8 @@ body a {
     text-transform: uppercase;
     font-weight: bold;
     color: #333;
-    padding-top:16px;
-    width: 65%;
+    margin-top:-25px;
+    width: 100%;
 }
 
 .fa {
