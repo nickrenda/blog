@@ -55,20 +55,34 @@ body a {
     padding-left: 1em;
 }
 
-.fa-bars {
-    color: #555;
+#nav-bar .fa {
+/*    color: #555;*/
+    color: #2a6496;
     padding-right:.7em;
     padding-top: 8px;
+}
+
+#nav-bar .fa-envelope {
+    padding-right:.2em;   
 }
 
 .fa-bars, .fa-envelope, .fa-github, .fa-linkedin {
     opacity: .9;
 }
 
-.fa-envelope, .fa-github, .fa-linkedin {
+footer .fa-envelope, .fa-github, .fa-linkedin {
     color: #428bca;
     padding-top: 8px;
-    padding-right: .2em;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+footer .fa-github {
+    padding-right: .5em;
+}
+
+footer .fa-envelope {
+    padding-left: .5em;
 }
 
 .fa {
@@ -76,10 +90,6 @@ body a {
     -moz-transition: color 500ms;
     -o-transition: color 500ms;
     transition: color 500ms;
-}
-
-.fa:focus {
-    color: black;
 }
 
 #primary_nav ul {
