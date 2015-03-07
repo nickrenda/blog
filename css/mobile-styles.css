@@ -79,17 +79,11 @@ body a {
 footer .fa-envelope, .fa-github, .fa-linkedin {
     opacity: .9;
     color: #428bca;
-    padding-top: .5em;
+    margin-top:.5em;
+    padding-right:.25em;
+    padding-left:.25em;
     margin-right:auto;
     margin-left:auto;
-}
-
-footer .fa-github {
-    padding-right: .5em;
-}
-
-footer .fa-envelope {
-    padding-left: .5em;
 }
 
 .fa {
