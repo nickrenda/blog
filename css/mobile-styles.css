@@ -28,7 +28,6 @@ body a {
 
 #nav ul li {
     float: left;
-    padding-right:1em;
     display: inline-block;
     background: #BBB;
     padding-left: 1em;
