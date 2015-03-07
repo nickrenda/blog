@@ -136,13 +136,23 @@ body a {
     color: #2a6496;
 }
 
+#courses h3 {
+    color:#555;
+}
+
 #courses h4 {
     color: #428bca;
     margin-bottom: 0px;
 }
 
+#courses a {
+    color: #428bca;
+    text-decoration: none;
+}
+
 #courses p {
     margin-top:.2em;
+    margin-bottom:.2em;
     color:#333;
 }
 
