@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvettica, sans-serif;
     background-color: white;
-    width: 100%;
+    width: 90%;
     font-size: 16px;
 }
 
@@ -21,6 +21,7 @@ body a {
 }
 
 #nav ul {
+    width: 100%;
     list-style-type: none;
     display: inline;
 }
@@ -29,6 +30,8 @@ body a {
     float: left;
     padding-right:1em;
     display: inline-block;
+    background: #BBB;
+    padding-left: 1em;
 }
 
 /*
