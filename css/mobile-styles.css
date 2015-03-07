@@ -79,7 +79,7 @@ body a {
 footer .fa-envelope, .fa-github, .fa-linkedin {
     opacity: .9;
     color: #428bca;
-    padding-top: 8px;
+    padding-top: .5em;
     margin-right:auto;
     margin-left:auto;
 }
@@ -90,10 +90,6 @@ footer .fa-github {
 
 footer .fa-envelope {
     padding-left: .5em;
-}
-
-footer .social {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .fa {
