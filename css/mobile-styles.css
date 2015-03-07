@@ -70,6 +70,7 @@ body a {
 }
 
 .fa {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-transition: color 500ms;
     -moz-transition: color 500ms;
     -o-transition: color 500ms;
