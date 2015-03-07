@@ -39,22 +39,25 @@ body a {
     padding-left: 1em;
 }
 
-#nav ul li ul {
-    position: absolute;
-    top: 4.5em;
-    display: none;
-    visibility: hidden;
-}
+@media only screen {
 
-#nav ul li ul li {
-    display: block;
-    background: #CCC;
-    
-}
+    #nav ul li ul {
+        position: absolute;
+        top: 4.5em;
+        display: none;
+        visibility: hidden;
+    }
 
-#nav ul li:hover ul {
-    display: block;
-    visibility: visible;
+    #nav ul li ul li {
+        display: block;
+        background: #CCC;
+
+    }
+
+    #nav ul li:hover ul {
+        display: block;
+        visibility: visible;
+    }
 }
 
 .fa-bars {
