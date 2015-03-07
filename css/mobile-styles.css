@@ -11,7 +11,8 @@ ul, li {
 body {
     font-family: Arial, Helvettica, sans-serif;
     background-color: white;
-    width: 95%;
+    overflow-x: hidden;
+    width: 100%;
     font-size: 16px;
 }
 
@@ -35,7 +36,7 @@ body a {
     height: 3em;
     margin-top: -8px;
     margin-left: -8px;
-    margin-right: -25px;
+    /*margin-right: -25px;*/
 }
 
 #nav-bar ul {
@@ -79,7 +80,7 @@ body a {
     list-style: none;
     background: #1c1c1c;
     margin-left:-8px;
-    margin-right:-25px;
+/*    margin-right:-25px;*/
 }
 
 #primary_nav li a {
