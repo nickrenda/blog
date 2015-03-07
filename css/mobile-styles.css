@@ -182,12 +182,9 @@ footer .fa-envelope, .fa-github, .fa-linkedin {
 }
 
 footer a {
+    -webkit-tap-highlight-color: #ccc;
     text-decoration: none;
     color: #428bca;
-    -webkit-transition: color 500ms;
-    -moz-transition: color 500ms;
-    -o-transition: color 500ms;
-    transition: color 500ms;
 }
 
 footer a:hover {
