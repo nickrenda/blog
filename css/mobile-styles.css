@@ -44,7 +44,7 @@ body a {
 }
 
 #nav-bar ul li {
-    float: left;
+    float: right;
     display: inline-block;
     padding-left: 1em;
 }
@@ -60,7 +60,7 @@ body a {
 .fa-envelope, .fa-github, .fa-linkedin {
     color: #428bca;
     padding-top: 8px;
-    padding-left: .2em;
+    padding-right: .2em;
 }
 
 .fa {
@@ -100,7 +100,9 @@ body a {
 
 
 #portrait {
-    /*box-shadow: 0px 3px 3px 3px #AAAAAA;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #info {
