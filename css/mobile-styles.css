@@ -196,6 +196,9 @@ footer {
     padding-right:.2em;   
 }
 
+.back-to-top {
+    padding-top:.5em;
+}
 
 footer .fa {
     opacity: .9;
