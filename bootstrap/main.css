@@ -7,7 +7,8 @@
 .jumbotron {
     margin-left: auto;
     margin-right: auto;
-    height: 38vw;
+    height: 45vw;
+    width: 100%;
     position: relative;
     top:80px;
     background-image: url(images/jumbo.png);
@@ -23,7 +24,7 @@
 }
 
 .jumbotron p {
-    margin-top: 10vw;
+    margin-top: 15vw;
     padding-left: 10px;
     font-size: 4vw;
     font-weight: normal;
@@ -32,17 +33,18 @@
 }
 
 #home-page-content {
-    clear: both;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+    position: relative;
+    top: 50px;
 }
 
 /* customize content in mobile view */
 @media (max-width: 768px) {
     #home-page-content {
         /* make sure there is enough space under jumbo-tron */
-        margin-top:60px;
+/*        margin-top:60px;*/
     }
+}
+
+footer {
+    text-align: center;
 }
