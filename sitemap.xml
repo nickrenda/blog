@@ -17,6 +17,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>http://epwalsh.com/about.html</loc>
+  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>http://epwalsh.com/coursework.html</loc>
   <lastmod>2015-02-10T20:04:27+00:00</lastmod>
   <priority>0.80</priority>
@@ -27,17 +32,12 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.com/resources.html</loc>
-  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>http://epwalsh.com/travel.html</loc>
   <lastmod>2015-02-10T20:04:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://epwalsh.com/Files/CV.pdf</loc>
+  <loc>http://epwalsh.com/files/CV.pdf</loc>
   <lastmod>2015-02-10T20:04:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>

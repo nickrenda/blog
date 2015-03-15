@@ -25,6 +25,7 @@
 }
 
 .jumbotron p {
+    text-align: center;
     margin-top: 15vw;
     padding-left: 10px;
     font-size: 4vw;
@@ -80,9 +81,43 @@
     top:50px;
 }
 
+/* course-info section
+============================================== */
+.course-info {
+    position: relative;
+    top:50px;
+}
+
+/* about me main section
+============================================== */
+.about-main-content {
+    position: relative;
+    top:100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about-main-content .container .row .col-md-12 .img-circle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-main-content .container .row {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-main-content .social .fa {
+    padding-left:10px;
+    padding-right: 10px;
+}
+
 /* adjust footer
 ============================================== */
 footer {
-    margin-top:50px;
+    position: relative;
+    top:100px;
+    margin-bottom: 50px;
     text-align: center;
 }
