@@ -21,13 +21,13 @@
 .jumbotron h1 {
     margin-top: -20px;
     font-size: 7vw;
-/*    color:#66FF66;*/
 }
 
-.jumbotron p {
+.jumbotron .container p {
     text-align: center;
     margin-top: 15vw;
     padding-left: 10px;
+    padding-right: 10px;
     font-size: 4vw;
     font-weight: normal;
     background-color: rgba(200,200,200,.7);
