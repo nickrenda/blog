@@ -73,6 +73,13 @@
     background-color: rgba(200,200,200,.7);
 }
 
+/* travel pic section
+============================================== */
+.travel-pics {
+    position: relative;
+    top:50px;
+}
+
 /* adjust footer
 ============================================== */
 footer {
