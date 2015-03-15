@@ -39,7 +39,7 @@
     padding:20px;
 }
 
-/* customize content in mobile view
+/* adjust content for mobile view
 ============================================== */
 @media (max-width: 768px) {
     #home-page-content {
@@ -67,10 +67,14 @@
     background-color: #333;
 }
 
-.carousel-caption {
+.carousel-caption p {
+    color:#111;
+    padding-left: 0;
     background-color: rgba(200,200,200,.7);
 }
 
+/* adjust footer
+============================================== */
 footer {
     margin-top:50px;
     text-align: center;
