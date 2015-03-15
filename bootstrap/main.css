@@ -3,7 +3,8 @@
     color: #999;
 }
 
-/* customize jumbotron */
+/* customize jumbotron
+============================================== */
 .jumbotron {
     margin-left: auto;
     margin-right: auto;
@@ -38,7 +39,8 @@
     padding:20px;
 }
 
-/* customize content in mobile view */
+/* customize content in mobile view
+============================================== */
 @media (max-width: 768px) {
     #home-page-content {
         /* make sure there is enough space under jumbo-tron */
@@ -48,6 +50,21 @@
     .jumbotron {
         background-image: url(images/jumbo-mobile.png);
     }
+}
+
+/* customize the carousel
+============================================== */
+#myCarousel {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#travel-carousel {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    background-color: #333;
 }
 
 footer {
