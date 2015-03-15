@@ -30,3 +30,19 @@
     background-color: rgba(200,200,200,.7);
     border-radius: 10px;
 }
+
+#home-page-content {
+    clear: both;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+/* customize content in mobile view */
+@media (max-width: 768px) {
+    #home-page-content {
+        /* make sure there is enough space under jumbo-tron */
+        margin-top:60px;
+    }
+}
