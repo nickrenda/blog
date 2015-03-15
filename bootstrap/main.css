@@ -67,6 +67,10 @@
     background-color: #333;
 }
 
+.carousel-caption {
+    margin-bottom: 40%;
+}
+
 footer {
     margin-top:50px;
     text-align: center;
