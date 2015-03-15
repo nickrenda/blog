@@ -35,6 +35,7 @@
 #home-page-content {
     position: relative;
     top: 50px;
+    padding:20px;
 }
 
 /* customize content in mobile view */
@@ -43,8 +44,13 @@
         /* make sure there is enough space under jumbo-tron */
 /*        margin-top:60px;*/
     }
+    /* use smaller version of image to load faster */
+    .jumbotron {
+        background-image: url(images/jumbo-mobile.png);
+    }
 }
 
 footer {
+    margin-top:50px;
     text-align: center;
 }
