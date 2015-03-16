@@ -53,6 +53,16 @@
     }
 }
 
+/* adjust content for desktop view
+============================================== */
+@media (min-width: 768px) {
+    #home-page-content {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* customize the carousel
 ============================================== */
 #myCarousel {
