@@ -164,5 +164,5 @@ footer {
 .popover {
     z-index: 1025;
     white-space: pre-wrap;
-    min-width: 150px;
+    min-width: 200px;
 }
