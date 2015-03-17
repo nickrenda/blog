@@ -1,3 +1,5 @@
+/* customize navbar
+============================================== */
 /* remove the hovering feature of navigation bar title */
 .navbar-header .navbar-brand:hover {
     color: #999;
@@ -9,6 +11,10 @@
     padding-top: 0px;
     margin-top: -5px;
     margin-bottom: -5px;
+}
+
+.nav li {
+    z-index: 10;
 }
 
 /* customize jumbotron
@@ -144,4 +150,11 @@ footer {
     top:100px;
     margin-bottom: 50px;
     text-align: center;
+}
+
+/* prevent tooltip from wrapping text at every word */
+.tooltip-inner {
+    white-space:pre;
+    max-width: none;
+    z-index: -1;
 }
