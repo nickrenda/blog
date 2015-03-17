@@ -3,6 +3,14 @@
     color: #999;
 }
 
+/* adjust navbar for bigger github icon */
+.navbar-right li {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
 /* customize jumbotron
 ============================================== */
 .jumbotron {
@@ -44,9 +52,9 @@
 /* adjust content for mobile view
 ============================================== */
 @media (max-width: 768px) {
-    #home-page-content {
-        /* make sure there is enough space under jumbo-tron */
-/*        margin-top:60px;*/
+    /* remove github icon from dropdown nav in mobile view */
+    .navbar-right {
+        display: none;
     }
     /* use smaller version of image to load faster */
     .jumbotron {
