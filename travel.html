@@ -35,7 +35,8 @@
         <!-- tooltip script -->
         <script type="text/javascript">
             $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();   
+                $('[data-toggle="tooltip"]').tooltip();
+                $("[data-toggle=popover]").popover({html:true});
             });
         </script>
       
@@ -137,16 +138,16 @@
                 <div class="row">
                     <div class="col-xs-4">
                         <div class="thumbnail">
-                            <a href="images/acadia1.JPG" data-toggle="tooltip" data-placement="bottom" data-original-title="Acadia National Park, Maine">
-                                <img src="images/acadia1-sm.JPG" alt="Acadia 1">
-                            </a>
+<!--                            <a href="images/acadia1.JPG" data-toggle="tooltip" data-placement="bottom" data-original-title="Acadia National Park, Maine">-->
+                                <img src="images/acadia1-sm.JPG" class="popovers" data-toggle="popover" title="" data-content="Acadia National Park, ME <a href='images/acadia1.JPG'>See full image</a>" data-original-title="Acadia National Park">
+<!--                            </a>-->
                         </div>
                     </div>
                     <div class="col-xs-4">
                         <div class="thumbnail">
-                            <a href="images/littleDevilsTower.JPG" data-toggle="tooltip" data-placement="bottom" data-original-title="Little Devil's Tower, Black Hills, South Dakota">
-                                <img src="images/littleDevilsTower-sm.JPG" alt="Little Devils Tower">
-                            </a>
+<!--                            <a href="images/littleDevilsTower.JPG" data-toggle="tooltip" data-placement="bottom" data-original-title="Little Devil's Tower, Black Hills, South Dakota">-->
+                                <img src="images/littleDevilsTower-sm.JPG" class="popovers" data-toggle="popover" title="" data-content="Acadia National Park, ME <a href='images/acadia1.JPG'>See full image</a>" data-original-title="Acadia National Park">
+<!--                            </a>-->
                         </div>
                     </div>
                     <div class="col-xs-4">
