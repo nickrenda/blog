@@ -13,6 +13,11 @@
     margin-bottom: -5px;
 }
 
+/* bring github tooltip slightly closer to bottom of navbar */
+.navbar-right li a {
+    padding-bottom: 11px;
+}
+
 /* customize jumbotron
 ============================================== */
 .jumbotron {
