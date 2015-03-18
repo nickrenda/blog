@@ -62,6 +62,9 @@
     .jumbotron {
         background-image: url(images/jumbo-mobile.png);
     }
+    .tooltip {
+        display: none !important;
+    }
 }
 
 /* adjust content for desktop view
