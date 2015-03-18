@@ -37,6 +37,7 @@
             $(document).ready(function(){
                 $('[data-toggle="tooltip"]').tooltip();
                 $('[data-toggle="popover"]').popover({html:true});
+                // close popovers by reclicking or clicking elsewhere
                 $('body').on('click', function (e) {
                 $('[data-toggle="popover"]').each(function () {
                     // the 'is' for buttons that trigger popups
@@ -45,7 +46,7 @@
                         $(this).popover('hide');
                     }
                 });
-            });
+                });
             });
         </script>
       
