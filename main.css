@@ -58,7 +58,7 @@
 
 /* adjust content for mobile view
 ============================================== */
-@media (max-width: 768px) {
+@media (max-width: @screen-sm-min) {
     /* remove github icon from dropdown nav in mobile view */
     .navbar-right {
         display: none;
