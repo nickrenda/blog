@@ -174,3 +174,7 @@ footer {
     white-space: pre-wrap;
     min-width: 200px;
 }
+
+.popover-info-link:hover {
+    cursor:pointer;
+}
