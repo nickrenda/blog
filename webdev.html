@@ -13,7 +13,6 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--        <meta name="viewport" content="width=device-width, initial-scale=1">-->
         <meta name="viewport" content="width=device-width, user-scalable=0, maximum-scale=1.0">
         <meta name="description" content="Statistics graduate student and lecturer @ Iowa State University.">
         <meta name="author" content="Evan Pete Walsh">
@@ -28,7 +27,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-        <title>E.P. Walsh | About</title>
+        <title>E.P. Walsh | Teaching</title>
 
         <!-- custom styles -->
         <link href="main.css" rel="stylesheet">
@@ -62,13 +61,13 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li class="active"><a href="#">About Me</a></li>
+                            <li><a href="about.html">About Me</a></li>
                             <li><a href="travel.html">Travel</a></li>
-                            <li><a href="webdev.html">Web Development</a></li>
+                            <li class="active"><a href="webdev.html">Web Development</a></li>
                         </ul>
                     </li>
                     <li><a href="coursework.html">Coursework</a></li>
-                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="#">Teaching</a></li>
                     <li><a href="mailto: epwalsh@iastate.edu" data-toggle="tooltip" data-placement="bottom" data-original-title="Email me"><i class="fa fa-envelope"></i></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -77,47 +76,43 @@
             </div>
         </div>
     </nav>
-       
         
-    <div itemscope itemtype="http://data-vocabulary.org/Person">
-        <div class="about-main-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <img class="img-circle" src="/images/me.jpg">
-                        <h1><span itemprop="name">Evan "Pete" Walsh</span></h1>
-                        <address>
-                            <strong><span itemprop="title">Statistics Graduate Student & Lecturer</span><br>
-                            Math & Statistics Tutor<br>
-                            Web Developer</strong><br>
-                            2410 Snedecor Hall<br>
-                            <span itemprop="affiliation">Iowa State University</span><br>
-                            Ames, IA 50010<br>
-                            <abbr title="Email">E:</abbr> <a href="mailto: epwalsh@iastate.edu">epwalsh@iastate.edu</a>
-                        </address>
-                        <p>I am a first year graduate student at Iowa State University in the Statistics Ph.D. program. I recently graduated from <a href="http://www.stlawu.edu/">St. Lawrence University</a> with a B.S. in Mathematics. While at St. Lawrence, I played for the varsity soccer team for my first three years and went to NCAA tournament every year. I also studied abroad in Shanghai where I lived with a Chinese host family. In my spare time I enjoy programming, playing soccer, bicycling, and skiing (not so much anymore because I live in Iowa).</p>
-                        <p>As part of my graduate assistantship this semester I am lecturing <a href="http://epwalsh.com/STAT-101/">Stat 101: Principles of Statistics</a>. I am also a part time tutor for mathematics, statistics, and computer science, and a part time web developer.</p>
-                        <p>Feel free to take a look at my <a href="Files/CV.pdf" data-toggle="tooltip" data-placement="top" data-original-title="Curriculum Vitae">CV <i class="fa fa-file-text-o"></i></a> or to contact me with regards to tutoring or web development.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="social"><li><a href="http://github.com/epwalsh" data-toggle="tooltip" data-placement="bottom" data-original-title="GitHub"><i class="fa fa-github fa-2x"></i></a></li>
-                        <li><a href="https://linkedin.com/in/epwalsh" data-toggle="tooltip" data-placement="bottom" data-original-title="LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                        <li><a href="mailto: epwalsh@iastate.edu" data-toggle="tooltip" data-placement="bottom" data-original-title="Email"><i class="fa fa-envelope fa-2x"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+        
+    <div class="container" id="web-dev-main-content">
+        
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">viShiny <span class="text-muted">interactive visualizations</span></h2>
+                <p class="lead">Built using R Studio's Shiny package, viShiny is an interactive web application that demonstrates certain statistical concepts. This is an ongoing project of mine and a tool that I use when teaching introductory statistics.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="http://epwalsh.shinyapps.io/viShiny">
+                    <img class="featurette-image img-responsive center-block" src="images/viShiny.png">
+                </a>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Walsh & Walsh, LLP <span class="text-muted">Attorneys at Law</span></h2>
+                <p class="lead">My parents had been using the same website for their law firm for the past 25 years. Needless to say, it needed some updates. Well, a lot of updates. So I built them a new one.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <a href="http://walsh2law.com">
+                    <img class="featurette-image img-responsive center-block" src="images/walsh2law.png">
+                </a>
             </div>
         </div>
         
-    
-    
         <footer>
             <small>© 2015 <a href="http://epwalsh.com">Evan P. Walsh</a></small>
         </footer>
-    </div>    
-    
+    </div>
         
+    
     </body>
 </html>

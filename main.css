@@ -151,6 +151,22 @@
     padding: 0 10px 0 10px;
 }
 
+/* webdev page 
+============================================== */
+#web-dev-main-content {
+    position: relative;
+    top:100px;
+    margin-bottom: 100px;
+}
+
+#web-dev-main-content .featurette-image {
+    border: 1px solid black;
+}
+
+#web-dev-main-content .featurette-image:hover {
+    border: 1px solid blue;
+}
+
 /* adjust footer
 ============================================== */
 footer {
