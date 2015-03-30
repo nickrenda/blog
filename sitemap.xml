@@ -4,44 +4,137 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>http://epwalsh.com/</loc>
-  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://epwalsh.com/index.html</loc>
-  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2015-03-28T18:46:37+00:00</lastmod>
 </url>
 <url>
   <loc>http://epwalsh.com/about.html</loc>
-  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://epwalsh.com/coursework.html</loc>
-  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://epwalsh.com/teaching.html</loc>
-  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2015-03-28T18:46:37+00:00</lastmod>
 </url>
 <url>
   <loc>http://epwalsh.com/travel.html</loc>
-  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2015-03-28T18:46:37+00:00</lastmod>
 </url>
 <url>
   <loc>http://epwalsh.com/webdev.html</loc>
+  <lastmod>2015-03-28T18:46:37+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/coursework.html</loc>
+  <lastmod>2015-03-28T18:46:37+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/teaching.html</loc>
+  <lastmod>2015-03-28T18:46:37+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
 </url>
 <url>
   <loc>http://epwalsh.com/Files/CV.pdf</loc>
-  <lastmod>2015-02-10T20:04:27+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2015-03-28T18:46:37+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Files/STAT101_G_H_S15.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Files/officeHours.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-1/Chapter01.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-1/Chapter02.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-1/Chapter03.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-1/Chapter03-2.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-1/Chapter04.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-2/Chapter05.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Files/z-table.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-2/Chapter5Examples.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-2/Chapter5Examples-Solutions.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-2/Chapter06.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-2/Chapter0708.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Files/Unit02-review.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-3/Chapter09.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Files/Chapter9Randomtable.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-3/Chapter10.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-3/Chapter11.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-3/Chapter12.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Files/BirthdayProblem.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-4/Chapter15.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-4/SDprop.worksheet.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-4/SDprop.worksheet.solutions.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-4/Chapter16.html</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/STAT-101/Topics/Unit-4/Chapter16.pdf</loc>
+  <lastmod>2015-03-30T03:00:09+00:00</lastmod>
 </url>
 </urlset>
