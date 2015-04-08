@@ -22,12 +22,13 @@
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 %\usepackage{tikz} % for including images with includegraphics command
-\usepackage{CJKutf8} % for Chinese characters
+%\usepackage{CJKutf8} % for Chinese characters
+%\usepackage{CJK}
+%\setCJKmainfont{SimSun}
 
 \newsectionwidth{0pt} % Stops section indenting
 
 \begin{document}
-\begin{CJK*}{UTF8}{gbsn} % for Chinese characters
 
 %----------------------------------------------------------------------------------------
 %	YOUR NAME AND ADDRESS(ES) SECTION
@@ -65,7 +66,7 @@ Overall GPA: 3.85/4.00
 Major GPA: 3.95/4.00 \\
 Overall GPA: 3.76/4.00 
 
-{\bf 华东师范大学 (East China Normal University),} Shanghai, China \hfill Spring 2013 \\
+{\bf East China Normal University,} Shanghai, China \hfill Spring 2013 \\
 {\sl Semester abroad, Mandarin Chinese and economics} 
 
 
@@ -73,24 +74,6 @@ Overall GPA: 3.76/4.00
 %	RESEARCH EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{RESEARCH EXPERIENCE} 
-
-\hrulefill \\
-{\bf Research Assistant} \hfill Fall 2013 - Spring 2014 \\
-{\sl St. Lawrence University Department of Chemistry } 
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Worked with Dr. Robin Lock in assisting the chemistry department by using R to discern how the composition of 4 local rivers changes week-by-week throughout the year
-\item Analyzed, using various methods, how the concentration of 72 elements and anions were affected by different conditions
-\item See \texttt{https://epwalsh.shinyapps.io/ShinyApp/}
-\end{itemize}
-
-{\bf Senior Honors Thesis }\hfill Fall 2013 - Spring 2014 \\
-{\sl St. Lawrence University Department of Mathematics } \\
-Advisor: Duncan Melville, Ph.D.
-\begin{itemize} \itemsep -2pt
-\item Explored the efficacy of momentum mutual funds and ETF's with regard to Sharpe-ratios and market alphas, finding that they have significantly underperformed the market over certain periods
-\item Examined the causes of the poor performance including transaction costs and option-like behavior following prolonged market declines
-\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	TEACHING EXPERIENCE SECTION
@@ -115,14 +98,24 @@ Advisor: Duncan Melville, Ph.D.
 %----------------------------------------------------------------------------------------
 %	RELEVANT COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
-\newpage
+
 \section{RELEVANT COMPUTER SKILLS}
 
 \hrulefill \\
-{\bf Programming:} Proficient in R; experience with Java, C, C++, Python and JavaScript \\
+{\bf Programming:} Proficient in R; experience with Java, C, C++, Python \\
 {\bf Markup:} Experienced with \LaTeX, HTML, CSS and Markdown \\
 {\bf Software:} Comfortable with R Studio, JMP, Minitab; limited experience with SAS \\
 {\bf Operating systems:} Native to OS X; experience with Windows and Linux
+
+%----------------------------------------------------------------------------------------
+%	SOFTWARE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{SOFTWARE}
+
+\hrulefill\\
+{\bf viShiny} \\
+Created using R Studio's Shiny package, viShiny is an interactive web application that demonstrates certain statistical concepts. This is an ongoing project of mine and a tool that I use when teaching introductory statistics. See the project on GitHub at \texttt{http://github.com/epwalsh/viShiny}.
 
 %----------------------------------------------------------------------------------------
 %	HONORS AND AWARDS SECTION
@@ -187,5 +180,5 @@ St. Lawrence University Men's Soccer, {\sl Midfielder} \hfill August 2010 - Nove
 
 
 \end{resume} 
-\clearpage\end{CJK*}
+%\clearpage\end{CJK*}
 \end{document}
