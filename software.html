@@ -2,20 +2,20 @@
 <!-- Designed and built by Evan Pete Walsh (epwalsh.com) -->
 
 <!-- ----- ----- --------- -----   -              -  -      -     ----- -    -
-  |   | |         |     |        \            /  / \     |     |     |    |
-  |   | |--       |     |--       \          /  /   \    |     |     |    |
-  ----- |--       |     |--        \   /\   /  / --- \   |     ----- |----|
-  |     |         |     |           \ /  \ /  /       \  |         | |    |
-  -     -----     -     -----        -    -  -         - ----- ----- -    - -->
+     |   | |         |     |        \            /  / \     |     |     |    |
+     |   | |--       |     |--       \          /  /   \    |     |     |    |
+     ----- |--       |     |--        \   /\   /  / --- \   |     ----- |----|
+     |     |         |     |           \ /  \ /  /       \  |         | |    |
+     -     -----     -     -----        -    -  -         - ----- ----- -    - -->
 
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=0, maximum-scale=1.0">
-    <meta name="description" content="Statistics graduate student and lecturer @ Iowa State University.">
+    <meta name="description" content="Software">
     <meta name="author" content="Evan Pete Walsh">
-    <meta name="keywords" content="Evan Pete Walsh, statistics, Iowa State Statistics, Iowa State University, Statistics Department, Iowa State Department of Statistics, Snedecor, stat 101, intro to statistics, web dev, web development, mathematics, programming">
+    <meta name="keywords" content="R package draw file tree">
     <meta name="google-site-verification" content="sKfaBrgOtjBdLWZ26K_IBQqudy6mcZma7Z2A8OaeqwM">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -34,9 +34,9 @@
 
     <!-- tooltip script -->
     <script type="text/javascript">
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
-});
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
     </script>
 
   </head>
@@ -225,7 +225,7 @@ draw(tree2, out = "~/Desktop/myfiletree.txt")</pre>
       <h4>Known Bugs</h4>
       <ul>
         <li>File names that have spaces in them may break the <code>grow</code> function.</li>
-        <li>This package is currently only Compatible with unix-based operating systems.</li>
+        <li>This package is currently only compatible with unix-based operating systems.</li>
       </ul>
 
 
@@ -236,6 +236,7 @@ draw(tree2, out = "~/Desktop/myfiletree.txt")</pre>
         <li>Plotting capabilities</li>
       </ul>
 
+      <p>To report a bug or suggest a feature, submit an issue at <a href="http://github.com/epwalsh/filetree/issues">github.com/epwalsh/filetree/issues</a>. Suggestions and contributions are welcome.</p>
 
       <h4>License</h4>
 
