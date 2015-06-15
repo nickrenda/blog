@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <!-- Designed and built by Evan Pete Walsh (epwalsh.com) -->
 
-<!-- ----- ----- --------- -----   -              -  -      -     ----- -    -
-     |   | |         |     |        \            /  / \     |     |     |    |
-     |   | |--       |     |--       \          /  /   \    |     |     |    |
-     ----- |--       |     |--        \   /\   /  / --- \   |     ----- |----|
-     |     |         |     |           \ /  \ /  /       \  |         | |    |
-     -     -----     -     -----        -    -  -         - ----- ----- -    - -->
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -27,6 +20,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+    <!-- google prettify code -->
+    <link rel="stylesheet" href="prettify.css">
+    <script src="scripts/prettify.js"></script>
+
     <title>E.P. Walsh @ Iowa State University</title>
 
     <!-- custom styles -->
@@ -37,6 +34,14 @@
       $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();   
       });
+    </script>
+
+    <script type="text/javascript">
+      !function ($) {
+        $(function(){
+            window.prettyPrint && prettyPrint()   
+        })
+       }(window.jQuery)
     </script>
 
   </head>
@@ -95,10 +100,10 @@
       <h4>Install</h4>
 
       <p>Assuming you have devtools installed,</p>
-      <pre>devtools::install_github("epwalsh/filetree")</pre>
+      <pre class="prettyprint">devtools::install_github("epwalsh/filetree")</pre>
 
       <h4>Examples</h4>
-      <pre>
+      <pre class="prettyprint">
 # Grow a file tree in the current working directory.
 tree1 <- grow()
 
@@ -129,7 +134,7 @@ filetree/
    |--filetree.Rproj</pre>
       </div>
 
-      <pre>
+      <pre class="prettyprint">
 # Grow a file tree in the current working directory with hidden files.
 tree2 <- grow(showhidden = TRUE)
 
@@ -217,14 +222,13 @@ filetree/
    |--filetree.Rproj</pre>
       </div>
 
-      <pre>
+      <pre class="prettyprint">
 # Output the tree to a file.
 draw(tree2, out = "~/Desktop/myfiletree.txt")</pre>
 
 
       <h4>Known Bugs</h4>
       <ul>
-        <li>File names that have spaces in them may break the <code>grow</code> function.</li>
         <li>This package is currently only compatible with unix-based operating systems.</li>
       </ul>
 

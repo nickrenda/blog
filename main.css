@@ -216,4 +216,6 @@ pre {
     margin-top: 10px;
 }
 
-
+.prettyprint ol.linenums > li { 
+    list-style-type: decimal; 
+}
