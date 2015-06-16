@@ -68,7 +68,7 @@
               <ul class="dropdown-menu">
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="travel.html">Travel</a></li>
-                <li class="active"><a href="#">Software</a></li>
+                <li class="active"><a href="#">Software <i class="fa fa-code"></i></a></li>
               </ul>
             </li>
             <li><a href="coursework.html">Coursework</a></li>
@@ -89,14 +89,65 @@
 
       <div class="media">
         <div class="media-body">
-          <p class="lead">Most of my coding projects can be seen on <a href="http://github.com/epwalsh">GitHub</a>, but I have decided to start writing about the projects I do on here. For starters, I am going to demonstrate an R package that I just made.</p>
+          <p class="lead">Most of my coding projects can be seen on 
+          <a href="http://github.com/epwalsh">GitHub</a>, but I have decided to 
+          start writing about the projects I do on here. For starters, I am going 
+          to demonstrate an R package and a Shiny app that I recently made. What is not 
+          shown here yet is an R package I am working on called manipulatoR, which I 
+          hope will improve some existing function for manipulating data frames, such 
+          as the functions <code>melt</code> and <code>dcast</code> in reshape2. I also plan 
+          on making a package whose purpose will be to create conditional random forests 
+          in parallel, since the existing code for CRF's is very slow.</p>
         </div>
       </div>
+
+      <div class="page-header">
+        <h3>viShiny | <small>Interactive visualizations</small></h3>
+      </div>
+
+      <div class="media">
+        <div media-body>
+          <p class="lead">Built using the <a href="http://shiny.rstudio.com">Shiny framework</a>
+          for R, viShiny is an interactive web application that demonstrates certain 
+          statistical concepts. This is an ongoing project of mine and a tool that I use 
+          when teaching introductory statistics. viShiny implements a modular 
+          design (inspired by <a href="https://github.com/gammarama/intRo">gammaram/intRo</a>)
+          that makes adding new topics quick and easy.</p>
+        </div>
+      </div>
+
+      <p>To use this app you have two choices. Either navigate to 
+      <a href="http://epwalsh.shinyapps.io/viShiny">epwalsh.shinyapps.io/viShiny</a> or, to run locally,
+      make sure you have R and the R package "shiny" installed, then
+      clone <a href="https://github.com/epwalsh/viShiny">this repository</a> and <code>cd</code> in 
+      the terminal to the root directory <code>~/.../viShiny</code>.
+      Start R from within the same terminal window and enter</p>
+
+      <pre class="prettyprint">
+library(shiny)
+runApp()</pre>
+
+      <img src="images/viShiny2.jpg" alt="viShiny" id="viShiny2">
+      
+      <p>To report a bug or suggest a feature, submit an issue at 
+      <a href="http://github.com/epwalsh/viShiny/issues">github.com/epwalsh/viShiny/issues</a>. Suggestions 
+      and contributions are welcome.</p>
+
 
       <div class="page-header">
         <h3>filetree | <small>Easily create simple file trees using R</small></h3>
       </div>
 
+      <div class="media">
+        <div class="media-body">
+          <p class="lead">Tired of drawing file trees by hand? Yea, me neither, actually, 
+          because I've never had to. But there is a good chance, one day, that I
+          will be in a situation where having a great looking file tree will come in handy.
+          And when that day comes I will be prepared, thanks to this neat little R package.</p>
+        </div>
+      </div>
+
+     
       <h4>Install</h4>
 
       <p>Assuming you have devtools installed,</p>
@@ -242,6 +293,8 @@ draw(tree2, out = "~/Desktop/myfiletree.txt")</pre>
 
       <p>To report a bug or suggest a feature, submit an issue at <a href="http://github.com/epwalsh/filetree/issues">github.com/epwalsh/filetree/issues</a>. Suggestions and contributions are welcome.</p>
 
+      <hr>
+      
       <h4>License</h4>
 
       <p>MIT</p>
