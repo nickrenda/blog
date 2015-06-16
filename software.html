@@ -310,6 +310,61 @@ filetree/
 </pre>
       </div>
 
+      <h5>filetree as a command line tool</h5>
+
+      <p>If you use the Linux or Windows operating systems you may be aware that each has its own command line tool to draw a file tree. However, this tool is missing from the OS X Terminal. That was partly the motivation for making this package. On Mac, if you want to use filetree from the command line, I recommend doing the following.</p>
+
+      <ul>
+        <li>Set up a folder called scripts in your home directory. In this folder, make an R script called <code>tree.R</code>. 
+          I also have several other R scripts that I use for different themes, my favorite of which is the galactica theme. 
+          I call this script <code>tree_galactica.R</code>.</li>
+        <li>Then make a bash script in the same folder called <code>tree.sh</code>.</li>
+        <li>The files and the structure should look like this:</li>
+      </ul>
+
+      <pre>
+scripts/
+   |__ tree.sh
+   |__ tree.R
+   |__ tree_rebel.R
+   |__ ...
+    \_ tree_galactica.R
+      </pre>
+
+      <pre class="prettyprint">
+# tree.R
+library(filetree)
+draw(grow())</pre>
+
+      <pre class="prettyprint">
+# tree_galactica.R
+library(filetree)
+draw(grow(), theme = "galactica")</pre>
+
+      <pre class="prettyprint">
+#!/bin/bash
+# tree.sh
+
+tree() {
+    if [ ! -z "$1" ]
+    then
+        if [ "$1" == "galactica" ]
+        then
+            Rscript ~/scripts/tree_galactica.R
+        else
+            echo "Unrecognized theme"
+        fi
+    else
+        Rscript ~/scripts/tree.R
+    fi
+
+    return 0
+}</pre>
+
+      <p>Then go into the terminal and enter source <code>~/scripts/tree.sh</code>. After you 
+      can cd to a directory where you want to make a file tree (a do not recommend doing this 
+      from your home directory) and enter <code>tree</code> or <code>tree galactica</code> for the galactica theme.</p>
+
 
       <h4>Known Bugs</h4>
       <ul>
