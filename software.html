@@ -278,6 +278,38 @@ filetree/
 # Output the tree to a file.
 draw(tree2, out = "~/Desktop/myfiletree.txt")</pre>
 
+<pre class="prettyprint">
+# Utilize some killer themes
+grow(tree1, theme = "galactica")
+</pre>
+
+      <a class="btn btn-primary" data-toggle="collapse" href="#example3" aria-expanded="false" aria-controls="example3">
+        <i class="fa fa-code"></i> 
+      </a>
+
+      <div id="example3" class="collapse">
+<pre class="prettyprint">
+filetree/
+   |_ R/
+   |   |__ draw.R
+   |   |__ filetree.R
+   |   |__ get_children.R
+   |   |__ grow.R
+   |   |__ utils.R
+   |    \_ zzz.R
+   |_ man/
+   |   |__ draw.Rd
+   |   |__ draw.filetree.Rd
+   |   |__ filetree.Rd
+   |    \_ grow.Rd
+   |__ DESCRIPTION
+   |__ LICENSE
+   |__ NAMESPACE
+   |__ README.md
+    \_ filetree.Rproj
+</pre>
+      </div>
+
 
       <h4>Known Bugs</h4>
       <ul>
@@ -287,7 +319,6 @@ draw(tree2, out = "~/Desktop/myfiletree.txt")</pre>
 
       <h4>Coming Soon</h4>
       <ul>
-        <li>Themes</li>
         <li>Support for Windows</li>
         <li>Plotting capabilities</li>
       </ul>
