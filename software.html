@@ -170,7 +170,7 @@ tree1 <- grow()
 draw(tree1)</pre>
 
       <a class="btn btn-primary" data-toggle="collapse" href="#example1" aria-expanded="false" aria-controls="example1">
-        <i class="fa fa-code"></i> 
+        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
       </a>
 
       <div class="collapse" id="example1">
@@ -201,7 +201,7 @@ tree2 <- grow(showhidden = TRUE)
 draw(tree2)</pre>
 
       <a class="btn btn-primary" data-toggle="collapse" href="#example2" aria-expanded="false" aria-controls="example2">
-        <i class="fa fa-code"></i> 
+        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
       </a>
 
       <div id="example2" class="collapse">
@@ -291,7 +291,7 @@ grow(tree1, theme = "galactica")
 </pre>
 
       <a class="btn btn-primary" data-toggle="collapse" href="#example3" aria-expanded="false" aria-controls="example3">
-        <i class="fa fa-code"></i> 
+        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
       </a>
 
       <div id="example3" class="collapse">
@@ -317,83 +317,213 @@ filetree/
 </pre>
       </div>
 
-      <h5>filetree as a command line tool</h5>
+      <br><br>
+      <p>To report a bug or suggest a feature, submit an issue at <a href="http://github.com/epwalsh/filetree/issues">github.com/epwalsh/filetree/issues</a>. 
+      Suggestions and contributions are welcome.</p>
 
-      <p>If you use the Linux or Windows operating systems you may be aware that each has its own command line tool to draw a file tree. However, this tool is missing by default from the OS X Terminal. So if you want to use filetree from the command line, I recommend doing the following.</p>
-      
-      <ul>
-        <li>Set up a folder called scripts in your home directory. In this folder, make an R script called <code>tree.R</code>. 
-          I also have several other R scripts that I use for different themes, my favorite of which is the galactica theme. 
-          I call this script <code>tree_galactica.R</code>.</li>
-        <li>Then make a bash script in the same folder called <code>tree.sh</code>.</li>
-        <li>The files and the structure should look like this:</li>
-      </ul>
 
-      <pre>
-scripts/
-   |__ tree.sh
-   |__ tree.R
-   |__ tree_rebel.R
-   |__ ...
-    \_ tree_galactica.R
-      </pre>
+      <div class="page-header">
+        <h3>treemac | <small>A command-line tool for creating file trees on OS X</small></h3>
+      </div>
+
+      <a href="https://travis-ci.org/epwalsh/treemac"><img src="https://travis-ci.org/epwalsh/treemac.svg?branch=master" alt="Build Status"></a>
+      <a href="#LICENSE"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="MIT"></a>
+
+      <div class="media">
+        <div class="media-body">
+          <p class="lead">If you use the Linux or Windows operating systems you may be aware that each has its own 
+          command-line tool to draw a file tree. However, this tool is missing by default from the OS X Terminal. That 
+          was the motivation behind this project.</p>
+        </div>
+      </div>
+
+      <h4>Before Install</h4>
+
+      <p>Note that this program is written in C++ and depends on some <a href="http://www.boost.org">boost</a> header files. If you don't have 
+      boost already, I recommend installing the latest version via homebrew. Simply enter <code>brew install boost</code>. By default, this 
+      should install the boost header files in <code>/usr/local/Cellar/boost/1.*/include/</code> and the binaries in 
+      <code>/usr/local/Cellar/boost/1.*/lib/</code>. This is where I assume that you have them for the compilation step in the 
+      install procedure. If this is not the case, be sure to complete step 3 in the installation
+      process (see below).</p>
+
+      <h4>Install</h4>
+
+      <p>To install and use the treemac command-line tool you just have to follow a few short steps.</p>
+
+      <ol>
+        <li><code>cd</code> to a directory where you would like to download the files.</li>
+        <li>Clone the GitHub repository using <code>git clone https://github.com/epwalsh/treemac</code>.</li>
+        <li>If the boost library is not installed in the location mentioned above, you will have to make a slight change to the <code>Makefile</code>. Open the 
+        <code>Makefile</code> and change the path on the line that says <code>BOOST = /usr/local/Cellar/boost/1.*</code> to the path of 
+        the boost library on your machine.</li>
+        <li>Make sure you are in the root folder of the newly downloaded repository and type <code>make</code>. This will create two 
+        new folders: <code>build/</code> and <code>bin/</code>. The <code>bin/</code> folder contains 
+        the executable file called <code>tree</code>, which is the only file that you need now.</li>
+        <li>Move the <code>tree</code> file to wherever you want to keep it on your Mac. For me, that is a folder I created 
+        in my home directory called <code>~/bin/</code>.</li>
+        <li>In your <code>.bash_profile</code> create an alias that points to the executable file. For me, I use <code>alias tree="~/bin/tree"</code>.</li>
+      </ol>
+
+      <h4>Usage</h4>
+
+      <p>After you source your <code>.bash_profile</code> you can <code>cd</code> to any directory you want to create a file tree and just enter <code>tree</code>. 
+      This will print a file tree that by default ignores all hidden files. If you want to show hidden files, use the <code>-s</code> option. You can 
+      also output the tree to a file using the standard redirection option like so: <code>tree > ~/Desktop/myfiletree.txt</code>.</p>
+
+      <h4>Examples</h4>
+
+<pre class="prettyprint">
+# Grow a file tree in the current working directory.
+tree      
+</pre>
+
+      <a class="btn btn-primary" data-toggle="collapse" href="#example4" aria-expanded="false" aria-controls="example4">
+        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
+      </a>
+
+      <div id="example4" class="collapse">
+        <pre>
+treemac
+   |__bin
+   |   |__tree
+   |__build
+   |   |__tree.o
+   |   |__utils.o
+   |__LICENSE
+   |__Makefile
+   |__README.md
+   |__src
+   |   |__tree.cpp
+   |   |__utils.cpp
+   |   |__utils.hpp
+</pre>
+      </div>
+
+<pre class="prettyprint">
+# Grow a file tree in the current working directory with hidden files.
+tree -s 
+</pre>
+
+      <a class="btn btn-primary" data-toggle="collapse" href="#example5" aria-expanded="false" aria-controls="example5">
+        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
+      </a>
+
+      <div id="example5" class="collapse">
+        <pre>
+   |__.git
+   |   |__COMMIT_EDITMSG
+   |   |__config
+   |   |__description
+   |   |__FETCH_HEAD
+   |   |__HEAD
+   |   |__hooks
+   |   |   |__applypatch-msg.sample
+   |   |   |__commit-msg.sample
+   |   |   |__post-update.sample
+   |   |   |__pre-applypatch.sample
+   |   |   |__pre-commit.sample
+   |   |   |__pre-push.sample
+   |   |   |__pre-rebase.sample
+   |   |   |__prepare-commit-msg.sample
+   |   |   |__update.sample
+   |   |__index
+   |   |__info
+   |   |   |__exclude
+   |   |__logs
+   |   |   |__HEAD
+   |   |   |__refs
+   |   |   |   |__heads
+   |   |   |   |   |__master
+   |   |   |   |__remotes
+   |   |   |   |   |__origin
+   |   |   |   |   |   |__HEAD
+   |   |   |   |   |   |__master
+   |   |__objects
+   |   |   |__01
+   |   |   |   |__097dc1695b2474ef035b2c4d5937fd8e444ad7
+   |   |   |   |__553f6362164daed073fa7efda331a39bc007f0
+   |   |   |__9b
+   |   |   |   |__9073d709669ca93b4b9a4eab0164ef0d4a76b8
+   |   |   |__9c
+   |   |   |   |__56cba9c314de3852364459cb718d16ce8e0d38
+   |   |   |   |__63bdae68bb0179f50254f2f60ffbc3e32d044c
+   |   |   |__b3
+   |   |   |   |__2a8a995567cf73bf1fb6575cd28de4d1d9814b
+   |   |   |   |__628cd7a29c4965760eb34eeff7f3db19588e6e
+   |   |   |   |__9d06d872a3e37aa352123c37cbd025af7c8f46
+   |   |   |__b4
+   |   |   |   |__4710f2ef08f66102e467fcec95a32c931c6e00
+   |   |   |__d0
+   |   |   |   |__7191516c2cc948c909027f2368d66cc878997f
+   |   |   |__d3
+   |   |   |   |__c08b365d75b360c903caeaf08baf4b1d06a483
+   |   |   |__d5
+   |   |   |   |__64d0bc3dd917926892c55e3706cc116d5b165e
+   |   |   |   |__ffc4ae8976fba739a0f6742b0fd7f83812cc41
+   |   |   |__d6
+   |   |   |   |__6e353ce8302c00eeac33bb9b9267ac6814daa7
+   |   |   |__info
+   |   |   |__pack
+   |   |__ORIG_HEAD
+   |   |__packed-refs
+   |   |__refs
+   |   |   |__heads
+   |   |   |   |__master
+   |   |   |__remotes
+   |   |   |   |__origin
+   |   |   |   |   |__HEAD
+   |   |   |   |   |__master
+   |   |   |__tags
+   |__.gitignore
+   |__.travis.yml
+   |__bin
+   |   |__tree
+   |__build
+   |   |__tree.o
+   |   |__utils.o
+   |__LICENSE
+   |__Makefile
+   |__README.md
+   |__src
+   |   |__tree.cpp
+   |   |__utils.cpp
+   |   |__utils.hpp
+</pre>
+      </div>
 
       <pre class="prettyprint">
-# tree.R
-library(filetree)
-draw(grow())</pre>
-
-      <pre class="prettyprint">
-# tree_galactica.R
-library(filetree)
-draw(grow(), theme = "galactica")</pre>
-
-      <pre class="prettyprint">
-#!/bin/bash
-# tree.sh
-
-tree() {
-    if [ ! -z "$1" ]
-    then
-        if [ "$1" == "galactica" ]
-        then
-            Rscript ~/scripts/tree_galactica.R
-        else
-            echo "Unrecognized theme"
-        fi
-    else
-        Rscript ~/scripts/tree.R
-    fi
-
-    return 0
-}</pre>
-
-      <p>Then go into the terminal and enter source <code>~/scripts/tree.sh</code>. After that you 
-      can cd to a directory where you want to make a file tree (I do not recommend doing this 
-      from your home directory) and enter <code>tree</code> or <code>tree galactica</code> for the galactica theme.</p>
-
+# Output the results to a file.
+tree > ~/Desktop/tree.txt  
+</pre>
 
 
       <h4>Coming Soon</h4>
-      <ul>
-        <li>Support for Windows</li>
-        <li>Plotting capabilities</li>
-      </ul>
 
-      <p>To report a bug or suggest a feature, submit an issue at <a href="http://github.com/epwalsh/filetree/issues">github.com/epwalsh/filetree/issues</a>. Suggestions and contributions are welcome.</p>
+      <ul>
+        <li>Support for different themes but using the <code>[-t theme]</code> option.</li>
+      </ul>
+      
+      <p>To report a bug or suggest a feature, submit an issue at <a href="http://github.com/epwalsh/treemac/issues">github.com/epwalsh/treemac/issues</a>. 
+      Suggestions and contributions are welcome.</p>
 
       <hr>
-      
+
       <h4 id="LICENSE">License</h4>
 
       <p>MIT</p>
       <p>Copyright (c) 2015 Evan P. Walsh</p>
 
-      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
+      files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, 
+      copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to 
+      whom the Software is furnished to do so, subject to the following conditions:</p>
 
       <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 
-      <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+      WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
+      COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+      ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 
         
     </div>
