@@ -76,7 +76,7 @@
             <li><a href="mailto:epwalsh@iastate.edu" data-toggle="tooltip" data-placement="bottom" data-original-title="Email me"><i class="fa fa-envelope"></i></a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://github.com/epwalsh/epwalsh.github.com" data-toggle="tooltip" data-placement="bottom" data-original-title="View this project on GitHub"><i class="fa fa-github fa-2x"></i></a></li>
+            <li><a href="http://github.com/epwalsh/" data-toggle="tooltip" data-placement="bottom" data-original-title="View this project on GitHub"><i class="fa fa-github fa-2x"></i></a></li>
           </ul>
         </div>
       </div>
@@ -138,191 +138,6 @@ runApp()</pre>
 
 
       <div class="page-header">
-        <h3>filetree | <small>Easily create simple file trees using R</small></h3>
-      </div>
-
-      <a href="https://travis-ci.org/epwalsh/filetree"><img src="https://travis-ci.org/epwalsh/filetree.svg?branch=master" alt="Build Status"></a>
-      <a href="#LICENSE"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="MIT"></a>
-
-      <div class="media">
-        <div class="media-body">
-          <p class="lead">Have you ever wondered how to make a beautiful represenation 
-          of all the files within a directory? Not a command-line guru? No problem. 
-          Now you can make elegant file trees right from within R thanks to this neat little 
-          package complete with themes and the option to show hidden files. You can also
-          export your file tree to a document.
-          </p>
-        </div>
-      </div>
-
-     
-      <h4>Install</h4>
-
-      <p>Assuming you have devtools installed,</p>
-      <pre class="prettyprint">devtools::install_github("epwalsh/filetree")</pre>
-
-      <h4>Examples</h4>
-      <pre class="prettyprint">
-# Grow a file tree in the current working directory.
-tree1 <- grow()
-
-# Draw the file tree in the console.
-draw(tree1)</pre>
-
-      <a class="btn btn-primary" data-toggle="collapse" href="#example1" aria-expanded="false" aria-controls="example1">
-        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
-      </a>
-
-      <div class="collapse" id="example1">
-        <pre>
-filetree/
-   |--R/
-   |   |--draw.R
-   |   |--get_children.R
-   |   |--grow.R
-   |   |--utils.R
-   |--man/
-   |   |--draw.Rd
-   |   |--draw.branch.Rd
-   |   |--draw.filetree.Rd
-   |   |--draw.leaf.Rd
-   |   |--grow.Rd
-   |--DESCRIPTION
-   |--LICENSE
-   |--NAMESPACE
-   |--filetree.Rproj</pre>
-      </div>
-
-      <pre class="prettyprint">
-# Grow a file tree in the current working directory with hidden files.
-tree2 <- grow(showhidden = TRUE)
-
-# Draw the tree.
-draw(tree2)</pre>
-
-      <a class="btn btn-primary" data-toggle="collapse" href="#example2" aria-expanded="false" aria-controls="example2">
-        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
-      </a>
-
-      <div id="example2" class="collapse">
-        <pre>
-filetree/
-   |--.Rproj.user/
-   |   |--A8C2DD97/
-   |       |--ctx/
-   |       |--pcs/
-   |       |   |--files-pane.pper
-   |       |   |--source-pane.pper
-   |       |   |--windowlayoutstate.pper
-   |       |   |--workbench-pane.pper
-   |       |--presentation/
-   |       |--sdb/
-   |       |   |--per/
-   |       |   |   |--t/
-   |       |   |   |--u/
-   |       |   |--prop/
-   |       |   |   |--24768FE6
-   |       |   |   |--4A550376
-   |       |--viewer-cache/
-   |       |--viewer_history/
-   |       |--cpp-definition-cache
-   |       |--persistent-state
-   |       |--saved_source_markers
-   |--.git/
-   |   |--info/
-   |   |   |--exclude
-   |   |--lfs/
-   |   |   |--objects/
-   |   |   |   |--logs/
-   |   |   |--tmp/
-   |   |--logs/
-   |   |   |--refs/
-   |   |   |   |--heads/
-   |   |   |   |   |--master
-   |   |   |   |--remotes/
-   |   |   |       |--origin/
-   |   |   |           |--master
-   |   |   |--HEAD
-   |   |--objects/
-   |   |   |--info/
-   |   |   |--pack/
-   |   |--refs/
-   |   |   |--heads/
-   |   |   |   |--master
-   |   |   |--remotes/
-   |   |   |   |--origin/
-   |   |   |       |--master
-   |   |   |--tags/
-   |   |--COMMIT_EDITMSG
-   |   |--FETCH_HEAD
-   |   |--HEAD
-   |   |--ORIG_HEAD
-   |   |--config
-   |   |--description
-   |   |--index
-   |--R/
-   |   |--draw.R
-   |   |--get_children.R
-   |   |--grow.R
-   |   |--utils.R
-   |--man/
-   |   |--draw.Rd
-   |   |--draw.branch.Rd
-   |   |--draw.filetree.Rd
-   |   |--draw.leaf.Rd
-   |   |--grow.Rd
-   |--.Rbuildignore
-   |--.gitignore
-   |--.travis.yml
-   |--DESCRIPTION
-   |--LICENSE
-   |--NAMESPACE
-   |--README.md
-   |--filetree.Rproj</pre>
-      </div>
-
-      <pre class="prettyprint">
-# Output the tree to a file.
-draw(tree2, out = "~/Desktop/myfiletree.txt")</pre>
-
-<pre class="prettyprint">
-# Utilize some killer themes
-grow(tree1, theme = "galactica")
-</pre>
-
-      <a class="btn btn-primary" data-toggle="collapse" href="#example3" aria-expanded="false" aria-controls="example3">
-        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
-      </a>
-
-      <div id="example3" class="collapse">
-        <pre>
-filetree/
-   |_ R/
-   |   |__ draw.R
-   |   |__ filetree.R
-   |   |__ get_children.R
-   |   |__ grow.R
-   |   |__ utils.R
-   |    \_ zzz.R
-   |_ man/
-   |   |__ draw.Rd
-   |   |__ draw.filetree.Rd
-   |   |__ filetree.Rd
-   |    \_ grow.Rd
-   |__ DESCRIPTION
-   |__ LICENSE
-   |__ NAMESPACE
-   |__ README.md
-    \_ filetree.Rproj
-</pre>
-      </div>
-
-      <br><br>
-      <p>To report a bug or suggest a feature, submit an issue at <a href="http://github.com/epwalsh/filetree/issues">github.com/epwalsh/filetree/issues</a>. 
-      Suggestions and contributions are welcome.</p>
-
-
-      <div class="page-header">
         <h3>treemac | <small>A command-line tool for creating file trees on OS X</small></h3>
       </div>
 
@@ -339,9 +154,9 @@ filetree/
 
       <h4>Before Install</h4>
 
-      <p>Note that this program is written in C++ and depends on some <a href="http://www.boost.org">boost</a> header files. If you don't have 
-      boost already, I recommend installing the latest version via homebrew. Simply enter <code>brew install boost</code>. By default, this 
-      should install the boost header files in <code>/usr/local/Cellar/boost/1.*/include/</code> and the binaries in 
+      <p>Note that this program is written in C++ and depends on the <a href="http://www.boost.org">Boost</a> library. If you don't have 
+      Boost already, I recommend installing the latest version via homebrew. Simply enter <code>brew install boost</code>. By default, this 
+      should install the Boost header files in <code>/usr/local/Cellar/boost/1.*/include/</code> and the binaries in 
       <code>/usr/local/Cellar/boost/1.*/lib/</code>. This is where I assume that you have them for the compilation step in the 
       install procedure. If this is not the case, be sure to complete step 3 in the installation
       process (see below).</p>
@@ -368,7 +183,8 @@ filetree/
 
       <p>After you source your <code>.bash_profile</code> you can <code>cd</code> to any directory you want to create a file tree and just enter <code>tree</code>. 
       This will print a file tree that by default ignores all hidden files. If you want to show hidden files, use the <code>-s</code> option. You can 
-      also output the tree to a file using the standard redirection option like so: <code>tree > ~/Desktop/myfiletree.txt</code>.</p>
+      also output the tree to a file using the standard redirection option like so: <code>tree > ~/Desktop/myfiletree.txt</code> or with the <code>[-o file]</code>
+      option.</p>
 
       <h4>Examples</h4>
 
@@ -397,6 +213,9 @@ treemac
    |   |__utils.cpp
    |   |__utils.hpp
 </pre>
+      <a class="btn btn-primary" data-toggle="collapse" href="#example4" aria-expanded="false" aria-controls="example4">
+        <i class="fa fa-minus-square"></i>
+      </a>
       </div>
 
       <br>
@@ -491,6 +310,10 @@ evans-macbookair:~ epwalsh$ tree -s
    |   |__utils.cpp
    |   |__utils.hpp
 </pre>
+      <a class="btn btn-primary" data-toggle="collapse" href="#example5" aria-expanded="false" aria-controls="example5">
+        <i class="fa fa-minus-square"></i>
+      </a>
+
       </div>
 
       <br><br>
@@ -498,6 +321,11 @@ evans-macbookair:~ epwalsh$ tree -s
       <pre class="prettyprint">
 evans-macbookair:~ epwalsh$ tree > ~/Desktop/tree.txt  
 </pre>
+
+      <p>Here I create a tree with hidden files in my <code>~/GitHub/</code> directory and save the result to a file on my desktop.</p>
+
+<pre class="prettyprint">
+evans-macbookair:~ epwalsh$ tree -s -o ~/Desktop/github_tree.txt ~/GitHub</pre>
 
 
       <h4>Coming Soon</h4>
