@@ -152,18 +152,23 @@ runApp()</pre>
         </div>
       </div>
 
-      <h4>Before Install</h4>
+      <h4>Download</h4>
 
-      <p>Note that this program is written in C++ and depends on the <a href="http://www.boost.org">Boost</a> library. If you don't have 
+      <p>To get started with treemac, just download the executable binary <a href="files/tree">here <i class="fa fa-file-o"></i></a>. Make sure you have execution rights by 
+      entering the command <code>chmod 755 tree</code>. Then just <code>mv</code> the binary to your <code>/usr/local/bin/</code> folder or anywhere else you want to put 
+      it (just make sure that it's in your <code>$PATH</code> or that you create an alias).</p>
+
+      <h4>Compile from Source</h4>
+
+      <p>If for some reason the binary executable file does not run on your machine, you can follow 
+      these instructions to download and compile the program from source.</p>
+
+      <p>Note that this software is written in C++ and depends on the <a href="http://www.boost.org">Boost</a> library. If you don't have 
       Boost already, I recommend installing the latest version via homebrew. Simply enter <code>brew install boost</code>. By default, this 
       should install the Boost header files in <code>/usr/local/Cellar/boost/1.*/include/</code> and the binaries in 
       <code>/usr/local/Cellar/boost/1.*/lib/</code>. This is where I assume that you have them for the compilation step in the 
       install procedure. If this is not the case, be sure to complete step 3 in the installation
       process (see below).</p>
-
-      <h4>Install</h4>
-
-      <p>To install and use the treemac command-line tool you just have to follow a few short steps.</p>
 
       <ol>
         <li><code>cd</code> to a directory where you would like to download the files.</li>
@@ -180,7 +185,8 @@ runApp()</pre>
 
       <h4>Usage</h4>
 
-      <p>After you source your <code>.bash_profile</code> you can <code>cd</code> to any directory you want to create a file tree and just enter <code>tree</code>. 
+      <p>Once installed you can <code>cd</code> to any directory you want to create a file tree and just enter <code>tree</code>. You can also just add the path 
+      onto the command like you would with <code>ls</code> or <code>cd</code>.
       This will print a file tree that by default ignores all hidden files. If you want to show hidden files, use the <code>-s</code> option. You can 
       also output the tree to a file using the standard redirection option like so: <code>tree > ~/Desktop/myfiletree.txt</code> or with the <code>[-o file]</code>
       option.</p>
@@ -188,12 +194,12 @@ runApp()</pre>
       <h4>Examples</h4>
 
       <p>Grow a file tree in the current directory.</p>
-<pre class="prettyprint">
+<pre>
 evans-macbookair:~ epwalsh$ tree      
 </pre>
 
       <a class="btn btn-primary" data-toggle="collapse" href="#example4" aria-expanded="false" aria-controls="example4">
-        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
+        +/- output
       </a>
 
       <div id="example4" class="collapse">
@@ -213,19 +219,19 @@ treemac
    |   |__utils.hpp
 </pre>
       <a class="btn btn-primary" data-toggle="collapse" href="#example4" aria-expanded="false" aria-controls="example4">
-        <i class="fa fa-minus-square"></i>
+        +/- output
       </a>
       </div>
 
       <br>
       <br>
       <p>Grow a file tree in the current directory with hidden files.</p>
-<pre class="prettyprint">
+<pre>
 evans-macbookair:~ epwalsh$ tree -s 
 </pre>
 
       <a class="btn btn-primary" data-toggle="collapse" href="#example5" aria-expanded="false" aria-controls="example5">
-        <i class="fa fa-plus-square"></i> / <i class="fa fa-minus-square"></i>
+        +/- output
       </a>
 
       <div id="example5" class="collapse">
@@ -310,20 +316,20 @@ evans-macbookair:~ epwalsh$ tree -s
    |   |__utils.hpp
 </pre>
       <a class="btn btn-primary" data-toggle="collapse" href="#example5" aria-expanded="false" aria-controls="example5">
-        <i class="fa fa-minus-square"></i>
+        +/- output
       </a>
 
       </div>
 
       <br><br>
       <p>Output the results to a file.</p>
-      <pre class="prettyprint">
+      <pre>
 evans-macbookair:~ epwalsh$ tree > ~/Desktop/tree.txt  
 </pre>
 
       <p>Here I create a tree with hidden files in my <code>~/GitHub/</code> directory and save the result to a file on my desktop.</p>
 
-<pre class="prettyprint">
+<pre>
 evans-macbookair:~ epwalsh$ tree -s -o ~/Desktop/github_tree.txt ~/GitHub</pre>
 
 
@@ -332,6 +338,8 @@ evans-macbookair:~ epwalsh$ tree -s -o ~/Desktop/github_tree.txt ~/GitHub</pre>
       <ul>
         <li>Support for different themes but using the <code>[-t theme]</code> option.</li>
       </ul>
+
+      <h4>Bugs</h4>
       
       <p>To report a bug or suggest a feature, submit an issue at <a href="http://github.com/epwalsh/treemac/issues">github.com/epwalsh/treemac/issues</a>. 
       Suggestions and contributions are welcome.</p>
