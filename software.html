@@ -92,7 +92,7 @@
           <p class="lead">Most of my coding projects can be seen on 
           <a href="http://github.com/epwalsh">GitHub</a>, but I have decided to 
           start writing about the projects I do on here. For starters, I am going 
-          to demonstrate an R package and a Shiny app that I recently made. What is not 
+          to demonstrate a command-line tool for drawing file trees and a Shiny app that I recently made. What is not 
           shown here yet is an R package I am working on called manipulatoR, which I 
           hope will improve some existing function for manipulating data frames, such 
           as the functions <code>melt</code> and <code>dcast</code> in reshape2. I also plan 
@@ -104,8 +104,6 @@
       <div class="page-header">
         <h3>viShiny | <small>Interactive visualizations</small></h3>
       </div>
-
-      <a href="#LICENSE"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="MIT"></a>
 
       <div class="media">
         <div media-body>
@@ -141,8 +139,7 @@ runApp()</pre>
         <h3>treemac | <small>A command-line tool for creating file trees on OS X</small></h3>
       </div>
 
-      <a href="https://travis-ci.org/epwalsh/treemac"><img src="https://travis-ci.org/epwalsh/treemac.svg?branch=master" alt="Build Status"></a>
-      <a href="#LICENSE"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="MIT"></a>
+      <a href="https://drone.io/github.com/epwalsh/treemac/latest"><img src="https://drone.io/github.com/epwalsh/treemac/status.png" alt="Build Status"></a>
 
       <div class="media">
         <div class="media-body">
@@ -176,11 +173,7 @@ runApp()</pre>
         <li>If the boost library is not installed in the location mentioned above, you will have to make a slight change to the <code>Makefile</code>. Open the 
         <code>Makefile</code> and change the path on the line that says <code>BOOST = /usr/local/Cellar/boost/1.*</code> to the path of 
         the boost library on your machine.</li>
-        <li>Make sure you are in the root folder of the newly downloaded repository and type <code>make</code>. This will create two 
-        new folders: <code>build/</code> and <code>bin/</code>. The <code>bin/</code> folder contains 
-        the executable file called <code>tree</code>, which is the only file that you need now.</li>
-        <li>Move the <code>tree</code> file to wherever you want to keep it on your Mac, preferably into <code>/usr/local/bin/</code> so it 
-          will already be on your path.</li>
+        <li>Make sure you are in the root folder of the newly downloaded repository and type <code>make</code> followed by <code>make install</code>.</li>
       </ol>
 
       <h4>Usage</h4>
@@ -336,7 +329,7 @@ evans-macbookair:~ epwalsh$ tree -s -o ~/Desktop/github_tree.txt ~/GitHub</pre>
       <h4>Coming Soon</h4>
 
       <ul>
-        <li>Support for different themes but using the <code>[-t theme]</code> option.</li>
+        <li>Support for different themes by using the <code>[-t theme]</code> option.</li>
       </ul>
 
       <h4>Bugs</h4>
