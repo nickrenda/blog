@@ -225,3 +225,7 @@ pre {
 .prettyprint ol.linenums > li { 
     list-style-type: decimal; 
 }
+
+#disqus {
+    margin-top: 50px;
+}
