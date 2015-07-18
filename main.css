@@ -28,11 +28,9 @@ body {
     padding-bottom: 11px;
 }
 
-/*
-.navbar {
-    background-color: cadetblue;
+.navbar-inverse {
+    opacity: 0.95;
 }
-*/
 
 /* customize jumbotron
 ============================================== */
