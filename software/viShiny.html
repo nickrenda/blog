@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=0, maximum-scale=1.0">
-    <meta name="description" content="Evan Pete Walsh's software">
+    <meta name="description" content="viShiny statistics visualizations">
     <meta name="author" content="Evan Pete Walsh">
-    <meta name="keywords" content="R package, draw file tree, vishiny, interactive statistics visualizations">
+    <meta name="keywords" content="vishiny, interactive statistics visualizations">
     <meta name="google-site-verification" content="sKfaBrgOtjBdLWZ26K_IBQqudy6mcZma7Z2A8OaeqwM">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- bootstrap -->
@@ -22,12 +22,12 @@
 
     <!-- google prettify code -->
     <link rel="stylesheet" href="prettify.css">
-    <script src="scripts/prettify.js"></script>
+    <script src="../scripts/prettify.js"></script>
 
-    <title>E.P. Walsh @ Iowa State University</title>
+    <title>viShiny</title>
 
     <!-- custom styles -->
-    <link href="main.css" rel="stylesheet">
+    <link href="../main.css" rel="stylesheet">
 
     <!-- tooltip script -->
     <script type="text/javascript">
@@ -66,47 +66,30 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="travel.html">Travel</a></li>
-                <li><a href="coursework.html">Coursework</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../travel.html">Travel</a></li>
+                <li><a href="../coursework.html">Coursework</a></li>
+                <li><a href="../teaching.html">Teaching</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Software <span class="caret"></span></i></a>
               <ul class="dropdown-menu">
-                <li class="active"><a href="software.html">Software home <i class="fa fa-code"></i></a></li>
-                <li><a href="software/viShiny.html">viShiny</a></li>
-                <li><a href="software/treemac.html">treemac</a></li>
+                <li><a href="../software.html">Software home <i class="fa fa-code"></i></a></li>
+                <li class="active"><a href="viShiny.html">viShiny</a></li>
+                <li><a href="treemac.html">treemac</a></li>
               </ul>
             </li>
             <li><a href="mailto:epwalsh@iastate.edu" data-toggle="tooltip" data-placement="bottom" data-original-title="Email me"><i class="fa fa-envelope"></i></a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://github.com/epwalsh?tab=repositories" data-toggle="tooltip" data-placement="bottom" data-original-title="View these projects on GitHub"><i class="fa fa-github fa-2x"></i></a></li>
+            <li><a href="https://github.com/epwalsh/viShiny" data-toggle="tooltip" data-placement="bottom" data-original-title="View this project on GitHub"><i class="fa fa-github fa-2x"></i></a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="container">
-      <div class="page-header">
-        <h1>Software</h1>
-      </div>
-
-      <div class="media">
-        <div class="media-body">
-          <p class="lead">Most of my coding projects can be seen on 
-          <a href="http://github.com/epwalsh">GitHub</a>, but I have decided to 
-          start writing about the projects I do on here. For starters, I am going 
-          to demonstrate a command-line tool for drawing file trees and a Shiny app that I recently made. What is not 
-          shown here yet is an R package I am working on called manipulatoR, which I 
-          hope will improve some existing function for manipulating data frames, such 
-          as the functions <code>melt</code> and <code>dcast</code> in reshape2. I also plan 
-          on making a package whose purpose will be to create conditional random forests 
-          in parallel, since the existing code for CRF's is very slow.</p>
-        </div>
-      </div>
 
       <div class="page-header">
         <h3>viShiny | <small>Interactive visualizations</small></h3>
@@ -125,44 +108,23 @@
         </div>
       </div>
 
-      <a href="software/viShiny.html">Learn more <i class="fa fa-arrow-circle-right"></i></a></p>
+      <p>To use this app you have two choices. Either navigate to 
+      <a href="http://epwalsh.shinyapps.io/viShiny">epwalsh.shinyapps.io/viShiny</a> or run the app locally. To run locally,
+      make sure you have R and the R package "shiny" installed, then from within R
+      <code>shiny::runGitHub("epwalsh/viShiny")</code>. Similarly you could clone <a href="https://github.com/epwalsh/viShiny">this repository</a> 
+      and <code>cd</code> in 
+      the terminal to the root directory <code>~/.../viShiny</code>.
+      Then start R from within the same terminal window and enter</p>
 
-      <div class="page-header">
-        <h3>treemac | <small>A command-line tool for creating file trees on OS X</small></h3>
-      </div>
+      <pre>
+library(shiny)
+runApp()</pre>
 
-      <a href="#LICENSE"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg"></a>
-      <a href="https://travis-ci.org/epwalsh/treemac"><img src="https://travis-ci.org/epwalsh/treemac.svg?branch=master"></a>
-      <a href="https://drone.io/github.com/epwalsh/treemac/latest"><img src="https://drone.io/github.com/epwalsh/treemac/status.png" alt="Build Status"></a>
-
-      <div class="media">
-        <div class="media-body">
-          <p class="lead">If you use the Linux or Windows operating systems you may be aware that each has its own 
-          command-line tool to draw a file tree. However, this tool is missing by default from the OS X Terminal. That 
-          was the motivation behind this project.</p>
-        </div>
-      </div>
-
-      <a href="software/treemac.html">Learn more <i class="fa fa-arrow-circle-right"></i></a></p>
-
-      <hr>
-
-      <h4 id="LICENSE">License</h4>
-
-      <p>MIT</p>
-      <p>Copyright (c) 2015 Evan P. Walsh</p>
-
-      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
-      files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, 
-      copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to 
-      whom the Software is furnished to do so, subject to the following conditions:</p>
-
-      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-
-      <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
-      WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
-      COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
-      ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <img src="../images/viShiny2.jpg" alt="viShiny" id="viShiny2">
+      
+      <p>To report a bug or suggest a feature, submit an issue at 
+      <a href="http://github.com/epwalsh/viShiny/issues">github.com/epwalsh/viShiny/issues</a>. Suggestions 
+      and contributions are welcome.</p>
 
       <div id="disqus_thread"></div>
       <script type="text/javascript">
