@@ -131,23 +131,132 @@
       <a href="software/treemac.html">Learn more <i class="fa fa-arrow-circle-right"></i></a></p>
 
       <hr>
+      <h3>Some fun snippets of code</h3>
+      <div class="media">
+        <div class="media-body">
+          <p class="lead">Here is some Python code to stream tweets in Iowa that mention the names of any of the 
+          current presidential candidates. This script also makes use of the <code>yagmail</code> module to send me 
+          email notifications every time an arbitrary number of tweets have been collected.</p>
+        </div>
+      </div>
 
-      <h4 id="LICENSE">License</h4>
+<pre class="prettyprint lang-py linenums">
+#!/usr/bin/env python
+#
+# File Name:     stream2.py
+# Author:        Evan Pete Walsh
+# Contact:       epwalsh@iastate.edu
+# Creation Date: 15-09-2015
+# Last Modified: Tue Sep 22 17:29:12 2015
+# =============================================================================
 
-      <p>MIT</p>
-      <p>Copyright (c) 2015 Evan P. Walsh</p>
+'''Capture tweets in Iowa about presidential candidates.'''
 
-      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
-      files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, 
-      copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to 
-      whom the Software is furnished to do so, subject to the following conditions:</p>
 
-      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+from tweepy.streaming import StreamListener
+from tweepy import OAuthHandler
+from tweepy import Stream
+from csv import DictReader
+from os.path import expanduser
+import sys
+import json
+import yagmail
 
-      <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
-      WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
-      COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
-      ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+# Read in twitter authentication data
+home = expanduser("~")
+with open(home + "/.twitter") as f:
+    reader = DictReader(f)
+    data = list(reader)
+
+# Read in gmail login data
+with open(home + "/.gmail") as f:
+    reader = DictReader(f)
+    data2 = list(reader)
+
+# Prepare twitter authentication data
+access_token = data[0]['access_token']
+access_token_secret = data[0]['access_token_secret']
+consumer_key = data[0]['consumer_key']
+consumer_secret = data[0]['consumer_secret']
+
+# Prepare gmail login data
+username = data2[0]['username']
+password = data2[0]['password']
+
+keywords_list = ['trump',                   # 'The golden-haired buffoon'
+                 'sanders', 'bernie',       # Bernie Sanders
+                 'hillary', 'clinton',      # Hillary Clinton
+                 'jeb', 'bush',             # Jeb Bush
+                 'carson',                  # Ben Carson
+                 'christie',                # Chris Christie
+                 'cruz',                    # Ted Cruz
+                 'fiorina',                 # Carly Fiorina
+                 'gilmore',                 # Jim Gilmore
+                 'graham',                  # Lindsey Graham
+                 'huckabee',                # Mike Huckabee
+                 'jindal',                  # Bobby Jindal
+                 'kasich',                  # John Kasich
+                 'pataki',                  # George Pataki
+                 'rand paul', 'randpaul',   # Rand Paul
+                 'rubio',                   # Marco Rubio
+                 'santorum'                 # Rick Santorum
+                 'biden',                   # Joe Biden
+                 'cuomo',                   # Andrew Cuomo
+                 'gore',                    # Al Gore
+                 'kucinich',                # Dennis Kucinich
+                 'schweitzer',              # Brian Schweitzer
+                 'chafee',                  # Lincoln Chafee
+                 'walker',                  # Scott Walker
+                 'perry',                   # Rick Perry
+                 'webb',                    # Jim Webb
+                 'democrat', 'democratic', 'republican', 'gop', 'tea party']
+
+
+class OutListener(StreamListener):
+
+    tweet_count = 0
+
+    def on_status(self, status):
+        if any(x in status.text.lower() for x in keywords_list):
+            place = status._json['place']['full_name']
+            if 'iowa' in place.lower() or 'ia' in place.lower():
+                output = {}
+                output['place'] = place
+                output['text'] = status.text
+                output['hashtags'] = status._json['entities']['hashtags']
+                output['retweeted'] = status._json['retweeted']
+                output['retweet_count'] = status._json['retweet_count']
+                output['favorited'] = status._json['favorited']
+                output['favorited_count'] = status._json['favorite_count']
+                output['coordinates'] = status._json['coordinates']
+                output['time'] = status._json[u'created_at']
+                OutListener.tweet_count += 1
+                if OutListener.tweet_count % 50 == 0:
+                    yag = yagmail.SMTP(username, password)
+                    subject = "Tweet count " + str(OutListener.tweet_count)
+                    recipient = 'epwalsh@iastate.edu'
+                    yag.send(recipient, subject)
+                    print json.dumps(output)
+
+    def on_error(self, status_code):
+        print >> sys.stderr, 'Error with status code:', status_code
+        yag = yagmail.SMTP(username, password)
+        yag.send('epwalsh@iastate.edu', str(status_code))
+        return True
+
+    def on_timeout(self):
+        print >> sys.stderr, 'Timeout...'
+        return True
+
+
+if __name__ == '__main__':
+    auth = OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+    listener = OutListener()
+    stream = Stream(auth, listener)
+    stream.filter(locations=[-96.5, 40.5, -90, 43.5])
+</pre>
 
     </div>
     
