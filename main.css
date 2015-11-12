@@ -8,6 +8,7 @@ body {
     margin-bottom: 100px;
 }
 
+
 /* customize navbar
 ============================================== */
 /* remove the hovering feature of navigation bar title */
@@ -83,6 +84,12 @@ body {
         display: none !important;
     }
     #viShiny2 {
+        display: none;
+    }
+    #sidebar {
+        display: none;
+    }
+    #name-title {
         display: none;
     }
 }
@@ -226,4 +233,10 @@ pre {
 
 #disqus {
     margin-top: 70px;
+}
+
+
+
+#sidebar {
+    padding-top: 40px;
 }
