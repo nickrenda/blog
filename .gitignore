@@ -1,1 +1,6 @@
 *.swp
+Thumbs.db
+.DS_Store
+.ropeproject
+*.dvi
+*.log
