@@ -46,15 +46,22 @@ body {
     #sidebar {
         display: none;
     }
-    #name-title {
-        display: none;
-    }
+    /*
+     * #name-title {
+     *     display: none;
+     * }
+     */
 }
 
 /* adjust content for desktop view
 ============================================== */
 @media (min-width: 768px) {
-
+    #resources {
+        display: none;
+    }
+    #mobile-break {
+        display: none;
+    }
 }
 
 /* customize the carousel
