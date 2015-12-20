@@ -43,7 +43,7 @@ body {
     .tooltip {
         display: none !important;
     }
-    #sidebar {
+    #CV, #CV-panel, #sidebar, .my-hr {
         display: none;
     }
     /*
@@ -141,6 +141,14 @@ pre {
 }
 
 
+/*
+ * Other
+============================================== */
 .btn {
     margin-bottom: 5px;
+}
+
+#CV {
+    width: 100%;
+    height: 700px;
 }
