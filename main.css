@@ -37,9 +37,9 @@ body {
     padding-top: 40px;
 }
 
-/* adjust content for mobile view
+/* adjust content for mobile/tablet view
 ============================================== */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .tooltip {
         display: none !important;
     }
@@ -55,7 +55,7 @@ body {
 
 /* adjust content for desktop view
 ============================================== */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     #resources {
         display: none;
     }
@@ -151,4 +151,18 @@ pre {
 #CV {
     width: 100%;
     height: 700px;
+}
+
+#portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+#bio {
+    padding-top: 10px;
+}
+
+#resources {
+    border-color: black;
 }
