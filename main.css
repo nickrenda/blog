@@ -6,6 +6,7 @@ html {
 body {
     padding-top: 50px;
     margin-bottom: 100px;
+    overflow-x: hidden;
 }
 
 
@@ -35,6 +36,11 @@ body {
 
 #sidebar {
     padding-top: 40px;
+}
+
+#sidebar > .list-group {
+    position: fixed;
+    width: 20%;
 }
 
 /* adjust content for mobile/tablet view
