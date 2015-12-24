@@ -10,13 +10,6 @@ body {
     margin-bottom: 100px;
     width: 100%;
     /* overflow-x: hidden; */
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-body .container {
-    max-width: 100%;
 }
 
 
@@ -119,9 +112,11 @@ footer {
     position: absolute;
     bottom: 0;
     margin-bottom: 20px;
-    width: 100%;
-    display: flex;
-    text-align: center;
+    /* margin-left: 0px; */
+    /* margin-right: 0px; */
+    /* width: 80%; */
+    /* display: flex; */
+    /* text-align: center; */
     align-items: center;
 }
 
