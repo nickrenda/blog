@@ -52,7 +52,7 @@ body {
     .tooltip {
         display: none !important;
     }
-    #CV, #CV-panel, #sidebar, .my-hr {
+    #CV, #CV-panel, #sidebar, .my-hr, .mobile-hide {
         display: none;
     }
     /*
