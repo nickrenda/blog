@@ -65,10 +65,7 @@ body {
 /* adjust content for desktop view
 ============================================== */
 @media (min-width: 992px) {
-    #resources {
-        display: none;
-    }
-    #mobile-break {
+    #resources, #mobile-break {
         display: none;
     }
 }
@@ -176,7 +173,8 @@ pre {
 
 .display-math {
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
+    height: 70vw;
 }
 
 .breadcrumb {
