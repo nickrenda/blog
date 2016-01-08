@@ -105,7 +105,7 @@ body {
 
 /* adjust footer
 ============================================== */
-footer {
+.footer {
     position: absolute;
     bottom: 0;
     margin-bottom: 20px;
@@ -178,5 +178,9 @@ pre {
 }
 
 .breadcrumb {
+    margin-top: 20px;
+}
+
+#top {
     margin-top: 20px;
 }
