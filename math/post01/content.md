@@ -1,4 +1,4 @@
-**Def:** *A family of measurable functions is absolutely continuous*
+**Def:** *A family of measurable functions is said to be absolutely continuous*
 
 Here is some inline text $x^{2} = 2$.
 

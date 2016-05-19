@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width; user-scalable=no; maximum-scale=1.0; initial-scale=1.0">
-    <meta name="description" content="math">
+    <meta name="description" content="">
     <meta name="author" content="Evan Pete Walsh">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="uniform integrability, real analysis">
     <meta name="google-site-verification" content="sKfaBrgOtjBdLWZ26K_IBQqudy6mcZma7Z2A8OaeqwM">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- bootstrap -->
@@ -28,19 +28,20 @@
     </script>
 
     <!-- custom styles -->
-    <link href="main.css" rel="stylesheet">
+    <link href="../main.css" rel="stylesheet">
 
     <!-- tooltip script -->
     <script type="text/javascript">
       $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();   
+        $('[data-toggle="tooltip"]').tooltip();
       });
     </script>
 
-    <script src="jquery.js"></script> 
-    <script> 
+    <script src="jquery.js"></script>
+    <script>
     $(function(){
       $("#includedNav").load("./nav.html");
+      $("#includedContent").load("./post01/content.html")
       $("#includedFooter").load("./footer.html");
     });
     </script>
@@ -54,21 +55,12 @@
 
     <div class="container">
 
-      <blockquote id="top">
-        <p>The scientist does not study nature because it is useful; he studies it because he delights in it, and he delights in it because 
-        it is beautiful. If nature were not beautiful, it would not be worth knowing, and if nature were not worth knowing, life would not be worth living. 
-        Of course I do not here speak of that beauty that strikes the senses, the beauty of qualities and appearances; not that I undervalue 
-        such beauty, far from it, but it has nothing to do with science; I mean that profounder beauty which comes from the harmonious 
-        oder of the parts, and which a pure intelligence can grasp.</p>
-        <footer>Henri Poincaré <cite>Science and Method (1908)</cite></footer>
-      </blockquote>
+      <ol class="breadcrumb">
+        <li><a href="../math.html">Math</a></li>
+        <li class="active">Uniform Integrability</li>
+      </ol>
 
-      <h3>Recent posts</h3>
-
-      <ul class="list-group">
-        <li class="list-group-item"><a href="math/post01.html"></a>Equivalent definitions of uniform integrability</li>
-        <li class="list-group-item"><a href=""></a></li>
-      </ul>
+      <div id="includedContent"></div>
 
       <div id="includedFooter"></div>
 
