@@ -9,6 +9,7 @@ body {
     padding-top: 50px;
     margin-bottom: 100px;
     width: 100%;
+    font-size: 16px;
     /* overflow-x: hidden; */
 }
 
@@ -183,4 +184,15 @@ pre {
 
 #top {
     margin-top: 20px;
+}
+
+/* Math  */
+.math {
+    font-size: 18px;
+}
+
+span.math.display {
+    display: block;
+    padding-top: 10px;
+    text-align: center;
 }
