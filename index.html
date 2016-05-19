@@ -55,6 +55,13 @@
 }
     </script>
 
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedFooter").load("./nav.html");
+    });
+    </script>
+
   </head>
 
   <body>
@@ -452,9 +459,7 @@
 
     </div><!-- /row off-canvas -->
 
-    <footer class="footer">
-      <small>© 2016 <a href="http://epwalsh.com">Evan P. Walsh</a></small>
-    </footer>
+    <div id="includedFooter"></div>
 
     </div>
 
