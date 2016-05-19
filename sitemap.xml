@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-	<url>
-		<loc>http://epwalsh.com/</loc>
-		<lastmod>2016-01-06</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>http://epwalsh.com/travel.html</loc>
-		<lastmod>2016-01-06</lastmod>
-		<changefreq>monthly</changefreq>
-	</url>
-	<url>
-		<loc>http://epwalsh.com/files/CV_Evan_Walsh.pdf</loc>
-		<lastmod>2016-01-06</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>http://epwalsh.com/math/analysis_qual.html</loc>
-		<lastmod>2016-01-06</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>http://epwalsh.com/math/analysis_qual/1996_fall.html</loc>
-		<lastmod>2016-01-06</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>http://epwalsh.com/math/analysis_qual/2014_spring.html</loc>
-		<lastmod>2016-01-06</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
+<url>
+  <loc>http://epwalsh.com/</loc>
+  <lastmod>2016-05-19T16:41:06+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/travel.html</loc>
+  <lastmod>2016-05-19T16:41:06+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/files/CV_Evan_Walsh.pdf</loc>
+  <lastmod>2016-05-19T16:41:05+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/math.html</loc>
+  <lastmod>2016-05-19T16:41:06+00:00</lastmod>
+</url>
+<url>
+  <loc>http://epwalsh.com/math/post01.html</loc>
+  <lastmod>2016-05-19T16:41:06+00:00</lastmod>
+</url>
 </urlset>
