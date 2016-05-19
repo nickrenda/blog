@@ -1,15 +1,22 @@
-We will prove the equivalence of the two following definitions of uniform integrability
+Uniform integrability is an important concept in measure and probability theory,
+particularly with regard to the [study of martingales](https://math.la.asu.edu/~jtaylor/teaching/Spring2011/APM504/lectures/lecture27/lecture27.pdf),
+and is often a necessary condition for convergence results. For example, uniform integrability is one of the 
+assumptions of the [Vitali Convergence Theorem](https://en.wikipedia.org/wiki/Vitali_convergence_theorem), which can be used to prove that absolutely continuous
+functions on an interval $[a,b]$ are precisely the functions for which 
+$$ \int_{a}^{b}f'\ d\mu = f(b) - f(a). $$
+As with many concepts in mathematics, there are several equivalent ways of stating uniform integrability.
+We will prove the equivalence of the two following definitions 
 with respect to Lebesgue measure $\mu$ on $\mathbb{R}^{k}$.
 
 Suppose $\{f_{\lambda} : \lambda \in \Lambda\}$ is a family of complex-valued measurable functions on $\mathbb{R}^{k}$.
 
-**Def 1:** *The family $\{f_{\lambda} : \lambda \in \Lambda\}$ is said to be __uniformly integrable__ if* 
+**Definition 1:** *The family $\{f_{\lambda} : \lambda \in \Lambda\}$ is said to be __uniformly integrable__ if* 
 \begin{equation}
 \lim_{t\rightarrow\infty} \sup_{\lambda} \int_{\{|f_{\lambda}| > t\}} |f_{\lambda}|\ d\mu = 0. 
 \label{eq:def1}
 \end{equation}
 
-**Def 2:** *The family $\{f_{\lambda} : \lambda \in \Lambda\}$ is said to be __uniformly integrable__ if for all $\epsilon > 0$, there exists $\delta > 0$ such that*
+**Definition 2:** *The family $\{f_{\lambda} : \lambda \in \Lambda\}$ is said to be __uniformly integrable__ if for all $\epsilon > 0$, there exists $\delta > 0$ such that*
 \begin{equation}
 \int_{A}\ |f_{\lambda}| \ d\mu < \epsilon
 \label{eq:def2}
@@ -17,14 +24,14 @@ Suppose $\{f_{\lambda} : \lambda \in \Lambda\}$ is a family of complex-valued me
 *for all $\lambda \in \Lambda$ whenever $A \in \mathcal{B}(\mathbb{R}^{k})$ such that 
 $\mu(A) < \delta$.*
 
-**Proof:** \
+*Proof.* \
 (Definition 1 >> Definition 2) Let $\epsilon > 0$. Choose $T > 0$ such that
 $\sup_{\lambda}\int\ |f_{\lambda}|\cdot I(|f_{\lambda}| > T)\ d\mu < \epsilon / 2$. 
 Then let $\delta := \epsilon / 2T$. Thus, for $A \in \mathcal{B}(\mathbb{R}^{k})$ with 
 $\mu(A) < \delta$,
 $$ \int_{A} |f_{\lambda}|\ d\mu = \int_{A\cap \{|f_{\lambda}| > T\}}|f_{\lambda}|\ d\mu + 
 \int_{A\cap \{|f_{\lambda}| \leq T\}}|f_{\lambda}|\ d\mu \leq 
-\int_{\{|f_{\lambda} > T\}} |f_{\lambda}|\ d\mu + \frac{\epsilon}{2T}T < \epsilon $$
+\int_{\{|f_{\lambda}| > T\}} |f_{\lambda}|\ d\mu + \frac{\epsilon}{2T}T < \epsilon $$
 for all $\lambda \in \Lambda$. 
 $$\tag*{$\blacksquare$ (>>)}$$
 
