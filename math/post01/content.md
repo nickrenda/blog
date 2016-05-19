@@ -28,7 +28,7 @@ for all $\lambda \in \Lambda$. Hence $\sup_{\lambda}\int_{A}|f_{\lambda}|d\mu \l
 
 (Definition 1 << Definition 2) Now suppose $\{f_{\lambda} : \lambda \in \Lambda\}$ 
 satisfies Definition 2. It suffices to show that $\sup_{\lambda}\mu(\{|f_{\lambda}| > t\}) \rightarrow 0$ and $t \rightarrow \infty$. By way of contradiction, suppose there exists $\epsilon > 0$ such that for all $t > 0$, there exists $\lambda \in \Lambda$ such that $\mu(\{|f_{\lambda}| > t\}) \geq \epsilon$. 
-By assumption we can choose $\delta > 0$ such that \eqref{eq:def1} is satisfied. 
+By assumption we can choose $\delta > 0$ such that $\eqref{eq:def2}$ is satisfied. 
 Then for each $n \in \mathbb{N}$, 
 $\blacksquare$ (<<)
 $\Box$ (proof)
