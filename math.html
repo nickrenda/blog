@@ -37,9 +37,13 @@
       });
     </script>
 
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <script>w3IncludeHTML();</script>
-
+    <!-- <script src="http://www.w3schools.com/lib/w3data.js"></script> -->
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("./math/test.html"); 
+    });
+    </script>
   </head>
 
   <body>
@@ -88,8 +92,10 @@
       <p>Currently I am studying for the PhD analysis qualifying exam which I will take in August this summer.
       I am documenting my solutions to previous qualifying exams <a href="./math/analysis_qual.html">here.</a></p>
 
-      <div w3-include-html="./math/test.html"></div>
+      <!-- <div w3-include-html="./math/test.html"></div> -->
 
+      <!-- <script>w3IncludeHTML();</script> -->
+      <div class="includedContent"></div>
 
       <footer class="footer">
         <small>© 2016 <a href="http://epwalsh.com">Evan P. Walsh</a></small>
