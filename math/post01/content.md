@@ -40,7 +40,7 @@ satisfies Definition 2. Then it suffices to show that $\sup_{\lambda}\mu(\{|f_{\
 $\epsilon > 0$ such that for all $t > 0$, there exists $\lambda \in \Lambda$ such that $\mu(\{|f_{\lambda}| > t\}) \geq \epsilon$. 
 By assumption we can choose $\delta > 0$ such that $\eqref{eq:def2}$ is satisfied. 
 Then for each $n \in \mathbb{N}$, there exists $\lambda_{n} \in \Lambda$ such that 
-$\mu(\{|f_{\lambda_n}| > n\}) \geq \epsilon$. But then by assumption we can choose $\{E_{n}\}_{n=0}^{\infty}$ such 
+$\mu(\{|f_{\lambda_n}| > n\}) \geq \epsilon$. Thus we can choose $\{E_{n}\}_{n=0}^{\infty}$ such 
 that $E_n \in \mathcal{B}(\mathbb{R}^{k})$,  $\mu(E_n) = \delta / 2$, and $|f_{\lambda_n}(x)| > n$ for all $x \in E_n$ (* see notes below). Now choose $N$ such that 
 $N \geq \frac{2\epsilon}{\delta}$, then
 \begin{equation}
