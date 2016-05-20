@@ -29,7 +29,7 @@
     </script>
 
     <!-- custom styles -->
-    <link href="main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- tooltip script -->
     <script type="text/javascript">
@@ -58,7 +58,7 @@
     <script src="jquery.js"></script> 
     <script> 
     $(function(){
-      $("#includedFooter").load("./footer.html");
+      $("#includedFooter").load("sections/footer.html");
     });
     </script>
 
@@ -155,13 +155,10 @@
               <h3 class="panel-title">Resources</h3>
             </a>
             <a href="travel.html" class="list-group-item"><i class="fa fa-plane"></i> travel</a>
-            <a href="files/CV_Evan_Walsh.pdf" class="list-group-item"><i class="fa fa-file-text-o"></i> Resume/CV</a>
-            <a href="./math.html" class="list-group-item"><i class="fa fa-pencil"></i> Math stuff</a>
+            <a href="./math.html" class="list-group-item"><i class="fa fa-pencil"></i> math blog</a>
+            <a href="files/CV_Evan_Walsh.pdf" class="list-group-item"><i class="fa fa-file-text-o"></i> resume/CV</a>
             <a href="https://www.linkedin.com/in/epwalsh" class="list-group-item"><i class="fa fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/epwalsh?tab=repositories" class="list-group-item"><i class="fa fa-code"></i> GitHub repositories</a>
-            <a href="https://github.com/epwalsh/treemac" class="list-group-item"><i class="fa fa-tree"></i> treemac</a>
             <a href="https://twitter.com/epwalsh10" class="list-group-item"><i class="fa fa-twitter"></i> twitter</a>
-            <a class="list-group-item" href="https://epwalsh.shinyapps.io/viShiny"><i class="fa fa-bar-chart"></i> viShiny</a>
           </div>
 
 
@@ -179,7 +176,7 @@
             <div class="panel-body">
               <div class="row">
                 <div class="col-md-3 mobile-hide">
-                  <h3>Current</h3>
+                  <h3>Spring 2016</h3>
                 </div>
                 <div class="col-md-3">
                   <h4>STAT/MATH 642<br><small>Advanced Probability Theory</small></h4>
@@ -204,33 +201,29 @@
                 </div>
                 <div class="col-md-5">
                   <h4>STAT/MATH 641<br><small>Foundations of Probability Theory</small></h4>
-                  <!--
-                    - <a class="btn btn-default" data-toggle="collapse" href="#stat641" aria-expand="false" aria-controls="stat641">
-                    -   Description 
-                    - </a>
-                  -->
+                  <a data-toggle="collapse" href="#stat641" aria-expand="false" aria-controls="stat641">
+                    Description <i class="fa fa-chevron-down"></i>
+                  </a>
 
-                  <!-- <div class="collapse" id="stat641"> -->
-                  <p>General measure spaces, probability
-                  measure, extension theorem and construction of Lebesgue-Stieljes measures on Euclidean spaces. Measurable 
-                  transformations and random variables, induced measures and probability distributions. General integration 
-                  and expectation, \(L^{p}\) spaces and integral inequalities. 
-                  Probability densities and the Radon-Nikodym theorem. Product spaces and Fubini-Tonelli theorems.</p>
-                  <!-- </div> -->
+                  <div class="collapse" id="stat641">
+                    <p>General measure spaces, probability
+                    measure, extension theorem and construction of Lebesgue-Stieljes measures on Euclidean spaces. Measurable 
+                    transformations and random variables, induced measures and probability distributions. General integration 
+                    and expectation, \(L^{p}\) spaces and integral inequalities. 
+                    Probability densities and the Radon-Nikodym theorem. Product spaces and Fubini-Tonelli theorems.</p>
+                  </div>
                 </div><!--/.col-xs-6.col-lg-4-->
                 <div class="col-md-4">
                   <h4>MATH 515<br><small>Real Analysis I</small></h4>
-                  <!--
-                    - <a class="btn btn-default" data-toggle="collapse" href="#math515" aria-expand="false" aria-controls="stat641">
-                    -   Description 
-                    - </a>
-                  -->
+                  <a data-toggle="collapse" href="#math515" aria-expand="false" aria-controls="stat641">
+                    Description <i class="fa fa-chevron-down"></i>
+                  </a>
 
-                  <!-- <div id="math515" class="collapse"> -->
+                  <div id="math515" class="collapse">
                   <p>Lebesgue measure and measurable functions. Egoroff's and Lusin's thoerems. The Lebesgue integral; dominated
                   convergence theorem and Vitali convergence theorem. One variable differentiation theory; Fubini and Tonelli 
                   theorems in \(\mathbb{R}^{n}\); \(L^{p}\) spaces.</p>
-                  <!-- </div> -->
+                  </div>
                 </div><!--/.col-xs-6.col-lg-4-->
               </div>
 
@@ -363,7 +356,7 @@
           <div class="panel-body">
             <div class="row">
               <div class="col-md-3 mobile-hide">
-                <h3>Current</h3>
+                <h3>Spring 2016</h3>
               </div>
               <div class="col-md-9">
                 <h4>STAT 105<br><small>Intro to Statistics for Engineers</small></h4>
@@ -447,13 +440,10 @@
       <div class="col-md-3 sidebar-offcanvas" id="sidebar">
         <div class="list-group">
           <a href="travel.html" class="list-group-item"><i class="fa fa-plane"></i> travel</a>
-          <a href="#CV-panel" class="list-group-item"><i class="fa fa-file-text-o"></i> Resume/CV</a>
-          <a href="./math.html" class="list-group-item"><i class="fa fa-pencil"></i> Math stuff</a>
+          <a href="./math.html" class="list-group-item"><i class="fa fa-pencil"></i> math blog</a>
+          <a href="#CV-panel" class="list-group-item"><i class="fa fa-file-text-o"></i> resume/CV</a>
           <a href="https://www.linkedin.com/in/epwalsh" class="list-group-item"><i class="fa fa-linkedin"></i> LinkedIn</a>
-          <a href="https://github.com/epwalsh?tab=repositories" class="list-group-item"><i class="fa fa-code"></i> GitHub repositories</a>
-          <a href="https://github.com/epwalsh/treemac" class="list-group-item"><i class="fa fa-tree"></i> treemac</a>
           <a href="https://twitter.com/epwalsh10" class="list-group-item"><i class="fa fa-twitter"></i> twitter</a>
-          <a class="list-group-item" href="https://epwalsh.shinyapps.io/viShiny"><i class="fa fa-bar-chart"></i> viShiny</a>
         </div>
       </div><!--/.sidebar-offcanvas--> 
 
