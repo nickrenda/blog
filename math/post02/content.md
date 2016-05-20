@@ -30,7 +30,7 @@ $$ \bigcap_{\left\{ E: E\in\mathcal{F}, x \in E \right\}}E \in \mathcal{F}, $$
 since $\mathcal{F}$ is closed under countable intersections.
 $$\tag*{$\blacksquare$ Claim 1}$$
 
-**Claim 2:** The image of $f$, $\left\{ A : A = f(x), x \in \Omega \right\}$ is a disjoint collection of sets.
+**Claim 2:** The image of $f$, $\left\{ A : A = f(x), x \in \Omega \right\}$, is a disjoint collection of sets.
 
 *Proof of Claim 2:* Let $x, y \in \Omega$. We need to show that $f(x) = f(y)$ or $f(x) \cap f(y) = \emptyset$. 
 In order to derive a contradiction, assume that $f(x) \neq f(y)$ and $f(x) \cap f(y) \neq \emptyset$. 
