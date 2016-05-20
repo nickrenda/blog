@@ -24,7 +24,7 @@ Suppose $\{f_{\lambda} : \lambda \in \Lambda\}$ is a family of complex-valued me
 *for all $\lambda \in \Lambda$ whenever $A \in \mathcal{B}(\mathbb{R}^{k})$ such that 
 $\mu(A) < \delta$.*
 
-*Proof.* \
+$Proof.$ \
 (Definition 1 >> Definition 2) Let $\epsilon > 0$. Choose $T > 0$ such that
 $\sup_{\lambda}\int\ |f_{\lambda}|\cdot I(|f_{\lambda}| > T)\ d\mu < \epsilon / 2$. 
 Then let $\delta := \epsilon / 2T$. Thus, for $A \in \mathcal{B}(\mathbb{R}^{k})$ with 
