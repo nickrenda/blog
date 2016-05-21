@@ -50,7 +50,7 @@ Therefore $\bigcup \{f(y) : y \in B \} \subseteq B$. Hence $B = \bigcup\{f(y) : 
 
 The fact that $\left\{ f(y) : y \in B \right\}$ is the unique collection of sets in $\left\{f(x): x \in \Omega \right\}$ such that 
 $B$ is their union follows directly as a result of Claim 1, 
-that the image of $f$, is a pairwise disjoint collection of sets.
+that the image of $f$ is a pairwise disjoint collection of sets.
 $$\tag*{$\blacksquare$ Claim 2}$$
 
 **Claim 3:** The image of $f$, $\left\{ f(x): x \in \Omega \right\}$, is countably infinite.
