@@ -48,9 +48,9 @@ Further, $f(x) \subseteq B$ because if that was not true then $f(x) \cap B$ woul
 $\mathcal{F}$ that contains $x$, which is a contradiction. So $f(x) \subseteq B$ for each $x \in B$. 
 Therefore $\bigcup \{f(y) : y \in B \} \subseteq B$. Hence $B = \bigcup\{f(y) : y \in B\}$.
 
-The fact that $\left\{ f(y) : y \in B \right\}$ is the unique collection of sets in $\left\{ A : A = f(x), x \in \Omega \right\}$ such that 
+The fact that $\left\{ f(y) : y \in B \right\}$ is the unique collection of sets in $\left\{f(x): x \in \Omega \right\}$ such that 
 $B$ is their union follows directly as a result of Claim 1, 
-that the image of $f$, $\left\{ f(x): x \in \Omega \right\}$, is a pairwise disjoint collection of sets.
+that the image of $f$, is a pairwise disjoint collection of sets.
 $$\tag*{$\blacksquare$ Claim 2}$$
 
 **Claim 3:** The image of $f$, $\left\{ f(x): x \in \Omega \right\}$, is countably infinite.
@@ -67,7 +67,7 @@ $$ \left\{f(x): x \in \Omega \right\} = \left\{ A_{n} \right\}_{n\in\mathbb{N}}.
 Now, let $\left\{ 0,1 \right\}^{\omega}$ be the set of all countably infinite sequences of 0's and 1's. Define 
 $$ g: \left\{ 0,1 \right\}^{\omega} \longrightarrow \mathcal{F} $$
 by 
-$$ g\left( \left( a_{n} \right)_{n\in\mathbb{N}} \right) = \bigcup_{\{n : a_{n} = 1\}}A_{n}, \text{ for each } \left( a_{n} \right)_{n\in\mathbb{N}}
+$$ g\left( \left( a_{n} \right)_{n\in\mathbb{N}} \right) := \bigcup_{\{n : a_{n} = 1\}}A_{n}, \text{ for each } \left( a_{n} \right)_{n\in\mathbb{N}}
 \in \left\{ 0,1 \right\}^{\omega}. $$
 Note that $g$ is well-defined since $\cup_{\{n:a_{n}=1\}}A_{n}$ is a countable union of sets in $\mathcal{F}$, and $\mathcal{F}$ is closed under
 countable unions.
