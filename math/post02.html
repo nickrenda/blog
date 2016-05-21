@@ -10,12 +10,9 @@
     <meta name="author" content="Evan Pete Walsh">
     <meta name="keywords" content="sigma algebra, real analysis">
     <link rel="icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
@@ -27,28 +24,21 @@ MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
     </script>
-    <script type="text/javascript"
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <script type="text/javascript" async
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
     <!-- custom styles -->
     <link href="../css/main.css" rel="stylesheet">
 
-    <!-- tooltip script -->
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
-
     <script src="jquery.js"></script>
     <script>
-    $(function(){
-      $("#includedNav").load("../sections/nav.html");
-      $("#includedContent").load("./post02/content.html");
-      $("#includedDisqus").load("../sections/disqus.html");
-      $("#includedFooter").load("../sections/footer.html");
-    });
+$(function(){
+  $("#includedNav").load("../sections/nav.html");
+  $("#includedContent").load("./post02/content.html");
+  $("#includedDisqus").load("../sections/disqus.html");
+  $("#includedFooter").load("../sections/footer.html");
+});
     </script>
 
   </head>
@@ -71,6 +61,11 @@ MathJax.Hub.Config({
       </ol>
 
       <div id="includedContent"></div>
+
+      <ul class="pager">
+        <li class="previous"><a href="./post01.html"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      </ul>
 
       <div id="includedDisqus"></div>
 

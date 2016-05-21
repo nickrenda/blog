@@ -10,38 +10,28 @@
     <meta name="author" content="Evan Pete Walsh">
     <meta name="keywords" content="">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <title>E.P. Walsh @ Iowa State University</title>
 
     <!-- mathjax -->
-    <script type="text/javascript"
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <script type="text/javascript" async
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
     <!-- custom styles -->
     <link href="css/main.css" rel="stylesheet">
 
-    <!-- tooltip script -->
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();   
-      });
-    </script>
-
     <script src="jquery.js"></script> 
     <script> 
-    $(function(){
-      $("#includedNav").load("sections/nav.html");
-      $("#includedFooter").load("sections/footer.html");
-    });
+$(function(){
+  $("#includedNav").load("sections/nav.html");
+  $("#includedFooter").load("sections/footer.html");
+});
     </script>
 
   </head>
@@ -70,8 +60,14 @@
       <h3>Recent posts</h3>
 
       <ul class="list-group">
-        <li class="list-group-item"><a href="math/post01.html">Equivalent definitions of uniform integrability</a></li>
-        <li class="list-group-item"><a href="math/post02.html">Why there is no countably infinite sigma algebra</a></li>
+        <li class="list-group-item">
+          <span class="badge">May 20, 2016</span>
+          <a href="math/post02.html">Why there is no countably infinite sigma algebra</a>
+        </li>
+        <li class="list-group-item">
+          <span class="badge">May 19, 2016</span>
+          <a href="math/post01.html">Equivalent definitions of uniform integrability</a>
+        </li>
       </ul>
 
       <div id="includedFooter"></div>
