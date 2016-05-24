@@ -96,3 +96,9 @@ $(\Leftarrow)$ Now suppose $F$ is absolutely continuous. Then by the lemma,
 $$ F(x) = F(a) + \int_{a}^{x}F'\ dm = \int_{a}^{x}F'\ dm \ \text{ for all } x \in [a,b]. $$
 It follows that $\mu(A) = \int_{A}F'\ dm$ for all $A \in \mathcal{B}[a,b]$. Thus, if $m(A) = 0$ then $0 = \int_{A}F'\ dm = \mu(A)$.
 $$\tag*{$\Box$}$$
+
+### References
+
+1. Royden, H.L., and P.M. Fitzpatrik, *Real Analysis*, 4th Edition
+2. Athreya, K.B., and S.N. Lahiri, *Measure Theory and Probability Theory*
+3. Titkos, Tamás. (2015) A Simple Proof of the Lebesgue Decomposition Theorem. *American Mathematical Monthly*, 122 (8). pp. 793-794. ISSN 0002-9890
