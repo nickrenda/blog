@@ -77,3 +77,22 @@ where $\sigma\langle \mathcal{C} \rangle$ denotes the $\sigma$-algebra generated
 $\mathcal{L} := \{A : A \in \mathcal{B}[0,1], \mu(A) = \mu'(A)\}$. It is easy to show that $\mathcal{L}$ is a 
 [$\lambda$-system (aka Dynkin-system)](https://en.wikipedia.org/wiki/Dynkin_system). Thus, it follows from the 
 [$\pi$-$\lambda$ theorem](https://en.wikipedia.org/wiki/Pi_system#The_.CF.80-.CE.BB_Theorem) that $\mu = \mu'$ on all of $\mathcal{B}[0,1]$.
+
+The relationship between definitions 1 & 3 is also worth exploring. It turns out that in the special case of LDT1 described above, there
+is a deep connection between both definitions of absolute continuity. First take note of the following lemma.
+
+**Lemma:** *A function $f : [a,b] \rightarrow \mathbb{R}$ is absolutely continuous if and only if it is an indefinite integral.*
+
+The proof of this is straight-forward and can be found in Royden & Fitzpatrick, *Real Analysis 4th Ed*, page 125.
+
+**Theorem:** *Suppose $\mu$ is a finite measure on $([a,b], \mathcal{B}[a,b])$. Let $F$ denote the cdf of $\mu$. Then $\mu \ll m$ if and only if $F$ is absolutely continuous.*
+
+$Proof.$ 
+$(\Rightarrow)$ Suppose $\mu \ll m$. Then by the Radon-Nikodym Theorem there is a non-negative, integrable function $f$ such that 
+$$ \mu(A) = \int_{A}f\ dm \ \text{ for all } A \in \mathcal{B}[a,b]. $$
+Thus $F(x) = \int_{a}^{x}f\ dm$ for all $x \in [a,b]$. Hence $F$ is an indefinite integral, so $F$ is absolutely continuous by the lemma.
+
+$(\Leftarrow)$ Now suppose $F$ is absolutely continuous. Then by the lemma,
+$$ F(x) = F(a) + \int_{a}^{x}F'\ dm = \int_{a}^{x}F'\ dm \ \text{ for all } x \in [a,b]. $$
+It follows that $\mu(A) = \int_{A}F'\ dm$ for all $A \in \mathcal{B}[a,b]$. Thus, if $m(A) = 0$ then $0 = \int_{A}F'\ dm = \mu(A)$.
+$$\tag*{$\Box$}$$
