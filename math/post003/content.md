@@ -12,41 +12,41 @@ say that $f$ is __absolutely continuous__ if for all $\epsilon > 0$, there exist
 disjoint collection $\{(a_k, b_k)\}_{k=1}^{n}$ of open intervals in $(a,b)$*,
 $$\text{ if } \sum_{k=1}^{n}[b_{k} - a_{k}] < \delta \text{ then } \sum_{k=1}^{n}|f(b_{k}) - f(a_{k})| < \epsilon.$$
 
-**Definition 4:** (Singular functions) *A real-valued function is said to be __singular__ if its defivative is 0 almost everywhere with respect to
+**Definition 4:** (Singular functions) *A real-valued function is said to be __singular__ if its derivative is 0 almost everywhere with respect to
 Lebesgue measure $m$*.
 
 Now that we have successfully abused some terminology, let's talk about the relationship between the Lebesgue decomposition theorems.
 
-There are two forms of the Lebesgue decomposition theorem (LDT): the first states that 
-a measure $\mu$ on a $\sigma$-finite measure space can be decomposed as the sum of two measures, one of
-which is absolutely continuous (in the sense of Definition 1) and one of which is singular (Definition 2) with respect
-to another $\sigma$-finite measure $\nu$ (LDT1), and the second states that a real-valued function $f$ of 
-[bounded variation](https://en.wikipedia.org/wiki/Bounded_variation)
-defined on a closed and bounded interval $[a,b]$ can be decomposed as the sum 
-of a function $g$ which is absolutely continuous (in the sense of Definition 3) and
-of a function $h$ which is singular (Definition 4) (LDT2). In particular, we can write
-$f = g + h$ where 
+There are two forms of the Lebesgue Decomposition Theorem: 
+
+**Lebesgue Decomposition Theorem for Measures:** (LDT1). *Suppose $\mu$ and $\eta$ are $\sigma$-finite measures on a measurable space $(\Omega, \mathcal{S})$.
+Then $\mu$ can be decomposed as the sum of two measures, $\nu$ and $\lambda$, where $\nu \ll \eta$ and $\lambda \perp \eta$.* (\*)
+
+**Lebesgue Decomposition Theorem for Functions of Bounded Variation:** (LDT2). *Suppose $f : [a,b] \rightarrow \mathbb{R}$ is of 
+[bounded variation](https://en.wikipedia.org/wiki/Bounded_variation). Then $f$ can be decomposed
+as the sum of two functions, $g$ and $h$, where $g$ is absolutely continuous (in the sense of Definition 3) and
+$h$ is singular (Definition 4). In particular, we can write*
 \begin{equation}
 g(x) := \int_{a}^{x}f'\ dm \ \text{ and } \ h(x) := f(x) - \int_{a}^{x}f'\ dm\ \text{ for all }x \in [a,b].
 \label{1}
 \end{equation}
-Since $f$ has bounded variation, $f'$ exists almost everywhere ($m$) and so the $g$ and $h$ in
-$\eqref{1}$ are well-defined.
+
+Note that if $f$ is of bounded variation, $f'$ exists almost everywhere ($m$). Hence the $g$ and $h$ in $\eqref{1}$ are well-defined.
 
 Considering the overlap of terminology
 it is not surprising that these theorems are closely related. In fact LDT1, when restricted to the 
 measurable space $([a,b], \mathcal{B}[a,b])$ and when the second measure is Lebesgue measure $m$, 
 can be seen as a special case of LDT2, where $-\infty < a < b < \infty$
 and $\mathcal{B}[a,b]$ denotes the Borel $\sigma$-algebra over $[a,b]$.
+More precisely, we can prove the following weaker version of LDT1 using LDT2.
 
-The proof of this relationship is quite simple.
+**Theorem:** (Weak LDT1). *Suppose $\mu$ is a finite measure on $([a,b], \mathcal{B}[a,b])$. Then there exists (finite) measures $\nu$ and $\lambda$
+on $([a,b], \mathcal{B}[a,b])$ such that $\mu = \nu + \lambda$, where $\nu \ll m$ and $\lambda \perp m$.*
 
-$Proof.$ Without loss of generality assume $a = 0$ and $b = 1$. Suppose $\mu$ is a measure on $([0,1], \mathcal{B}[0,1])$.
-We will use LDT2 to prove LDT1, i.e. to show that $\mu$ can be decomposed as $\mu = \nu + \lambda$, where $\nu \ll m$ and 
-$\lambda \perp m$. Let
+$Proof.$ Without loss of generality assume $a = 0$ and $b = 1$. Let
 $$ F(t) := \mu([0, t]), \ t \in [0,1], $$
-i.e. $F$ is the cumulative distribution function (cdf) of $\mu$. In order to apply LDT2, we need $F$ to be of bounded variation.
-However, since $F$ is non-decreasing this is trivial. Thus we can decompose $F$ as the sum of an absolutely continuous function 
+i.e. $F$ is the cumulative distribution function (cdf) of $\mu$. 
+Since $F$ is non-decreasing, $F$ is of bounded variation. Thus, by LDT2, we can decompose $F$ as the sum of an absolutely continuous function 
 $G$ and a singular function $H$ given by
 $$ G(x) := \int_{0}^{x}F'\ dm \ \text{ and } \ H(x) := F(x) - \int_{0}^{x}F'\ dm. $$
 First we will show that $G$ and $H$ are valid cdf's.
@@ -60,12 +60,20 @@ Therefore $H$ is non-decreasing. Now, by the right-continuity of $F$ and the con
 $$ \lim_{y\rightarrow x^{+}} H(y) = \lim_{y\rightarrow x^{+}} F(y) - \int_{0}^{y}F'\ dm = F(x) - \int_{0}^{x}F'\ dm = H(x). $$
 $$\tag*{$\blacksquare$ Claim 1}$$
 
-By Claim 1, $G$ and $H$ are the cdf's of two measures, call them $\nu$ and $\lambda$, respectively. It follows that $\mu = \nu + \lambda$ where $\nu$
-is given explicitly by
-$\nu(A) = \int_{A}F' dm$ (a good exercise is to verify this yourself).
+By Claim 1, $G$ and $H$ are the cdf's of two measures, call them $\nu$ and $\lambda$, respectively. More precisely, $\nu$ and $\lambda$
+are [Lebesgue-Stieltjes measures](https://en.wikipedia.org/wiki/Lebesgue%E2%80%93Stieltjes_integration#Definition) generated by $G$ and $H$.
+It follows that $\mu = \nu + \lambda$ where $\nu$ is given explicitly by
+$\nu(A) = \int_{A}F' dm$ (a good exercise is to verify this yourself, see \*\* below).
 Thus $\nu \ll m$. Further, since $H' \equiv 0$ a.e. ($m$), $\lambda(A) > 0$ if and only if $A$ contains a discontinuity point of $H$.
 But the discontinuity points $\mathcal{D}$ of $H$ form a countable set (why is this?). Therefore $0 = m(\mathcal{D}) = \lambda([0,1] - \mathcal{D})$.
 Hence $\lambda \perp m$ by definition.
 $$\tag*{$\Box$}$$
 
-> NOTES: A nice proof of a general form of LDT1 can be found [here](http://arxiv.org/pdf/1404.1871v1.pdf).  
+> (\*) A nice proof of a general form of LDT1 can be found [here](http://arxiv.org/pdf/1404.1871v1.pdf).  
+(\*\*) To show that $\mu(A) = \nu(A) + \lambda(A)$, one could first show that $\mu$ and $\mu' := \nu + \lambda$ agree over a suitable
+[$\pi$-system](https://en.wikipedia.org/wiki/Pi_system), $\mathcal{C}$, for which $\mathcal{B}[0,1] = \sigma\langle \mathcal{C} \rangle$,
+where $\sigma\langle \mathcal{C} \rangle$ denotes the $\sigma$-algebra generated by $\mathcal{C}$
+(the set of all subintervals of $[0,1]$ is a good bet). Then, after verifying that $\mu'$ is a valid measure, define 
+$\mathcal{L} := \{A : A \in \mathcal{B}[0,1], \mu(A) = \mu'(A)\}$. It is easy to show that $\mathcal{L}$ is a 
+[$\lambda$-system (aka Dynkin-system)](https://en.wikipedia.org/wiki/Dynkin_system). Thus, it follows from the 
+[$\pi$-$\lambda$ theorem](https://en.wikipedia.org/wiki/Pi_system#The_.CF.80-.CE.BB_Theorem) that $\mu = \mu'$ on all of $\mathcal{B}[0,1]$.
