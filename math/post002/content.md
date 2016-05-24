@@ -1,3 +1,5 @@
+## Why there is no countably infinite sigma algebra
+
 A $\sigma$-algebra $\mathcal{F}$ over a set $\Omega$ is a collection of subsets of $\Omega$ such that
 
 1. $\emptyset \in \mathcal{F}$,
