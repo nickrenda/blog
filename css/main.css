@@ -60,6 +60,9 @@ blockquote {
     #CV, #CV-panel, #sidebar, .my-hr, .mobile-hide {
         display: none;
     }
+    .jumbotron {
+        display: none;
+    }
     /*
      * #name-title {
      *     display: none;
