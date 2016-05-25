@@ -62,7 +62,7 @@ $$ f_n(\omega) = \left\{\begin{array}{cl}
 0 & \omega \neq n \\
 n & \omega = n
 \end{array} \right..$$
-Then for any $\epsilon > 0$, $\{f_n : n\in \mathbb{N}\}$ satisfies $\eqref{eq:def1}$ 
+Then for any $\epsilon > 0$, $\{f_n : n\in \mathbb{N}\}$ satisfies $\eqref{eq:def2}$ 
 with $\delta = 1/2$ since $\emptyset$ is the only measurable set with measure less than $1/2$.
 However,
 $$ \lim_{t\rightarrow\infty}\sup_{n}\int_{\{|f_{n}| > t\}}|f_{n}|\ dc \geq 
