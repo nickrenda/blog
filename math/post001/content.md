@@ -43,7 +43,7 @@ $\epsilon > 0$ such that for all $t > 0$, there exists $\lambda \in \Lambda$ suc
 By assumption we can choose $\delta > 0$ such that $\eqref{eq:def2}$ is satisfied. 
 Then for each $n \in \mathbb{N}$, there exists $\lambda_{n} \in \Lambda$ such that 
 $\mu(\{|f_{\lambda_n}| > n\}) \geq \epsilon$. Thus we can choose $\{E_{n}\}_{n=0}^{\infty}$ such 
-that $E_n \in \mathcal{B}(\mathbb{R}^{k})$,  $\mu(E_n) = \delta / 2$, and $|f_{\lambda_n}(x)| > n$ for all $x \in E_n$ (* see notes below). Now choose $N$ such that 
+that $E_n \in \mathcal{B}(\mathbb{R}^{k})$,  $\mu(E_n) = \delta / 2$, and $|f_{\lambda_n}(x)| > n$ for all $x \in E_n$ (see ($*$) below). Now choose $N$ such that 
 $N \geq \frac{2\epsilon}{\delta}$, then
 \begin{equation}
 \int_{E_{N}}|f_{\lambda_{N}}|\ d\mu \geq \int_{E_N} N \ d\mu = N\cdot \frac{\delta}{2} \geq 
@@ -91,5 +91,9 @@ $$ T\mu(A) = \int_{A}T\ d\mu \leq \int_{A}|f_{\lambda}|\ d\mu \leq M, $$
 which implies $\mu(A) \leq MT^{-1} < \delta$. Hence $\int_{A}|f_{\lambda}|\ d\mu < \epsilon$.
 $$\tag*{$\Box$}$$
 
-> \* One property of Lebesgue measure on $\mathbb{R}^{k}$ is that if $\mu(A) = R > 0$, then for all $0 < r < R$, 
+> ($*$) One property of Lebesgue measure on $\mathbb{R}^{k}$ is that if $\mu(A) = R > 0$, then for all $0 < r < R$, 
 there exists a Borel set $E \subset A$  such that $\mu(E) = r$. 
+
+### References
+
+1. Athreya, K.B., and S.N. Lahiri, *Measure Theory and Probability Theory*
