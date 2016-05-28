@@ -1,6 +1,6 @@
 ### Characterizations of converence (general measure theory)
 
-![](./figures/post004/convergence_measureTheory.png)
+[![](./figures/post004/convergence_measureTheory.png)](./figures/post004/convergence_measureTheory.png)
 
 Let $(\Omega, \mathcal{S}, \mu)$ be a measure space and $f, f_{0}, f_{1}, ...$ real-valued measurable functions on $\Omega$.
  
@@ -32,9 +32,10 @@ B. Suppose $\Omega = [0, \infty)$. Let $f_{n} := \chi_{[n,\infty)}$ for each $n 
 
 C. Suppose $\Omega = [0,1]$ and for $n \geq 1$, let $f_{n} := n\chi_{[0,n^{-1}]}$. Then $f_{n} \rightarrow f$ in measure but not in $L^{p}$, $0 < p \leq \infty$.
 
+
 ### Characterizations of convergence (probability theory)
 
-![](./figures/post004/convergence_probTheory.png)
+[![](./figures/post004/convergence_probTheory.png)](./figures/post004/convergence_probTheory.png)
 
 **Theorem 7:** *Suppose $\{X_{n}\}_{n=0}^{\infty}$ is UI and $X_{n} \rightarrow X$ in distribution. Then $E|X_{0}| < \infty$ and $EX_{n} \rightarrow EX_{0}$.*
 
@@ -56,3 +57,5 @@ in distribution and in expectation, but not in probability, in $L^{p}$, or almos
 
 
 ### Characterizations of continuity
+
+[![](./figures/post004/continuity.png)](./figures/post004/continuity.png)
