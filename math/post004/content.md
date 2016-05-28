@@ -1,6 +1,6 @@
 ### General measure theory convergence 
 
-![](./convergence_measureTheory.png)
+![](./figures/post004/convergence_measureTheory.png)
 
 ### Probability thoery convergence
 
