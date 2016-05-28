@@ -1,4 +1,4 @@
-### Characterizations of converence (general measure theory)
+### Characterizations of convergence (general measure theory)
 
 [![](./figures/post004/convergence_measureTheory.png)](./figures/post004/convergence_measureTheory.png)
 
@@ -46,7 +46,8 @@ on a common probability space $(\Omega, \mathcal{S}, P)$ such that $Y, Y_{n}$ ha
 $Y_{n} \rightarrow Y$ a.s. ($P$).*
 
 **Theorem 9:** *Suppose $\{X_{n}\}_{n=1}^{\infty}$ is a sequence of independent random variables on probability space. 
-Let $S_{n} := \sum_{j=1}^{n}X_{n}$. Then $S_{n}$ converges in probability to a random variable $S$ if and only if $S_{n}$ converges a.s. ($P$) to $S$.*
+Let $S_{n} := \sum_{j=1}^{n}X_{n}$. Then the sequence $\{S_{n}\}_{n=1}^{\infty}$ converges in probability to a random variable $S$ if and only if $\{S_{n}\}_{n=1}^{\infty}$ 
+converges a.s. ($P$) to $S$.*
 
 **Theorem 10:** *Convergence in probability implies convergence in distribution. Hence so does convergence a.s. and convergence in $L^{p}$, $0 < p \leq \infty$.*
 
