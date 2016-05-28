@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Designed and built by Evan Pete Walsh (epwalsh.com) -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; user-scalable=no; maximum-scale=1.0; initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Evan Pete Walsh">
+    <meta name="keywords" content="convergence, real analysis, measure theory, probability theory">
+    <link rel="icon" href="../images/favicon.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <title>QEDed.</title>
+
+    <!-- mathjax -->
+    <script type="text/javascript" async
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+    </script>
+
+    <!-- custom styles -->
+    <link href="../css/main.css" rel="stylesheet">
+
+    <script src="jquery.js"></script>
+    <script>
+$(function(){
+  $("#includedNav").load("../sections/nav_blog.html");
+  $("#includedContent").load("./post004/content.html");
+  $("#includedDisqus").load("../sections/disqus.html");
+  $("#includedFooter").load("../sections/footer.html");
+});
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- navigation -->
+    <div id="includedNav"></div>
+
+    <div class="jumbotron">
+      <div class="container">
+      </div>
+    </div>
+
+    <div class="container">
+
+      <ol class="breadcrumb">
+        <li><a href="index.html#recentPosts">Recent posts</a></li>
+        <li class="active">May 28</li>
+      </ol>
+
+      <h2>Cheat sheets</h2>
+      <hr>
+
+      <div id="includedContent"></div>
+
+      <hr>
+
+      <ul class="pager">
+        <li class="previous"><a href="./post003.html"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+
+      <div id="includedDisqus"></div>
+
+      <div id="includedFooter"></div>
+
+    </div>
+
+    <script type="text/javascript">
+      if (window.MathJax) {MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}
+    </script>
+  </body>
+</html>
