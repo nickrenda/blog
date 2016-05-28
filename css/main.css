@@ -193,18 +193,3 @@ pre {
     margin-top: 20px;
 }
 
-/* Math  */
-.math {
-    font-size: 16px;
-}
-
-span.math.display {
-    display: block;
-    text-align: center;
-}
-
-.jumbotron {
-    /* background-image: url(http://factsongambling.com/wp-content/uploads/2015/01/gambling-facts-image.png) no-repeat center center; */
-    background: url(../images/math.png) no-repeat center center;
-    height: 366px;
-}
