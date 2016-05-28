@@ -60,3 +60,9 @@ in distribution and in expectation, but not in probability, in $L^{p}$, or almos
 ### Characterizations of continuity
 
 [![](./figures/post004/continuity.png)](./figures/post004/continuity.png)
+
+
+### References
+
+1. Royden, H.L., and P.M. Fitzpatrik, *Real Analysis*, 4th Edition
+2. Athreya, K.B., and S.N. Lahiri, *Measure Theory and Probability Theory*
