@@ -1,0 +1,182 @@
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Evan `Pete'}{Walsh}
+\title{CV}                               % optional, remove / comment the line if not wanted
+\address{Iowa State University}{Department of Statistics}{Snedecor Hall Room 2410, Ames, IA 50011} % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{+44 12345 12345}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{epwalsh@iastate.edu}                               % optional, remove / comment the line if not wanted
+\homepage{epwalsh.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{\href{https://github.com/epwalsh}{\faGithub}, \href{https://www.linkedin.com/in/epwalsh}{\faLinkedin}: epwalsh} % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Third-year graduate student pursuing a co-major PhD in Statistics and Mathematics.}
+
+\section{Education}
+
+\vspace{5pt}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+  \item{\cventry{August 2014 -- Present}{Pursuing PhD in Statistics and Mathematics (co-major)}{Iowa State University}{Ames, IA}{}{Overall GPA: 3.86 / 4.00}}
+
+  \item{\cventry{August 2010 -- May 2014}{Bachelor of Science (B.S.), Mathematics (with honors)}{St. Lawrence University}{Canton, NY}{}{Major GPA:
+    3.95 / 4.00}}  
+
+  \item{\cventry{Spring 2013}{Semester Abroad, Mandarin Chinese and Economics}{East China Normal University}{Shanghai, China}{}{}}
+
+\end{itemize}
+
+\section{Academic Experience}
+
+\vspace{6pt}
+
+\subsection{Iowa State University}
+
+\begin{itemize}
+
+  \item{\cventry{Spring 2016 -- Present}{AFLEX}{Research Assistant}{}{}{\vspace{3pt} An interdisciplinary approach using machine learning and 
+        natural language processing to develop an Automated Functional Language EXtraction (AFLEX) system to transform the translation of STEM 
+    research to society; funded by NIH, working with Dr. Kris De Brabanter.}}
+
+    \vspace{6pt}
+
+  \item{\cventry{Spring 2016}{STAT 105}{Instructor}{}{}{\vspace{3pt}Intro Stat for Engineering Students (online section)}}
+
+    \vspace{6pt}
+
+  \item{\cventry{Spring 2015}{STAT 101}{Instructor}{}{}{\vspace{3pt}Principles of Statistics}}
+
+    \vspace{6pt}
+
+  \item{\cventry{Fall 2014, Fall 2015}{STAT 326}{Lab Instructor}{}{}{\vspace{3pt}Business Statistics II}}
+
+    \vspace{6pt}
+
+  \item{\cventry{Fall 2014}{STAT 101}{Lab Instructor}{}{}{\vspace{3pt}Principles of Statistics}}
+
+\end{itemize}
+
+\subsection{St. Lawrence University}
+
+\begin{itemize}
+
+  \item{\cventry{Fall 2013 -- Spring 2014}{Analysis of River Data}{Research Assistant}{}{}{\vspace{3pt} Assisted the Chemistry Department in analyzing and visualizing data using R.}}
+
+    \vspace{6pt}
+
+  \item{\cventry{Fall 2012 -- Spring 2014}{Quantitative Resource Center}{Peer Mentor}{}{}{\vspace{3pt}Tutored other students and occasionally ran
+    workshops in mathematics, computer science, statistics, and economics.}}
+
+\end{itemize}
+
+\section{Honors and Awards}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+  \item \textbf{prudsys 2015 Data Mining Cup - 2nd Place} \hfill \emph{Spring 2015} \\ 
+  The Data Mining Cup is a 
+
+  \vspace{6pt}
+
+\item \textbf{Industry Software Skills:} SolidWorks (Advanced), Matlab (Advanced), Ansys (Intermediate),  LTspice (Intermediate), Most MS Office products including MS project and MS access (Advanced).
+
+\vspace{6pt}
+
+\item \textbf{General Business Skills:} Good presentation skills, Works well in a team.
+
+\vspace{6pt}
+
+\item \textbf{Other:} Good soldering and spot welding skills, Can write well organised and structured reports.
+
+\end{itemize}
+
+\section{Technical Skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} Proficient in: C, C++, Python, Matlab, Arduino, TeX \\ Also basic ability with: Assembly, VBA, VHDL.
+
+\vspace{6pt}
+
+\item \textbf{Industry Software Skills:} SolidWorks (Advanced), Matlab (Advanced), Ansys (Intermediate),  LTspice (Intermediate), Most MS Office products including MS project and MS access (Advanced).
+
+\vspace{6pt}
+
+\item \textbf{General Business Skills:} Good presentation skills, Works well in a team.
+
+\vspace{6pt}
+
+\item \textbf{Other:} Good soldering and spot welding skills, Can write well organised and structured reports.
+
+\end{itemize}
+
+\section{Interests and extra-curricular activity}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{I was a "fresher representative" in my 2nd and 3rd years of university, this required me to guide, look after, and ensure that a particular flat of first years have a good time in their first week, and feel consoled in what for most of them is there first time living away from home. We were responsible for the safety and wellbeing of the group of first years during the first week, and during this time I made good friends with all of them.}
+
+\vspace{6pt}
+
+\item{I am a member of a number of university societies. I was also the vice president and co-founder of the flash mob society. My roles in this included recruiting members, in which during "fresher's fair" we enlisted over 200 new members. This was regarded as very successful, considering other societies averaged around 50. I also appeared in an interview on the university television station, set up a society bank account, and helped organise the events. One of these events was featured in the local newspaper.}
+
+\vspace{6pt}
+
+\item{I am also an avid hiker, having completed the national 3 peaks challenge last summer. Other interest include guitar, which I am self-taught, and home brewing.}
+
+\end{itemize}
+
+\end{document}
