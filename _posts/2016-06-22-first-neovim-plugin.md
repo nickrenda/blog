@@ -4,7 +4,7 @@ title: NvimAutoheader
 subtitle: Shameless plug for my first Neovim plugin
 ---
 
-![](/img/posts/NvimAutoheader_main.gif)
+![](/img/posts/2016-06-22/NvimAutoheader_main.gif)
 
 I was recently inspired to switch over from Vim to [Neovim](https://neovim.io/) due to reading
 Geoff Greer's awesome [blog post](http://geoff.greer.fm/2015/01/15/why-neovim-is-better-than-vim/) on the subject.
