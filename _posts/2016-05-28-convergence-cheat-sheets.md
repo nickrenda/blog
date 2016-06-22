@@ -42,12 +42,12 @@ $$ \int_{A} |f_{\lambda}|\ d\mu = \int_{A\cap \{|f_{\lambda}| > T\}}|f_{\lambda}
 \int_{\{|f_{\lambda}| > T\}} |f_{\lambda}|\ d\mu + \frac{\epsilon}{2T}T < \epsilon $$
 for all $\lambda \in \Lambda$. 
 
-(Definition 1 $\Leftarrow$ Definition 2) Now suppose $\{f_{\lambda} : \lambda \in \Lambda\}$ 
+(Definition 1 $\Leftarrow$ Definition 2) Now suppose $\lbrace f_{\lambda} : \lambda \in \Lambda\rbrace$ 
 satisfies Definition 2. Then it suffices to show that $\sup_{\lambda}\mu(\{|f_{\lambda}| > t\}) \rightarrow 0$ and $t \rightarrow \infty$. By way of contradiction, suppose there exists 
 $\epsilon > 0$ such that for all $t > 0$, there exists $\lambda \in \Lambda$ such that $\mu(\{|f_{\lambda}| > t\}) \geq \epsilon$. 
 By assumption we can choose $\delta > 0$ such that $\eqref{eq:def2}$ is satisfied. 
 Then for each $n \in \mathbb{N}$, there exists $\lambda_{n} \in \Lambda$ such that 
-$\mu(\{|f_{\lambda_n}| > n\}) \geq \epsilon$. Thus we can choose $\{E_{n}\}_{n=0}^{\infty}$ such 
+$\mu(\{|f_{\lambda_n}| > n\}) \geq \epsilon$. Thus we can choose $\\{E_{n}\\}_{n=0}^{\infty}$ such 
 that $E_n \in \mathcal{B}(\mathbb{R}^{k})$,  $\mu(E_n) = \delta / 2$, and $|f_{\lambda_n}(x)| > n$ for all $x \in E_n$ (see ($*$) below). Now choose $N$ such that 
 $N \geq \frac{2\epsilon}{\delta}$, then
 \begin{equation}
