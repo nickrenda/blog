@@ -3,7 +3,7 @@ layout: post
 title: Equivalent definitions of uniform integrability
 ---
 
-Uniform integrability is an important concept in measure and probability theory,
+Uniform integrability is an important concept in measure theory and probability theory,
 particularly with regard to the [study of martingales](https://math.la.asu.edu/~jtaylor/teaching/Spring2011/APM504/lectures/lecture27/lecture27.pdf),
 and is often a necessary condition for convergence results. For example, uniform integrability is one of the 
 assumptions of the [Vitali Convergence Theorem](https://en.wikipedia.org/wiki/Vitali_convergence_theorem), which can be used to prove that absolutely continuous
