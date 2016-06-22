@@ -7,3 +7,4 @@ Thumbs.db
 *.aux
 *.out
 _site/
+.jekyll-metadata
