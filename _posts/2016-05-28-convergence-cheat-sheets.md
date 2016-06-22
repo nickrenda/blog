@@ -29,14 +29,14 @@ there exists $$\delta > 0$$ such that*
 *for all $$\lambda \in \Lambda$$ whenever $$A \in \mathcal{S}$$ such that 
 $$\mu(A) < \delta$$.*
 
-**Proposition 1:** Definitions 1 & 2 are equivalent when $$(X, \mathcal{S}, \mu) = (\mathbb{R}^{k}, \mathcal{B}(\mathbb{R}^{k}), m)$$, where $$m$ is the
+**Proposition 1:** Definitions 1 & 2 are equivalent when $$(X, \mathcal{S}, \mu) = (\mathbb{R}^{k}, \mathcal{B}(\mathbb{R}^{k}), m)$$, where $$m$$ is the
 Lebesgue measure on $$\mathbb{R}^{k}$$.
 
 $$Proof.$$ \
 (Definition 1 $$\Rightarrow$$ Definition 2) Let $$\epsilon > 0$$. Choose $$T > 0$$ such that
 $$\sup_{\lambda}\int\ |f_{\lambda}|\cdot I(|f_{\lambda}| > T)\ d\mu < \epsilon / 2$$. 
 Then let $$\delta := \epsilon / 2T$$. Thus, for $$A \in \mathcal{B}(\mathbb{R}^{k})$$ with 
-$\mu(A) < \delta$$,
+$$\mu(A) < \delta$$,
 $$ \int_{A} |f_{\lambda}|\ d\mu = \int_{A\cap \{|f_{\lambda}| > T\}}|f_{\lambda}|\ d\mu + 
 \int_{A\cap \{|f_{\lambda}| \leq T\}}|f_{\lambda}|\ d\mu \leq 
 \int_{\{|f_{\lambda}| > T\}} |f_{\lambda}|\ d\mu + \frac{\epsilon}{2T}T < \epsilon $$
@@ -59,7 +59,7 @@ This is a contradiction.
 $$\tag*{$$\Box$$}$$
 
 It is important to realize that in a general measure space $$(X, \mathcal{S}, \mu)$$ definitions 1 and 2 may not be equivalent. 
-For example, consider the measure space $$(\mathbb{N}, \mathcal{P}(\mathbb{N}), c)$$, where $$c$ is the counting measure.
+For example, consider the measure space $$(\mathbb{N}, \mathcal{P}(\mathbb{N}), c)$$, where $$c$$ is the counting measure.
 Let $$f_n$$, $$n \in \mathbb{N}$$, be defined by 
 $$ f_n(\omega) = \left\{\begin{array}{cl}
 0 & \omega \neq n \\
