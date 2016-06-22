@@ -12,7 +12,7 @@ $$ \int_{a}^{b}f'\ dm = f(b) - f(a). $$
 As with many concepts in mathematics, there are several equivalent ways of stating uniform integrability:
 
 Suppose $$(X, \mathcal{S}, \mu)$$ is a measure space and $$\{f_{\lambda} : \lambda \in \Lambda\}$$ is a family of complex-valued 
-measurable functions on $$X$.
+measurable functions on $$X$$.
 
 **Definition 1:** *The family $$\{f_{\lambda} : \lambda \in \Lambda\}$$ is said to be __uniformly integrable__ (UI) if* 
 \begin{equation}
@@ -56,7 +56,7 @@ $$N \geq \frac{2\epsilon}{\delta}$$, then
 \label{eq:1}
 \end{equation}
 This is a contradiction. 
-$$\tag*{$$\Box$$}$$
+$$\tag*{$\Box$}$$
 
 It is important to realize that in a general measure space $$(X, \mathcal{S}, \mu)$$ definitions 1 and 2 may not be equivalent. 
 For example, consider the measure space $$(\mathbb{N}, \mathcal{P}(\mathbb{N}), c)$$, where $$c$$ is the counting measure.
