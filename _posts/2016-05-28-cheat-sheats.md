@@ -3,8 +3,7 @@ layout: post
 title: Cheats sheets - convergence and continuity
 ---
 
-For your studying pleasure I have collected and categorized the more well-known results convergence results in measure theory
-and, more specifically, probability theory.
+For your studying pleasure... 
 
 ### Characterizations of convergence (general measure theory)
 
