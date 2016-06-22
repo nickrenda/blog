@@ -61,10 +61,12 @@ $$\tag*{$\Box$}$$
 It is important to realize that in a general measure space $(X, \mathcal{S}, \mu)$ definitions 1 and 2 may not be equivalent. 
 For example, consider the measure space $(\mathbb{N}, \mathcal{P}(\mathbb{N}), c)$, where $c$ is the counting measure.
 Let $f_n$, $n \in \mathbb{N}$, be defined by 
-\\[ f_n(\omega) = \left\{\begin{array}{cl}
+\begin{equation*}
+f_n(\omega) = \left\{\begin{array}{cl}
 0 & \omega \neq n \\
 n & \omega = n
-\end{array} \right..\\]
+\end{array} \right..
+\end{equation*}
 Then for any $\epsilon > 0$, $\{f_n : n\in \mathbb{N}\}$ satisfies $\eqref{eq:def2}$ 
 with $\delta = 1/2$ since $\emptyset$ is the only measurable set with measure less than $1/2$.
 However,
@@ -79,11 +81,13 @@ $$ \sup_{\lambda} \int |f_{\lambda}|\ d\mu < \infty. $$
 $Proof.$ Since $\{f_{\lambda}\}$ satisfies Definition 1, there exists $T > 0$ such that
 $$ \sup_{\lambda} \int_{\{|f_{\lambda}| > T\}}|f_{\lambda}|\ d\mu \leq 1. $$
 Thus,
-\begin{align*}
+
+$$ \begin{align*}
 \sup_{\lambda} \int |f_{\lambda}|\ d\mu & = \sup_{\lambda}\left\{ \int_{\{|f_{\lambda}| \leq T\}} |f_{\lambda}|\ d\mu + 
 \int_{\{|f_{\lambda}| > T\}} |f_{\lambda}|\ d\mu \right\} \\
 & \leq T\mu(X) + 1 < \infty.
-\end{align*}
+\end{align*} $$
+
 $$\tag*{$\Box$}$$
 
 **Proposition 2:** On a measure space $(X, \mathcal{S}, \mu)$, definitions 1 & 2 are equivalent if $\mu(X) < \infty$.
