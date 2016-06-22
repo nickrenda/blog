@@ -8,7 +8,7 @@ and, more specifically, probability theory.
 
 ### Characterizations of convergence (general measure theory)
 
-[![](/img/posts/2015-06-28/convergence_measureTheory.png)](/img/posts/2016-05-28/convergence_measureTheory.png)
+[![](/img/posts/2016-05-28/convergence_measureTheory.png)](/img/posts/2016-05-28/convergence_measureTheory.png)
 
 Let $(\Omega, \mathcal{S}, \mu)$ be a measure space and $f, f_{0}, f_{1}, ...$ real-valued measurable functions on $\Omega$.
  
@@ -45,9 +45,7 @@ C. Suppose $\Omega = [0,1]$ and for $n \geq 1$, let $f_{n} := n\chi_{[0,n^{-1}]}
 
 [![](/img/posts/2016-05-28/convergence_probTheory.png)](/img/posts/2016-05-28/convergence_probTheory.png)
 
-The following theorems can be found in Measure Theory and Probability Theory, *Athreya and Lahiri*.
-
-**Theorem 7:** *Suppose $\lbrace X_{n}\rbrace_{n=0}^{\infty}$ is UI and $X_{n} \rightarrow X$ in distribution. Then $E|X_{0}| < \infty$ and $EX_{n} \rightarrow EX_{0}$.*
+**Theorem 7:** *Suppose $\lbrace X_{n}\rbrace_{n=0}^{\infty}$ is UI and $X_{n} \rightarrow X$ in distribution. Then $E\|X_{0}\| < \infty$ and $EX_{n} \rightarrow EX_{0}$.*
 
 **Theorem 8:** (Skorohod's Embedding Theorem) *Suppose $X, X_1, X_2, ...$ are random variables, possibly defined on different probability spaces.
 Let $\mu, \mu_{n}$ denote the probability distributions of $X, X_{n}$, respectively, on $(\mathbb{R}, \mathcal{B}(\mathbb{R}))$ for 
