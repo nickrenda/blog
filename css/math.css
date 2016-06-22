@@ -16,3 +16,9 @@ span.math.display {
     background: url(../images/math.png) no-repeat center center;
     height: 366px;
 }
+
+@media (max-width: 991px) {
+    .jumbotron {
+        display: none;
+    }
+}

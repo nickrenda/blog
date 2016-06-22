@@ -60,9 +60,6 @@ blockquote {
     #CV, #CV-panel, #sidebar, .my-hr, .mobile-hide {
         display: none;
     }
-    .jumbotron {
-        display: none;
-    }
     /*
      * #name-title {
      *     display: none;
@@ -193,3 +190,23 @@ pre {
     margin-top: 20px;
 }
 
+#homePageJumbotron {
+    background: url(../images/ireland.jpg) no-repeat center center;
+    width: 100%;
+    min-height: 400px;
+    /* height: 500px; */
+    /* height: 366px; */
+}
+
+#homePageJumbotron p {
+    color: white;
+    text-color: white;
+}
+
+@media (max-width: 991px) {
+    #homePageJumbotron {
+        min-height: 200px;
+        /* height: 500px; */
+        /* height: 366px; */
+    }
+}
