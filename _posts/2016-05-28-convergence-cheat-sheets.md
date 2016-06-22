@@ -47,7 +47,7 @@ satisfies Definition 2. Then it suffices to show that $\sup_{\lambda}\mu(\{|f_{\
 $\epsilon > 0$ such that for all $t > 0$, there exists $\lambda \in \Lambda$ such that $\mu(\{|f_{\lambda}| > t\}) \geq \epsilon$. 
 By assumption we can choose $\delta > 0$ such that $\eqref{eq:def2}$ is satisfied. 
 Then for each $n \in \mathbb{N}$, there exists $\lambda_{n} \in \Lambda$ such that 
-$\mu(\{|f_{\lambda_n}| > n\}) \geq \epsilon$. Thus we can choose $\\{E_{n}\\}_{n=0}^{\infty}$ such 
+$\mu(\{|f_{\lambda_n}| > n\}) \geq \epsilon$. Thus we can choose $\lbrace E_{n}\rbrace_{n=0}^{\infty}$ such 
 that $E_n \in \mathcal{B}(\mathbb{R}^{k})$,  $\mu(E_n) = \delta / 2$, and $|f_{\lambda_n}(x)| > n$ for all $x \in E_n$ (see ($*$) below). Now choose $N$ such that 
 $N \geq \frac{2\epsilon}{\delta}$, then
 \begin{equation}
@@ -61,10 +61,10 @@ $$\tag*{$\Box$}$$
 It is important to realize that in a general measure space $(X, \mathcal{S}, \mu)$ definitions 1 and 2 may not be equivalent. 
 For example, consider the measure space $(\mathbb{N}, \mathcal{P}(\mathbb{N}), c)$, where $c$ is the counting measure.
 Let $f_n$, $n \in \mathbb{N}$, be defined by 
-$$ f_n(\omega) = \left\{\begin{array}{cl}
+\\[ f_n(\omega) = \left\{\begin{array}{cl}
 0 & \omega \neq n \\
 n & \omega = n
-\end{array} \right..$$
+\end{array} \right..\\]
 Then for any $\epsilon > 0$, $\{f_n : n\in \mathbb{N}\}$ satisfies $\eqref{eq:def2}$ 
 with $\delta = 1/2$ since $\emptyset$ is the only measurable set with measure less than $1/2$.
 However,
