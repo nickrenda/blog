@@ -32,7 +32,8 @@ $\mu(A) < \delta$.*
 **Proposition 1:** Definitions 1 & 2 are equivalent when $(X, \mathcal{S}, \mu) = (\mathbb{R}^{k}, \mathcal{B}(\mathbb{R}^{k}), m)$, where $m$ is the
 Lebesgue measure on $\mathbb{R}^{k}$.
 
-$Proof.$ \
+$Proof.$ 
+
 (Definition 1 $\Rightarrow$ Definition 2) Let $\epsilon > 0$. Choose $T > 0$ such that
 $\sup_{\lambda}\int\ |f_{\lambda}|\cdot I(|f_{\lambda}| > T)\ d\mu < \epsilon / 2$. 
 Then let $\delta := \epsilon / 2T$. Thus, for $A \in \mathcal{B}(\mathbb{R}^{k})$ with 
