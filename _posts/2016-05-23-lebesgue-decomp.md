@@ -14,7 +14,7 @@ if there exists a set $A \in \mathcal{S}$ such that $\mu(A) = \nu(\Omega - A) = 
 
 **Definition 3:** (Absolutely continuous functions) *Suppose $-\infty < a < b < \infty$ and $f : [a,b] \rightarrow \mathbb{R}$. We
 say that $f$ is __absolutely continuous__ if for all $\epsilon > 0$, there exists a $\delta > 0$ such that for every finite
-disjoint collection $\lbrace (a_k, b_k)\}_{k=1}^{n}$ of open intervals in $(a,b)$*,
+disjoint collection $\lbrace (a_{k}, b_{k})\rbrace_{k=1}^{n}$ of open intervals in $(a,b)$*,
 $$\text{ if } \sum_{k=1}^{n}[b_{k} - a_{k}] < \delta \text{ then } \sum_{k=1}^{n}|f(b_{k}) - f(a_{k})| < \epsilon.$$
 
 **Definition 4:** (Singular functions) *A real-valued function is said to be __singular__ if its derivative is 0 almost everywhere with respect to
