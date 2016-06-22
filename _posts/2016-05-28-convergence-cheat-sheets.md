@@ -61,12 +61,12 @@ $$\tag*{$\Box$}$$
 It is important to realize that in a general measure space $(X, \mathcal{S}, \mu)$ definitions 1 and 2 may not be equivalent. 
 For example, consider the measure space $(\mathbb{N}, \mathcal{P}(\mathbb{N}), c)$, where $c$ is the counting measure.
 Let $f_n$, $n \in \mathbb{N}$, be defined by 
-\begin{equation*}
-f_n(\omega) = \left\{\begin{array}{cl}
+
+$$ f_n(\omega) = \left\{\begin{array}{cl}
 0 & \omega \neq n \\
 n & \omega = n
-\end{array} \right..
-\end{equation*}
+\end{array} \right.. $$
+
 Then for any $\epsilon > 0$, $\{f_n : n\in \mathbb{N}\}$ satisfies $\eqref{eq:def2}$ 
 with $\delta = 1/2$ since $\emptyset$ is the only measurable set with measure less than $1/2$.
 However,
