@@ -3,7 +3,9 @@ layout: post
 title: Cheats sheets - convergence and continuity
 ---
 
-For your studying pleasure... 
+For your studying pleasure I have characterized a list of the better known convergence results in measure theory and 
+probabililty theory. Most of the general convergence thoerems can be found in Measure Thoery and Probability Theory, by 
+Athreya and Lahiri, Chapter 2.
 
 ### Characterizations of convergence (general measure theory)
 
