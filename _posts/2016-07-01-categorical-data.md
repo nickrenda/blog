@@ -80,20 +80,21 @@ This approach was developed by [Cory Lanker, PhD](http://people.llnl.gov/lanker1
 Dr. Lanker also gave a theoretical justification for this approach in his dissertation at Iowa State University in 2015.
 
 The idea is to tranform each categorical feature using a real-valued function of that variable and the response variable. Suppose, for instance, we have the variable 'size' which represents the size of a t-shirt, and we want to predict whether or not the t-shirt is returned.
-If for each size we knew the conditional probability of the t-shirt being returned then we would have all of the information necessary to build an optimal classifier. Of course we can never actually know this probability, but we can empirically estimate it for each color as
+Ultimately we want to estimate the conditional probability of the t-shirt being returned for each color:
 \begin{equation}
 \hat{P}\left(\text{returned} \big| \text{size = x}\right) = \frac{\text{# items returned with size = x}}{\text{# items with size = x}}.
+\eqref{0}
 \end{equation}
 
 Similarly, the ratio
 \begin{equation}
 \frac{\hat{P}\left(\text{returned}\big| \text{size = x}\right)}{\hat{P}\left(\text{not returned}\big|\text{size = x}\right)} = \frac{\text{# items returned with size = x}}{\text{# items not returned with size = x}}
 \end{equation}
-also is an estimate of a statistic that contains all the necessary information.
+encorporates the same information as equation \eqref{0}.
 
 This is the motivation for the transformation function defined below in equation \eqref{1}. Note that since this transformation is a function of the reponse variable, it should only be calculated based on a separate "historical" set which is never used for training.
 
-The danger of calculated this transformation on the same set that is used for training is the risk of leakage: where information about the specific values of the response variable are "leaked" into the training set, causing your model to overfit the training data.
+The danger of calculating this transformation on the same set used for training is the risk of [leakage](https://www.kaggle.com/wiki/Leakage): where information about the specific values of the response variable are "leaked" into the training set, causing your model to overfit the training data.
 
 ![](/img/posts/2016-07-01/historical_features.png)
 
