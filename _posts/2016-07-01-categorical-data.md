@@ -83,7 +83,7 @@ The idea is to tranform each categorical feature using a real-valued function of
 Ultimately we want to estimate the conditional probability of the t-shirt being returned for each color:
 \begin{equation}
 \hat{P}\left(\text{returned} \big| \text{size = x}\right) = \frac{\text{# items returned with size = x}}{\text{# items with size = x}}.
-\eqref{0}
+\label{0}
 \end{equation}
 
 Similarly, the ratio
