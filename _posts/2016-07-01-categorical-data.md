@@ -200,3 +200,11 @@ transform(hist, train, 'color', 'returned')
 ```
 
 There are several ways you could improve the above function. For one, you could modify the function to calculate the $\epsilon$ terms in a Bayesian way instead of using $\epsilon_{0} = \epsilon_{1} = 0.5$. The function also assigns a value of 0 when it encounters levels or combinations of levels in the target set that were not in the historical set. Instead, you could assign these levels to $\log \epsilon_{0} - \log \epsilon_{1}$ if you chose $\epsilon_{0}$ to be different from $\epsilon_{1}$.
+
+### When to use lpr's and when to use dummy variables
+
+The obvious disadvantage of using empirical log probability ratios is the need for a separate "historical" set. This usually means having less data to train the model on. Thus, in my opinion, you should only resort to using lpr's when the number of levels for all categorical variables is large AND you have enough training data to justify splitting off a portion into a historical set. How to best split up the training data depends very much on the situation.
+
+## References
+
+1. Lanker, Cory (2015). *Local prediction and classification techniques for machine learning and data mining* (Doctoral dissertation). Retrieved from Digital Repository @ Iowa State University.
