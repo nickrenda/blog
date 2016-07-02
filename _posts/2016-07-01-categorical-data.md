@@ -4,7 +4,7 @@ title: Data mining techniques for classification
 subtitle: A generic approach to dealing with categorical variables
 ---
 
-In the real world, data often comes in the form of categorical variables, i.e. variables without a natural ordering. This presents a problem for data mining challenges as many machine learning algorithms cannot directly deal with categorical features, such as linear regression or even the ever-so-popular [Extreme Gradient Boosting (xgboost)](https://github.com/dmlc/xgboost). Instead, these features need to be transformed into numerical variables in such a way that the information regarding the response variable is preserved.
+Data often comes in the form of categorical variables, i.e. variables without a natural ordering. This presents a problem for data mining challenges as many machine learning algorithms cannot directly deal with categorical features, such as linear regression or even the ever-so-popular [Extreme Gradient Boosting (xgboost)](https://github.com/dmlc/xgboost). Instead, these features need to be transformed into numerical variables in such a way that the information regarding the response variable is preserved.
 
 One simple yet popular transformation is one-hot encoding, where each level (unique value) of a categorical feature is transformed into an indicator variable (aka "dummy variable"). For example, suppose we have the feature 'color' with the levels blue, green, and red. The first few rows of the feature
 'color' may look like this:
@@ -67,7 +67,7 @@ dumb_down(df, 'color', 'size')
 
 While one-hot encoding can be very useful, it is not without its drawbacks. The main issue is that when a categorical feature has $n$ different levels, $n$ different dummy variables have to be created. This means that when the number of levels is high, the number of features can increase drastically by doing one-hot encoding, especially if you want to include interactions between multiple categorical features. 
 
-For classification problems there is an alternative to dummy variables, called empirical log probability ratios (lpr's), which has been demonstrated to work very well in practice.
+For classification problems, there is an alternative to dummy variables called empirical log probability ratios (lpr's), which has been demonstrated to work very well in practice.
 
 ## Empirical log probability ratios
 
@@ -199,4 +199,4 @@ transform(hist, train, 'color', 'returned')
 #   large   1.609438
 ```
 
-There are several ways you could improve the above function. For one, you could modify the function to calculate the $\epsilon$ terms in a Bayesian way instead using $\epsilon_{0} = \epsilon_{1} = 0.5$. The function also assigns a value of 0 when it encounters levels or combinations of levels in the target set that were not in the historical set. Instead, you could assign these levels to $\log \epsilon_{0} - \log \epsilon_{1}$ if you chose $\epsilon_{0}$ to be different from $\epsilon_{1}$.
+There are several ways you could improve the above function. For one, you could modify the function to calculate the $\epsilon$ terms in a Bayesian way instead of using $\epsilon_{0} = \epsilon_{1} = 0.5$. The function also assigns a value of 0 when it encounters levels or combinations of levels in the target set that were not in the historical set. Instead, you could assign these levels to $\log \epsilon_{0} - \log \epsilon_{1}$ if you chose $\epsilon_{0}$ to be different from $\epsilon_{1}$.
