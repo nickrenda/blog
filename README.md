@@ -1,4 +1,4 @@
-[My personal webpage](https://epwalsh.fyi)
+My personal webpage and blog, published at [epwalsh.fyi](https://epwalsh.fyi)
 
 ----
 
