@@ -4,8 +4,8 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "https://epwalsh.com"
-enforce_ssl: "epwalsh.com"
+url: "https://epwalsh.fyi"
+enforce_ssl: "epwalsh.fyi"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -25,7 +25,7 @@ description: My personal website
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resume / CV: "http://epwalsh.com/files/CV_Evan_Walsh.pdf"
+  Resume / CV: "https://epwalsh.fyi/files/CV_Evan_Walsh.pdf"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -55,7 +55,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "epwalsh.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "epwalsh.fyi"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -63,12 +63,12 @@ url-pretty: "epwalsh.com"  # eg. "deanattali.com/beautiful-jekyll"
 disqus: "epwalsh"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-79839424-1"
+google_analytics: "UA-79839424-2"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
