@@ -1,4 +1,10 @@
 <head>
+  <script type="text/javascript">
+    var host = "epwalsh.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -19,7 +25,8 @@ MathJax.Hub.Config({
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
-  
+  <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
