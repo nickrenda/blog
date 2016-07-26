@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cheats sheets - convergence and continuity
+share-img: https://epwalsh.fyi/img/posts/2016-05-28/convergence_measureTheory.png
 ---
 
 For your studying pleasure I have characterized a list of the better known convergence results in measure theory and 
