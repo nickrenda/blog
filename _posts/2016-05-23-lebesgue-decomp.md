@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The relationship between the Lebesgue decomposition theorems
+tags: [measure-theory, analysis, lebesgue-measure, probability-theory]
 ---
 
 Before proceeding let's confuse ourselves with several definitions.

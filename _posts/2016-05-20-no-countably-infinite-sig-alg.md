@@ -1,13 +1,10 @@
 ---
 layout: post
 title: Why there is no countably infinite sigma algebra
+tags: [measure-theory, analysis, set-theory]
 ---
 
-A $\sigma$-algebra $\mathcal{F}$ over a set $\Omega$ is a collection of subsets of $\Omega$ such that
-
-1. $\emptyset \in \mathcal{F}$,
-2. $\Omega - A \in \mathcal{F}$ whenever $A \in \mathcal{F}$, and 
-3. $\cup_{n=0}^{\infty}A_{n} \in \mathcal{F}$ whenever $A_{0}, A_{1}, A_{2},... \in \mathcal{F}$.
+A $\sigma$-algebra $\mathcal{F}$ over a set $\Omega$ is a collection of subsets of $\Omega$ such that (1) $\emptyset \in \mathcal{F}$, (2) $\Omega - A \in \mathcal{F}$ whenever $A \in \mathcal{F}$, and (3) $\cup_{n=0}^{\infty}A_{n} \in \mathcal{F}$ whenever $A_{0}, A_{1}, A_{2},... \in \mathcal{F}$.
 
 The concept of a $\sigma$-algebra provides a starting point for measure theory. 
 Of course $\sigma$-algebras can be finite, like the 

@@ -2,6 +2,7 @@
 layout: post
 title: NvimAutoheader
 subtitle: Shameless plug for my first Neovim plugin
+tags: [coding, vim, neovim, workflow]
 ---
 
 ![](/img/posts/2016-06-22/NvimAutoheader_main.gif)

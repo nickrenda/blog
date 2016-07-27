@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Equivalent definitions of uniform integrability
+tags: [analysis, probability-theory, measure-theory]
 ---
 
 Uniform integrability is an important concept in measure theory and probability theory,

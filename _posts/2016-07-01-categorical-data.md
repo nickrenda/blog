@@ -2,6 +2,7 @@
 layout: post
 title: Data mining techniques for classification
 subtitle: A generic approach to dealing with categorical variables
+tags: [data-mining, machine-learning, statistics]
 ---
 
 Data often comes in the form of categorical variables, i.e. variables without a natural ordering. This presents a problem for data mining challenges as many machine learning algorithms cannot directly deal with categorical features, such as linear regression or even the ever-so-popular [Extreme Gradient Boosting (xgboost)](https://github.com/dmlc/xgboost). Instead, these features need to be transformed into numerical variables in such a way that the information regarding the response variable is preserved.
