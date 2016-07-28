@@ -1,4 +1,4 @@
-.highlight  { background: #ffffff; }
+.highlight  { background: #eee; }
 .highlight pre { background-color: #fff; font-size: 16px }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -22,6 +22,7 @@
 .highlight .gt { color: #aa0000 } /* Generic.Traceback */
 .highlight .kc { font-weight: bold } /* Keyword.Constant */
 .highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #0066ff } /* Keyword.Pseudo */
 .highlight .kp { font-weight: bold } /* Keyword.Pseudo */
 .highlight .kr { font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
