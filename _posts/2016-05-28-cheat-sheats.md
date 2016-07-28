@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Cheats sheets - convergence and continuity
+title: Cheats sheets 
+subtitle: Convergence and continuity
 share-img: https://epwalsh.fyi/img/posts/2016-05-28/convergence_measureTheory.png
 tags: [measure-theory, probability-theory, analysis]
 ---

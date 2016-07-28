@@ -138,13 +138,6 @@ def get_name(names):
 def transform(hist_df, target_df, var_names, y):
     """
     Calculate empirical log probability ratios.
-
-    Args (name, type, description):
-      hist_df    DataFrame           historical set
-      var_names  list of str or str  variables to transform
-      target_df  DataFrame           training or test set
-      y          str                 response variable
-    Returns: DataFrame with transformed variables for target_df.
     """
     if type(var_names) is not list: var_names = [var_names]
     lprs = hist_df.groupby(var_names)[y].agg(log_ratio)
