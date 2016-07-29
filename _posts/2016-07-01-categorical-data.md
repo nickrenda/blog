@@ -31,22 +31,22 @@ After applying the transformation, we would replace 'color' with 3 new variables
 
 Below is a simple function in Python that performs this transformation on an arbitrary number of features.
 
-```python
+{% highlight python linenos %}
 import pandas as pd
 
 def dumb_down(df, *args):
     """
-    Transform categorical features listed as *args into dummy variables.
+    Transform categorical features into dummy variables.
     """
     for arg in args:
         dummy_cols = pd.get_dummies(df[arg], prefix=arg)
         df = pd.concat([df, dummy_cols], axis=1)
     return df.drop(list(args), axis=1)
-```
+{% endhighlight %}
 
 Here is a minimal working example:
 
-```python
+{% highlight python linenos %}
 df = pd.DataFrame({'color': ['blue', 'green', 'blue', 'red'],
                    'size' : ['small', 'large', 'large', 'small']})
 df
@@ -64,7 +64,7 @@ dumb_down(df, 'color', 'size')
 # 0.0          1.0          0.0         1.0         0.0
 # 1.0          0.0          0.0         1.0         0.0
 # 0.0          0.0          1.0         0.0         1.0
-```
+{% endhighlight %}
 
 While one-hot encoding can be very useful, it is not without its drawbacks. The main issue is that when a categorical feature has $n$ different levels, $n$ different dummy variables have to be created. This means that when the number of levels is high, the number of features can increase drastically by doing one-hot encoding, especially if you want to include interactions between multiple categorical features. 
 
@@ -109,7 +109,7 @@ So according to equation \eqref{1}, the transformed 'size' variable in the train
 
 Below is some Python code to calculate these transformations.
 
-```python
+{% highlight python linenos %}
 import pandas as pd
 import math
 
@@ -147,11 +147,11 @@ def transform(hist_df, target_df, var_names, y):
     temp.columns = var_names + [get_name(var_names)]
     merged = pd.merge(target_df, temp, how='left', on=var_names).fillna(0)
     return merged.drop(var_names, axis=1)
-```
+{% endhighlight %}
 
 This function can be used not just to calculate transformations of a single categorical variable, but also combinations of an arbitrary number of categorical variables. Here is a minimal working example:
 
-```python
+{% highlight python linenos %}
 hist = pd.DataFrame({'color': ['blue', 'green', 'blue', 'red', 'red'],
                      'size' : ['small', 'large', 'large', 'small', 'small'],
                      'returned' : [1, 0, 1, 1, 1]})
@@ -191,7 +191,7 @@ transform(hist, train, 'color', 'returned')
 #   small   1.609438
 #   large   1.609438
 #   large   1.609438
-```
+{% endhighlight %}
 
 There are several ways you could improve the above function. For one, you could modify the function to calculate the $\epsilon$ terms in a Bayesian way instead of using $\epsilon_{0} = \epsilon_{1} = 0.5$. The function also assigns a value of 0 when it encounters levels or combinations of levels in the target set that were not in the historical set. Instead, you could assign these levels to $\log \epsilon_{0} - \log \epsilon_{1}$ if you chose $\epsilon_{0}$ to be different from $\epsilon_{1}$.
 
