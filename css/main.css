@@ -591,7 +591,7 @@ table tr td :last-child {
 
 /* Code --- {{{ */
 pre {
-  font-size: 16px;
+  font-size: 14px !important;
   line-height: 1.5em;
 }
 pre code {
