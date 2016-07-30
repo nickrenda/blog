@@ -48,7 +48,7 @@ Here is a minimal working example:
 
 {% highlight python linenos %}
 df = pd.DataFrame({'color': ['blue', 'green', 'blue', 'red'],
-                   'size' : ['small', 'large', 'large', 'small']})
+    'size' : ['small', 'large', 'large', 'small']})
 df
 
 #  color   size
@@ -153,8 +153,8 @@ This function can be used not just to calculate transformations of a single cate
 
 {% highlight python linenos %}
 hist = pd.DataFrame({'color': ['blue', 'green', 'blue', 'red', 'red'],
-                     'size' : ['small', 'large', 'large', 'small', 'small'],
-                     'returned' : [1, 0, 1, 1, 1]})
+    'size' : ['small', 'large', 'large', 'small', 'small'],
+    'returned' : [1, 0, 1, 1, 1]})
 hist
 
 #   color size   returned
@@ -166,7 +166,7 @@ hist
 
 
 train = pd.DataFrame({'color': ['green', 'red', 'red', 'blue'],
-                      'size': ['small', 'small', 'large', 'large']})
+    'size': ['small', 'small', 'large', 'large']})
 train
 
 #   color size
