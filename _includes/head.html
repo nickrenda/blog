@@ -4,22 +4,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="icon" href="/img/favicon.ico">
 
-  <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-  </script>
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-  </script>
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
-  <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
 
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
@@ -28,39 +19,39 @@ MathJax.Hub.Config({
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
   {% if layout.common-ext-css %}
-    {% for css in layout.common-ext-css %}
-      <link rel="stylesheet" href="{{ css }}" />
-    {% endfor %}
+  {% for css in layout.common-ext-css %}
+  <link rel="stylesheet" href="{{ css }}" />
+  {% endfor %}
   {% endif %}    
   
   {% if layout.common-css %}
-    {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
-    {% endfor %}
+  {% for css in layout.common-css %}
+  <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+  {% endfor %}
   {% endif %}  
   
   {% if layout.common-googlefonts %}
-    {% for font in layout.common-googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
-    {% endfor %}
+  {% for font in layout.common-googlefonts %}
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+  {% endfor %}
   {% endif %}
 
   {% if page.ext-css %}
-    {% for css in page.ext-css %}
-      <link rel="stylesheet" href="{{ css }}" />
-    {% endfor %}
+  {% for css in page.ext-css %}
+  <link rel="stylesheet" href="{{ css }}" />
+  {% endfor %}
   {% endif %}  
   
   {% if page.css %}
-    {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
-    {% endfor %}
+  {% for css in page.css %}
+  <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+  {% endfor %}
   {% endif %}
 
   {% if page.googlefonts %}
-    {% for font in page.googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
-    {% endfor %}
+  {% for font in page.googlefonts %}
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+  {% endfor %}
   {% endif %}
 
   <!-- Facebook OpenGraph tags -->
