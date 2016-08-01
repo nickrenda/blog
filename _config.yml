@@ -39,6 +39,7 @@ author:
   name: Evan Pete Walsh
   email: "epwalsh@iastate.edu"
   facebook: epwalsh10  
+  instagram: epwalsh10
   github: epwalsh
   twitter: epwalsh10
   linkedin: epwalsh 
@@ -48,7 +49,8 @@ author:
 footer-links-active:
   rss: false
   facebook: false
-  email: true
+  instagram: true
+  email: false
   twitter: true
   github: true
   linkedin: true
