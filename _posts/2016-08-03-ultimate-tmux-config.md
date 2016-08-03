@@ -17,13 +17,13 @@ I spent a lot time customizing the status bar. The majority of the inspiration f
 [this post](http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/). On the very left,
 the window and pane number are displayed in the two brackets ```[ ]``` and then the current command that
 is running (like 'bash' for example). On the right, the current song that's playing (I'm going through
-a country phase), followed by the batter status (it will be a different color depending on the amount of charge
-left), and then the date and time.
+a country phase), followed by the battery status (it will be a different color depending on the amount of charge
+left), and lastly the date and time.
 
 ## Now playing and battery status
 
-To display the song information and battery status I have Tmux called two external bash scripts which print out the relevant info.
-For the song information I used the folowing script which I got from [https://www.tylerewing.co/tmux-now-playing](https://www.tylerewing.co/tmux-now-playing):
+To display the song information and battery status I have Tmux call two external bash scripts which print out the relevant info.
+For the song information I used the following script which I got from [https://www.tylerewing.co/tmux-now-playing](https://www.tylerewing.co/tmux-now-playing):
 
 {% highlight bash linenos %}
 #!/bin/bash
