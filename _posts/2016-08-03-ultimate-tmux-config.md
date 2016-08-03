@@ -2,6 +2,7 @@
 layout: post
 title: The ultimate tmux config
 tags: [coding, tmux]
+share-img: https://epwalsh.fyi/img/posts/2016-08-03/tmux-setup.png
 published: true
 ---
 
