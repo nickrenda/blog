@@ -12,13 +12,9 @@ baseurl: ""
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
 
-# Of course don't forget to change the username and projectname to YOUR username and project
 
-# Name of website
-title: E.P. Walsh
-
-# Short description of your site
-description: My personal website
+title: "E.P. Walsh"
+description: "Graduate student at Iowa State University pursuing PhD in Probability Theory. Bachelor of Mathematics from St. Lawrence University. Data Scientist at Structurely."
 
 # --- Navigation bar options --- #
 
