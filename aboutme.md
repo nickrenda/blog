@@ -6,4 +6,4 @@ subtitle: Pursuing PhD in Statistics and Mathematics, programming addict, Vim fa
 
 I am a third-year graduate student at Iowa State University pursuing a co-major PhD in Statistics and Mathematics.  In addition to having a strong mathematical background in analysis and measure theory, I am an extremely competent programmer in several different languages.  As a result I have a solid understanding of a wide variety of machine learning algorithms and the computing know-how to efficiently implement and deploy them.
 
-Besides being a full-time student I work as a data scientist for a start-up called Structurely -- a company on the forefront of bringing artificial intelligence to the real estate industry.
+Besides being a full-time student I work as a data scientist for a start-up called [Structurely](http://structure.ly) -- a company on the forefront of artificial intelligence to the real estate industry. At Structurely we leverage machine learning, deep learning, and natural language processing to improve the home search experience for both realtors and homebuyers. 
